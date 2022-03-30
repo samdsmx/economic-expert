@@ -20,7 +20,7 @@ import {
   Stack,
 } from "@fluentui/react";
 
-export function Card({ title }) {
+export function Card({ title, tipo, conceptos, autores, referencias }) {
   const onActionClick = (
     action: string,
     ev: React.SyntheticEvent<HTMLElement>
@@ -28,85 +28,6 @@ export function Card({ title }) {
     console.log(`You clicked the ${action} action`);
     ev.stopPropagation();
     ev.preventDefault();
-  };
-
-  const previewProps: IDocumentCardPreviewProps = {
-    getOverflowDocumentCountText: (overflowCount: number) =>
-      `+${overflowCount} more`,
-    previewImages: [
-      {
-        name: "2016 Conference Presentation",
-        linkProps: {
-          href: "http://bing.com",
-          target: "_blank",
-        },
-        previewImageSrc: TestImages.documentPreview,
-        iconSrc: TestImages.iconPpt,
-        imageFit: ImageFit.cover,
-        width: 318,
-        height: 196,
-      },
-      {
-        name: "New Contoso Collaboration for Conference Presentation Draft",
-        linkProps: {
-          href: "http://bing.com",
-          target: "_blank",
-        },
-        previewImageSrc: TestImages.documentPreviewTwo,
-        iconSrc: TestImages.iconPpt,
-        imageFit: ImageFit.cover,
-        width: 318,
-        height: 196,
-      },
-      {
-        name: "Spec Sheet for design",
-        linkProps: {
-          href: "http://bing.com",
-          target: "_blank",
-        },
-        previewImageSrc: TestImages.documentPreviewThree,
-        iconSrc: TestImages.iconPpt,
-        imageFit: ImageFit.cover,
-        width: 318,
-        height: 196,
-      },
-      {
-        name: "Contoso Marketing Presentation",
-        linkProps: {
-          href: "http://bing.com",
-          target: "_blank",
-        },
-        previewImageSrc: TestImages.documentPreview,
-        iconSrc: TestImages.iconPpt,
-        imageFit: ImageFit.cover,
-        width: 318,
-        height: 196,
-      },
-      {
-        name: "Notes from Ignite conference",
-        linkProps: {
-          href: "http://bing.com",
-          target: "_blank",
-        },
-        previewImageSrc: TestImages.documentPreviewTwo,
-        iconSrc: TestImages.iconPpt,
-        imageFit: ImageFit.cover,
-        width: 318,
-        height: 196,
-      },
-      {
-        name: "FY17 Cost Projections",
-        linkProps: {
-          href: "http://bing.com",
-          target: "_blank",
-        },
-        previewImageSrc: TestImages.documentPreviewThree,
-        iconSrc: TestImages.iconPpt,
-        imageFit: ImageFit.cover,
-        width: 318,
-        height: 196,
-      },
-    ],
   };
 
   const documentCardActions = [
@@ -135,15 +56,19 @@ export function Card({ title }) {
     root: { fontSize: 17, fontWeight: "bold", lineHeight: "normal" },
   };
 
+  const cardSubTitleStyles: IDocumentCardStyles = {
+    root: { lineHeight: "normal", height: 'auto', padding: '2px 16px' },
+  };
+
   const cardPreviewStyles: IDocumentCardPreviewStyles = {
-      root: "",
-      fileListOverflowText: { float: 'right' },
-      previewIcon: "",
-      icon: "",
-      fileList: "",
-      fileListIcon: "",
-      fileListLink: ""
-  }
+    root: "",
+    fileListOverflowText: { float: "right" },
+    previewIcon: "",
+    icon: "",
+    fileList: "",
+    fileListIcon: "",
+    fileListLink: { color: "rgb(0, 120, 212)", textDecoration: "underline" },
+  };
 
   const addIcon: IIconProps = { iconName: "ExploreContent" };
 
@@ -189,58 +114,61 @@ export function Card({ title }) {
 
   return (
     <DocumentCard styles={cardStyles}>
-        <Stack verticalFill verticalAlign="space-between">
-            <Stack>
-                <Stack horizontal horizontalAlign="space-between">
-                    <DocumentCardTitle
-                    title={title}
-                    styles={cardTitleStyles}
-                    shouldTruncate
-                    />
-                    <IconButton
-                    split
-                    iconProps={addIcon}
-                    splitButtonAriaLabel="See 2 options"
-                    aria-roledescription="split button"
-                    styles={customSplitButtonStyles}
-                    menuProps={menuProps}
-                    ariaLabel="New item"
-                    onClick={_alertClicked}
-                    />
-                </Stack>
-                <DocumentCardTitle
-                    showAsSecondaryTitle
-                    title={
-                    "This is the email content preview which is very very long. The email also has some more content. " +
-                    "The content continues. sdfjsdlfkjsdl fsdljkf sdfkjs dfkjsd fl This is the last."
-                    }
-                />
-                <DocumentCardPreview {...previewProps} styles={cardPreviewStyles} />
-            </Stack>
-            <Stack>
-                <DocumentCardActivity
-                    activity={"" + Math.floor(1800 + Math.random() * 220)}
-                    people={[
-                    {
-                        name: "Annie Lindqvist",
-                        profileImageSrc: null,
-                    },
-                    {
-                        name: "Sergio Marquez",
-                        profileImageSrc: null,
-                    },
-                    {
-                        name: "Cristina Jimenez",
-                        profileImageSrc: null,
-                    },
-                    ].slice(0, Math.floor(Math.random() * 3))}
-                />
-                <DocumentCardActions
-                    actions={documentCardActions}
-                    views={Math.floor(Math.random() * 30)}
-                />
-            </Stack>
+      <Stack verticalFill verticalAlign="space-between">
+        <Stack>
+          <Stack horizontal horizontalAlign="space-between">
+            <DocumentCardTitle
+              title={title}
+              styles={cardTitleStyles}
+              shouldTruncate
+            />
+            <IconButton
+              split
+              iconProps={addIcon}
+              splitButtonAriaLabel="See 2 options"
+              aria-roledescription="split button"
+              styles={customSplitButtonStyles}
+              menuProps={menuProps}
+              ariaLabel="New item"
+              onClick={_alertClicked}
+            />
+          </Stack>
+          <DocumentCardTitle
+            showAsSecondaryTitle
+            title={
+              "This is the email content preview which is very very long. The email also has some more content. "
+            }
+            styles={cardSubTitleStyles}
+          />
+          <DocumentCardTitle
+            showAsSecondaryTitle
+            title={conceptos.join(", ")}
+            styles={cardSubTitleStyles}
+          />
+          <DocumentCardPreview
+            maxDisplayCount={3}
+            getOverflowDocumentCountText={(overflowCount: number) =>
+              overflowCount - 2 > 0 && `+${overflowCount - 2} mas`
+            }
+            previewImages={referencias.concat(["", ""]).map((r: string) => {
+              return { name: r, linkProps: { href: r, target: "_blank" } };
+            })}
+            styles={cardPreviewStyles}
+          />
         </Stack>
+        <Stack>
+          <DocumentCardActivity
+            activity={"" + Math.floor(1800 + Math.random() * 220)}
+            people={autores.map((a: string) => {
+              return { name: a, profileImageSrc: null };
+            })}
+          />
+          <DocumentCardActions
+            actions={documentCardActions}
+            views={Math.floor(Math.random() * 30)}
+          />
+        </Stack>
+      </Stack>
     </DocumentCard>
   );
 }

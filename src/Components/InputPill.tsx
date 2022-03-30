@@ -5,20 +5,21 @@ import { Label } from '@fluentui/react/lib/Label';
 import { Link, Stack } from "@fluentui/react";
 import styled from "styled-components";
 import { useId } from "@fluentui/react-hooks";
-import { IPersonaSharedProps, Persona, PersonaSize, PersonaPresence } from '@fluentui/react/lib/Persona';
 
-export function InputPill({label="", type="pill"}) {
+export function InputPill({ label="", type="pill", onChange=(_newVal: string[])=>{} }) {
 
     const [conceptos, setConceptos] = React.useState([]);
     const [concepto, setConcepto] = React.useState('');
   
     const deleteConcept = (valor) => {
       setConceptos(conceptos.filter(val => val !== valor));
+      onChange(conceptos);
     };
   
     const addConcept = () => {
       conceptos.push(concepto);
       setConceptos(conceptos.slice());
+      onChange(conceptos);
     };
   
     const onChangeConcepto = (e) => {
@@ -69,43 +70,6 @@ export function InputPill({label="", type="pill"}) {
   );
 }
 
-/*
-      { type==="pill" && <Stack horizontal style={{ display: "flex", flexFlow: "wrap" }}>
-        {conceptos.map((item, index) => (
-          <Pill
-            key={`${type}${index}`}
-            category={item}
-            type={type}
-            removeFilter={deleteConcept}
-          />
-        ))}
-      </Stack> }
-
-      { type==="link" && <Stack>
-        {conceptos.map((item, index) => (
-          <Link
-            key={`link${index}`}
-            role="link"
-            title={item}
-            target="_blank"
-            href={item}
-          >{item}</Link>
-        ))}
-      </Stack> }
-
-      { type==="person" && <Stack>
-        {conceptos.map((item, index) => (
-          <Persona
-            text={item}
-            key={`person${index}`}
-            size={PersonaSize.size24}
-            presence={PersonaPresence.none}
-            imageAlt="Annie Ried, status is unknown"
-            />
-        ))}
-      </Stack> }
-*/
-
 const HeaderSearch = styled.div`
   display: flex;
   flex-grow: 0;
@@ -117,9 +81,7 @@ const HeaderSearch = styled.div`
 
   
   background-color: white;
-  :focus-within {
-    box-shadow: 0 0 0 3px #f90;
-  }
+
 `;
 
 const HeaderSearchInput = styled.input`
