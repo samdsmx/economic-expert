@@ -13,9 +13,9 @@ function App() {
   return (
     <React.Fragment>
         <Header page={page} setPage={setPage}/>
-        {page=="insert" && <InsertPage />}
-        {page=="search" && <SearchPage />}
-        {page=="about" && <AboutPage />}
+        {page==="insert" && <InsertPage />}
+        {page==="search" && <SearchPage />}
+        {page==="about" && <AboutPage />}
     </React.Fragment>
   );
 }
