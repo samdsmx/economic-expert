@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutPage from "Pages/AboutPage";
+import React, { useState } from "react";
+import { Header } from "./Pages/Sections/Header";
+import InsertPage from "./Pages/InsertPage";
+import { SearchPage } from "./Pages/SearchPage";
+import { initializeIcons } from '@fluentui/react/lib/Icons';
 
 function App() {
+  initializeIcons();
+
+  const [page, setPage] = useState("search");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+        <Header page={page} setPage={setPage}/>
+        {page=="insert" && <InsertPage />}
+        {page=="search" && <SearchPage />}
+        {page=="about" && <AboutPage />}
+    </React.Fragment>
   );
 }
 

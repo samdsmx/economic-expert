@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "jsx": "react",
+      "checkJs": true,
+      "outDir": "./built",
+      "esModuleInterop": true, 
+    },
+}
