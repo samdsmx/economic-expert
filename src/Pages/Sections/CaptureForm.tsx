@@ -5,71 +5,105 @@ import { Dropdown } from "@fluentui/react/lib/Dropdown";
 import styled from "styled-components";
 import { DefaultButton, PrimaryButton } from "@fluentui/react/lib/Button";
 import { InputPill } from "../../Components/InputPill";
-import axios from 'axios';
+import axios from "axios";
 
 export default function CaptureForm() {
-
   const columnProps: Partial<IStackProps> = {
     tokens: { childrenGap: 15 },
     styles: { root: { width: 300 } },
   };
 
-  const [nombre, setNombre] = useState('');
-  const [descripcion, setDescripcion] = useState('');
-  const [year, setYear] = useState('');
-  const [tipo, setTipo] = useState('');
+  const [nombre, setNombre] = useState("");
+  const [descripcion, setDescripcion] = useState("");
+  const [year, setYear] = useState("");
+  const [tipo, setTipo] = useState("");
   const [conceptos, setConceptos] = useState([]);
   const [autores, setAutores] = useState([]);
   const [referencias, setReferencias] = useState([]);
-  
+
   const postData = () => {
-    axios.post(`https://6244adda7701ec8f72484339.mockapi.io/theory`, {
-      nombre,
-      tipo,
-      descripcion,
-      year,
-      conceptos,
-      autores,
-      referencias,
-  });
-}
+    axios
+      .post(`https://6244adda7701ec8f72484339.mockapi.io/theory`, {
+        nombre,
+        tipo,
+        descripcion,
+        year,
+        conceptos,
+        autores,
+        referencias,
+      })
+      .then((e) => {
+        console.log(`termino de salvar`);
+        console.log(e);
+      });
+  };
 
   return (
     <Styles>
-      <form>
+          <form>
+    
         <Stack {...columnProps}>
           <h1>Teoria Economica</h1>
-          <TextField label="Nombre" multiline autoAdjustHeight onChange={(_e, newVal) => setNombre(newVal) } />
+          <TextField
+            label="Nombre"
+            multiline
+            autoAdjustHeight
+            onChange={(_e, newVal) => setNombre(newVal)}
+          />
           <Dropdown
             placeholder="Selecione una opcion"
             label="Tipo"
-            onChange={(_e, newVal: {key:string, text:string}) => setTipo(newVal.key) }
+            onChange={(_e, newVal: { key: string; text: string }) =>
+              setTipo(newVal.key)
+            }
             options={[
               { key: `Macro`, text: `Macroeconomia` },
               { key: `Micro`, text: `Microeconomia` },
             ]}
           />
 
-          <TextField label="Descripcion" multiline autoAdjustHeight onChange={(_e, newVal) => setDescripcion(newVal) } />
+          <TextField
+            label="Descripcion"
+            multiline
+            autoAdjustHeight
+            onChange={(_e, newVal) => setDescripcion(newVal)}
+          />
 
-          <TextField label={`Año`} autoAdjustHeight onChange={(_e, newVal) => setYear(newVal) } />
+          <TextField
+            label={`Año`}
+            autoAdjustHeight
+            onChange={(_e, newVal) => setYear(newVal)}
+          />
 
-          <InputPill label={`Conceptos relacionados`} type={`pill`}  onChange={(newVal) => setConceptos(newVal)}/>
+          <InputPill
+            label={`Conceptos relacionados`}
+            type={`pill`}
+            onChange={(newVal) => setConceptos(newVal)}
+          />
 
-          <InputPill label={`Autores`} type={`person`}  onChange={(newVal) => setAutores(newVal)}/>
+          <InputPill
+            label={`Autores`}
+            type={`person`}
+            onChange={(newVal) => setAutores(newVal)}
+          />
 
-          <InputPill label={`Referencias`} type={`link`}  onChange={setReferencias}/>
+          <InputPill
+            label={`Referencias`}
+            type={`link`}
+            onChange={setReferencias}
+          />
 
           <Stack
             horizontal
             horizontalAlign="space-around"
             style={{ padding: 20 }}
           >
-            <PrimaryButton text="Guardar" onClick={postData} type='submit' />
-            <DefaultButton text="Cancelar" />
+            <PrimaryButton text="Guardar" onClick={postData} />
+            <DefaultButton text="Cancelar" type="reset" />
           </Stack>
         </Stack>
-      </form>
+        </form>
+
     </Styles>
   );
 }
