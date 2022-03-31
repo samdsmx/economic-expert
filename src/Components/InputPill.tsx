@@ -12,14 +12,18 @@ export function InputPill({ label="", type="pill", onChange=(_newVal: string[])=
     const [concepto, setConcepto] = React.useState('');
   
     const deleteConcept = (valor) => {
-      setConceptos(conceptos.filter(val => val !== valor));
-      onChange(conceptos);
+      console.log(`borras ${valor}`);
+      const newConceptos = conceptos.filter(val => val !== valor).slice();
+      console.log(newConceptos);
+      setConceptos(newConceptos);
+      onChange(newConceptos);
     };
   
     const addConcept = () => {
       conceptos.push(concepto);
-      setConceptos(conceptos.slice());
-      onChange(conceptos);
+      const newConceptos = conceptos.slice();
+      setConceptos(newConceptos);
+      onChange(newConceptos);
     };
   
     const onChangeConcepto = (e) => {

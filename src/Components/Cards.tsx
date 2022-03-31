@@ -11,6 +11,8 @@ export function Cards({ items }) {
         <Card 
           key={index} 
           title={item.nombre} 
+          descripcion={item.descripcion}
+          year={item.year}
           referencias={item.referencias}
           tipo={item.tipo}
           conceptos={item.conceptos}

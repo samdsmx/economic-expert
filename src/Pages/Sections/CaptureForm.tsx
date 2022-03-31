@@ -15,6 +15,8 @@ export default function CaptureForm() {
   };
 
   const [nombre, setNombre] = useState('');
+  const [descripcion, setDescripcion] = useState('');
+  const [year, setYear] = useState('');
   const [tipo, setTipo] = useState('');
   const [conceptos, setConceptos] = useState([]);
   const [autores, setAutores] = useState([]);
@@ -24,6 +26,8 @@ export default function CaptureForm() {
     axios.post(`https://6244adda7701ec8f72484339.mockapi.io/theory`, {
       nombre,
       tipo,
+      descripcion,
+      year,
       conceptos,
       autores,
       referencias,
@@ -45,6 +49,10 @@ export default function CaptureForm() {
               { key: `Micro`, text: `Microeconomia` },
             ]}
           />
+
+          <TextField label="Descripcion" multiline autoAdjustHeight onChange={(_e, newVal) => setDescripcion(newVal) } />
+
+          <TextField label={`Año`} autoAdjustHeight onChange={(_e, newVal) => setYear(newVal) } />
 
           <InputPill label={`Conceptos relacionados`} type={`pill`}  onChange={(newVal) => setConceptos(newVal)}/>
 

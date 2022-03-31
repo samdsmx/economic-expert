@@ -3,6 +3,7 @@ import {
   DocumentCard,
   DocumentCardActions,
   DocumentCardActivity,
+  DocumentCardLocation,
   DocumentCardPreview,
   DocumentCardTitle,
   IDocumentCardPreviewProps,
@@ -20,7 +21,7 @@ import {
   Stack,
 } from "@fluentui/react";
 
-export function Card({ title, tipo, conceptos, autores, referencias }) {
+export function Card({ title, tipo, descripcion, conceptos, autores, referencias, year }) {
   const onActionClick = (
     action: string,
     ev: React.SyntheticEvent<HTMLElement>
@@ -53,11 +54,13 @@ export function Card({ title, tipo, conceptos, autores, referencias }) {
   };
 
   const cardTitleStyles: IDocumentCardStyles = {
-    root: { fontSize: 17, fontWeight: "bold", lineHeight: "normal" },
+    root: { fontSize: 17, fontWeight: "bold", height: 'auto', lineHeight: "normal" },
   };
 
   const cardSubTitleStyles: IDocumentCardStyles = {
-    root: { lineHeight: "normal", height: 'auto', padding: '2px 16px' },
+    root: { lineHeight: "normal", height: 'auto',  padding: '2px 16px' },
+
+    
   };
 
   const cardPreviewStyles: IDocumentCardPreviewStyles = {
@@ -122,6 +125,7 @@ export function Card({ title, tipo, conceptos, autores, referencias }) {
               styles={cardTitleStyles}
               shouldTruncate
             />
+
             <IconButton
               split
               iconProps={addIcon}
@@ -133,11 +137,10 @@ export function Card({ title, tipo, conceptos, autores, referencias }) {
               onClick={_alertClicked}
             />
           </Stack>
+          <DocumentCardLocation location={tipo + `economia`}  styles={{ root: { paddingTop: 0, color: 'rgb(50, 49, 48)', pointerEvents: 'none', cursor: 'default' } }}/>
           <DocumentCardTitle
             showAsSecondaryTitle
-            title={
-              "This is the email content preview which is very very long. The email also has some more content. "
-            }
+            title={descripcion?.length > 120 ? descripcion?.substring(0, 120) + '...' : descripcion}
             styles={cardSubTitleStyles}
           />
           <DocumentCardTitle
@@ -158,7 +161,7 @@ export function Card({ title, tipo, conceptos, autores, referencias }) {
         </Stack>
         <Stack>
           <DocumentCardActivity
-            activity={"" + Math.floor(1800 + Math.random() * 220)}
+            activity={year}
             people={autores.map((a: string) => {
               return { name: a, profileImageSrc: null };
             })}
