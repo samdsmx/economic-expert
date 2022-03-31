@@ -18,9 +18,12 @@ export function SearchPage() {
 
   const theories = React.useMemo(() => {
 
-    if (!conceptos || conceptos.length == 0) { return []; }
+    // if (!conceptos || conceptos.length == 0) { return []; }
 
     let filteredTheories =
+
+
+
       APIData?.filter((row: any) => {
         let tempResult = false;
         for (const value of conceptos) {
