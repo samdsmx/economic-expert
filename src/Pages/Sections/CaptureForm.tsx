@@ -43,7 +43,7 @@ export default function CaptureForm() {
           <form>
     
         <Stack {...columnProps}>
-          <h1>Teoria Economica</h1>
+          <h1>Modelo Economico</h1>
           <TextField
             label="Nombre"
             multiline
