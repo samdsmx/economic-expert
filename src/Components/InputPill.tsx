@@ -2,7 +2,7 @@ import React from "react";
 import AddIcon from "@material-ui/icons/Add";
 import { Pill } from "./Pill";
 import { Label } from '@fluentui/react/lib/Label';
-import { Link, Stack } from "@fluentui/react";
+import { Stack } from "@fluentui/react";
 import styled from "styled-components";
 import { useId } from "@fluentui/react-hooks";
 
@@ -65,9 +65,6 @@ export function InputPill({ label="", type="pill", onChange=(_newVal: string[])=
         ))}
       </Stack>
 
-
-
-
     </Stack>
   );
 }
@@ -78,12 +75,8 @@ const HeaderSearch = styled.div`
   height: 35px;
   border: 1px solid !important;
   border-radius: 4px;
-
   overflow: hidden;
-
-  
   background-color: white;
-
 `;
 
 const HeaderSearchInput = styled.input`

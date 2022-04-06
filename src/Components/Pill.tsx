@@ -1,8 +1,6 @@
 import React from "react";
-import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import { useId } from "@fluentui/react-hooks";
 import {
-  HighContrastSelector,
   IButtonStyles,
   IconButton,
   IIconProps,
@@ -11,7 +9,6 @@ import {
   Stack,
 } from "@fluentui/react";
 import {
-  IPersonaSharedProps,
   Persona,
   PersonaSize,
   PersonaPresence,

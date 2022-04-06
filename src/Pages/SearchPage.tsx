@@ -1,22 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Stack } from "@fluentui/react";
 import { Cards } from "../Components/Cards";
 import { InputPill } from "../Components/InputPill";
 import { Toggle } from '@fluentui/react/lib/Toggle';
-import { useLocalStorageMap } from "../Hooks/UseLocalStorage";
-
-import axios from 'axios';
+import { useLocalStorageMap } from "../Hooks/UseLocalStorageMap";
+import { useAPIData } from '../Hooks/UseAPIData';
 
 export function SearchPage() {
 
-  const [APIData, setAPIData] = useState([]);
-  useEffect(() => {
-    axios.get(`https://6244adda7701ec8f72484339.mockapi.io/theory`)
-        .then((response) => {
-            setAPIData(response.data);
-        })
-  }, []);
-
+  const {APIData, loading, error} = useAPIData();
   const [parsedPinsMap, savePins] = useLocalStorageMap('pinned', new Map());
   const [conceptos, setConceptos] = useState([]);
   const [viewAll, setViewAll] = useState(false);
@@ -27,9 +19,8 @@ export function SearchPage() {
 
   const theories = React.useMemo(() => {
     let filteredTheories = APIData?.filter((row: any) => {
-      row['pinStatus'] = parsedPinsMap?.get(row.id) || false;
       if (viewAll && (!conceptos || conceptos.length === 0)) return true;
-      if (row['pinStatus']) return true;
+      if (parsedPinsMap.get(row.id)) return true;
       let tempResult = false;
       for (const value of conceptos) {
           tempResult = row.conceptos.includes(value) || row.autores.includes(value) || row.year == value || row.tipo === value  
@@ -48,6 +39,9 @@ export function SearchPage() {
         <Stack style={{padding: 20, background: 'antiquewhite', height: '100%' }}>
             <Toggle label="Ver todo por default?" onText="Si" offText="No" onChange={_onChange} />
             <InputPill label={`Conceptos relacionados?`} onChange={(newVal) => setConceptos(newVal) }/>
+            <p>{loading && `Cargando...`}</p>
+            <p>{error && `Error`}</p>
+            <p>{(!error && !loading) && `Ingresa tu consulta`}</p>
         </Stack>
         <Cards items={theories} savePins={savePins} parsedPinsMap={parsedPinsMap} />
       </Stack>
