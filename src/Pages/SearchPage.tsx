@@ -3,10 +3,9 @@ import { Stack } from "@fluentui/react";
 import { Cards } from "../Components/Cards";
 import { InputPill } from "../Components/InputPill";
 import { Toggle } from '@fluentui/react/lib/Toggle';
-import { Text } from '@fluentui/react/lib/Text';
+import { useLocalStorageMap } from "../Hooks/UseLocalStorage";
 
 import axios from 'axios';
-import styled from 'styled-components';
 
 export function SearchPage() {
 
@@ -18,6 +17,7 @@ export function SearchPage() {
         })
   }, []);
 
+  const [parsedPinsMap, savePins] = useLocalStorageMap('pinned', new Map());
   const [conceptos, setConceptos] = useState([]);
   const [viewAll, setViewAll] = useState(false);
 
@@ -26,20 +26,20 @@ export function SearchPage() {
   }
 
   const theories = React.useMemo(() => {
-    if (!viewAll) { return []; }
-    let filteredTheories =
-      APIData?.filter((row: any) => {
-        let tempResult = false;
-        for (const value of conceptos) {
-            tempResult = row.conceptos.includes(value) || row.autores.includes(value) || row.year == value || row.tipo === value
-            if (!tempResult) return false;
-        }
-        return true;
-      })
-      .slice() || [];
+    let filteredTheories = APIData?.filter((row: any) => {
+      row['pinStatus'] = parsedPinsMap?.get(row.id) || false;
+      if (viewAll && (!conceptos || conceptos.length === 0)) return true;
+      if (row['pinStatus']) return true;
+      let tempResult = false;
+      for (const value of conceptos) {
+          tempResult = row.conceptos.includes(value) || row.autores.includes(value) || row.year == value || row.tipo === value  
+          if (!tempResult) return false;
+      }
+      return tempResult;
+    }).slice() || [];
+    savePins(new Map(parsedPinsMap));
     return filteredTheories;
-
-  },[APIData, conceptos, viewAll]);
+  },[APIData, conceptos, viewAll]).slice();
 
 
   return (
@@ -49,7 +49,7 @@ export function SearchPage() {
             <Toggle label="Ver todo por default?" onText="Si" offText="No" onChange={_onChange} />
             <InputPill label={`Conceptos relacionados?`} onChange={(newVal) => setConceptos(newVal) }/>
         </Stack>
-        <Cards items={theories} />
+        <Cards items={theories} savePins={savePins} parsedPinsMap={parsedPinsMap} />
       </Stack>
     </React.Fragment>
   );

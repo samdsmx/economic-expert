@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   DocumentCard,
   DocumentCardActions,
@@ -6,12 +6,9 @@ import {
   DocumentCardLocation,
   DocumentCardPreview,
   DocumentCardTitle,
-  IDocumentCardPreviewProps,
   IDocumentCardPreviewStyles,
   IDocumentCardStyles,
 } from "@fluentui/react/lib/DocumentCard";
-import { TestImages } from "@fluentui/example-data";
-import { ImageFit } from "@fluentui/react/lib/Image";
 import {
   HighContrastSelector,
   IButtonStyles,
@@ -21,7 +18,7 @@ import {
   Stack,
 } from "@fluentui/react";
 
-export function Card({ title, tipo, descripcion, conceptos, autores, referencias, year }) {
+export function Card({ id, title, tipo, descripcion, conceptos, autores, referencias, year, savePins, parsedPinsMap }) {
   const onActionClick = (
     action: string,
     ev: React.SyntheticEvent<HTMLElement>
@@ -31,15 +28,26 @@ export function Card({ title, tipo, descripcion, conceptos, autores, referencias
     ev.preventDefault();
   };
 
-  const documentCardActions = [
+  const onClickPinButton = (ev: React.SyntheticEvent<HTMLElement>) => {
+    if (parsedPinsMap.get(id)) {
+      parsedPinsMap.delete(id);
+    } else {
+      parsedPinsMap.set(id, true);
+    }
+    savePins(parsedPinsMap);
+    ev.stopPropagation();
+    ev.preventDefault();
+  };
+
+  const documentCardActions = React.useMemo(() => [
     {
       iconProps: { iconName: "Share" },
       onClick: onActionClick.bind(this, "share"),
       ariaLabel: "share action",
     },
     {
-      iconProps: { iconName: "Pin" },
-      onClick: onActionClick.bind(this, "pin"),
+      iconProps: { iconName: parsedPinsMap.get(id) ? "Pinned" : "Pin" },
+      onClick: onClickPinButton,
       ariaLabel: "pin action",
     },
     {
@@ -47,7 +55,7 @@ export function Card({ title, tipo, descripcion, conceptos, autores, referencias
       onClick: onActionClick.bind(this, "notifications"),
       ariaLabel: "notifications action",
     },
-  ];
+  ],[parsedPinsMap]);
 
   const cardStyles: IDocumentCardStyles = {
     root: { display: "inline-block", marginRight: 20, marginBottom: 20 },
@@ -59,8 +67,6 @@ export function Card({ title, tipo, descripcion, conceptos, autores, referencias
 
   const cardSubTitleStyles: IDocumentCardStyles = {
     root: { lineHeight: "normal", height: 'auto',  padding: '2px 16px' },
-
-    
   };
 
   const cardPreviewStyles: IDocumentCardPreviewStyles = {
