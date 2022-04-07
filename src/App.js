@@ -4,6 +4,7 @@ import { Header } from "./Pages/Sections/Header";
 import InsertPage from "./Pages/InsertPage";
 import { SearchPage } from "./Pages/SearchPage";
 import { initializeIcons } from '@fluentui/react/lib/Icons';
+import { PinsProvider } from "./Hooks/PinsContext";
 
 function App() {
   initializeIcons();
@@ -14,7 +15,13 @@ function App() {
     <React.Fragment>
         <Header page={page} setPage={setPage}/>
         {page==="insert" && <InsertPage />}
-        {page==="search" && <SearchPage />}
+        
+        {page==="search" && 
+          <PinsProvider>
+            <SearchPage />
+          </PinsProvider>
+        }
+        
         {page==="about" && <AboutPage />}
     </React.Fragment>
   );

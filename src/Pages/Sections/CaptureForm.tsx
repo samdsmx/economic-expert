@@ -40,8 +40,7 @@ export default function CaptureForm() {
 
   return (
     <Styles>
-          <form>
-    
+      <form>
         <Stack {...columnProps}>
           <h1>Modelo Economico</h1>
           <TextField
@@ -102,8 +101,7 @@ export default function CaptureForm() {
             <DefaultButton text="Cancelar" type="reset" />
           </Stack>
         </Stack>
-        </form>
-
+      </form>
     </Styles>
   );
 }

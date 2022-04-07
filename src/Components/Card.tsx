@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   DocumentCard,
   DocumentCardActions,
@@ -17,8 +17,12 @@ import {
   IIconProps,
   Stack,
 } from "@fluentui/react";
+import { PinsContext } from "../Hooks/PinsContext";
 
-export function Card({ id, title, tipo, descripcion, conceptos, autores, referencias, year, savePins, parsedPinsMap }) {
+export function Card({ id, title, tipo, descripcion, conceptos, autores, referencias, year }) {
+  
+  const {parsedPinsMap, savePins} = useContext(PinsContext);
+
   const onActionClick = (
     action: string,
     ev: React.SyntheticEvent<HTMLElement>
