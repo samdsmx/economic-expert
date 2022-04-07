@@ -5,12 +5,13 @@ import { InputPill } from "../Components/InputPill";
 import { Toggle } from '@fluentui/react/lib/Toggle';
 import { useAPIData } from '../Hooks/UseAPIData';
 import { PinsContext } from '../Hooks/PinsContext';
+import { useLocalStorage } from '../Hooks/UseLocalStorage';
 
 export function SearchPage() {
   const {parsedPinsMap, savePins} = useContext(PinsContext);
   const {APIData, loading, error} = useAPIData();
   const [conceptos, setConceptos] = useState([]);
-  const [viewAll, setViewAll] = useState(false);
+  const [viewAll, setViewAll] = useLocalStorage('viewAll', false);
   const [theories, setTheories] = useState([]);
 
   useEffect(()=>{
@@ -35,6 +36,7 @@ export function SearchPage() {
             <Toggle 
               label="Ver todo por default?" 
               onText="Si" offText="No" 
+              defaultChecked={viewAll}
               onChange={(ev: React.MouseEvent<HTMLElement>, checked?: boolean) => setViewAll(checked)} />
             <InputPill label={`Conceptos relacionados?`} onChange={(newVal) => setConceptos(newVal) }/>
             <p>{loading && `Cargando...`}</p>

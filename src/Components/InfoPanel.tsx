@@ -18,29 +18,24 @@ export function InfoPanel({ isOpen, dismissPanel, item }) {
 
       <h4 style={{textAlign: 'center'}}>{[item.tipo, ...item.conceptos].join(", ")}</h4>
 
-      <Stack tokens={{ childrenGap: 1 }} wrap style={{paddingBottom:15}} >
+      <Stack tokens={{ childrenGap: 1 }} style={{paddingBottom:15}} >
         <Label>{`Abstract: `}</Label>
         <Text style={{textAlign: 'justify'}}>{item.descripcion}</Text>
         <Text>{`Año: ${item.year}`}</Text>
       </Stack>
 
       <Label>{`Autores: `}</Label>
-      <Stack tokens={{ childrenGap: 16 }} wrap style={{paddingBottom:20}}>
-        {item.autores.map((autor: string) => {
-          return <Persona text={autor} size={PersonaSize.size32} />;
+      <Stack tokens={{ childrenGap: 15 }} style={{paddingBottom:20}}>
+        {item.autores.map((autor: string, index) => {
+          return (<Persona key={index} text={autor} size={PersonaSize.size32} />);
         })}
       </Stack>
 
       <Label>{`Referencias: `}</Label>
-      <Stack tokens={{ childrenGap: 10 }} wrap >
-        {item.referencias.map((referencia: string) => {
+      <Stack tokens={{ childrenGap: 10 }} >
+        {item.referencias.map((referencia: string, index) => {
           return (
-            <Link
-              href={referencia}
-              target="_blank"
-              key={referencia}
-              role="link"
-            >
+            <Link href={referencia} key={index} target="_blank" role="link" >
               {referencia}
             </Link>
           );

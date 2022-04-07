@@ -20,7 +20,7 @@ function reviver(key, value) {
   return value;
 }
 
-export function useLocalStorageMap(itemName, initialValue) {
+export function useLocalStorage(itemName, initialValue) {
   const localStoragePins = localStorage.getItem(itemName);
   const m = JSON.parse(localStoragePins, reviver) || initialValue;
 

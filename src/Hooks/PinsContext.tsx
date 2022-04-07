@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocalStorageMap } from './UseLocalStorageMap';
+import { useLocalStorage } from './UseLocalStorage';
 
 interface PinContextType {
     parsedPinsMap: any;
@@ -10,7 +10,7 @@ export const PinsContext = React.createContext<PinContextType | undefined>(undef
 
 export function PinsProvider(props) {
 
-    const [parsedPinsMap, savePins] = useLocalStorageMap('pinned', new Map());
+    const [parsedPinsMap, savePins] = useLocalStorage('pinned', new Map());
 
     return (
         <PinsContext.Provider value={{
