@@ -7,7 +7,6 @@ export function useAPIData() {
   const [APIData, setAPIData] = useState([]);
 
   useEffect(() => {
-    console.log(`cada cuando se llama la api??`);
     axios
       .get(`https://6244adda7701ec8f72484339.mockapi.io/theory`)
       .then((response) => {
@@ -15,8 +14,6 @@ export function useAPIData() {
         setLoading(false);
       })
       .catch(error => {
-        console.log(`error`);
-        console.log(error);
         setLoading(false);
         setError(error);
       });

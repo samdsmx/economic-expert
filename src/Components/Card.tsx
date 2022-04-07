@@ -17,11 +17,14 @@ import {
   IIconProps,
   Stack,
 } from "@fluentui/react";
+import { useBoolean } from '@fluentui/react-hooks';
 import { PinsContext } from "../Hooks/PinsContext";
+import { InfoPanel } from "./InfoPanel";
 
-export function Card({ id, title, tipo, descripcion, conceptos, autores, referencias, year }) {
+export function Card({ item }) {
   
   const {parsedPinsMap, savePins} = useContext(PinsContext);
+  const [isOpen, { setTrue: openPanel, setFalse: dismissPanel }] = useBoolean(false);
 
   const onActionClick = (
     action: string,
@@ -33,10 +36,10 @@ export function Card({ id, title, tipo, descripcion, conceptos, autores, referen
   };
 
   const onClickPinButton = (ev: React.SyntheticEvent<HTMLElement>) => {
-    if (parsedPinsMap.get(id)) {
-      parsedPinsMap.delete(id);
+    if (parsedPinsMap.get(item.id)) {
+      parsedPinsMap.delete(item.id);
     } else {
-      parsedPinsMap.set(id, true);
+      parsedPinsMap.set(item.id, true);
     }
     savePins(parsedPinsMap);
     ev.stopPropagation();
@@ -50,7 +53,7 @@ export function Card({ id, title, tipo, descripcion, conceptos, autores, referen
       ariaLabel: "share action",
     },
     {
-      iconProps: { iconName: parsedPinsMap.get(id) ? "Pinned" : "Pin" },
+      iconProps: { iconName: parsedPinsMap.get(item.id) ? "Pinned" : "Pin" },
       onClick: onClickPinButton,
       ariaLabel: "pin action",
     },
@@ -123,15 +126,13 @@ export function Card({ id, title, tipo, descripcion, conceptos, autores, referen
     ],
   };
 
-  function _alertClicked(): void {}
-
   return (
     <DocumentCard styles={cardStyles}>
       <Stack verticalFill verticalAlign="space-between">
         <Stack>
           <Stack horizontal horizontalAlign="space-between">
             <DocumentCardTitle
-              title={title}
+              title={item.nombre}
               styles={cardTitleStyles}
               shouldTruncate
             />
@@ -144,18 +145,18 @@ export function Card({ id, title, tipo, descripcion, conceptos, autores, referen
               styles={customSplitButtonStyles}
               menuProps={menuProps}
               ariaLabel="New item"
-              onClick={_alertClicked}
+              onClick={openPanel}
             />
           </Stack>
-          <DocumentCardLocation location={tipo + `economia`}  styles={{ root: { paddingTop: 0, color: 'rgb(50, 49, 48)', pointerEvents: 'none', cursor: 'default' } }}/>
+          <DocumentCardLocation location={item.tipo + `economia`}  styles={{ root: { paddingTop: 0, color: 'rgb(50, 49, 48)', pointerEvents: 'none', cursor: 'default' } }}/>
           <DocumentCardTitle
             showAsSecondaryTitle
-            title={descripcion?.length > 120 ? descripcion?.substring(0, 120) + '...' : descripcion}
+            title={item.descripcion?.length > 120 ? item.descripcion?.substring(0, 120) + '...' : item.descripcion}
             styles={cardSubTitleStyles}
           />
           <DocumentCardTitle
             showAsSecondaryTitle
-            title={conceptos.join(", ")}
+            title={item.conceptos.join(", ")}
             styles={cardSubTitleStyles}
           />
           <DocumentCardPreview
@@ -163,7 +164,7 @@ export function Card({ id, title, tipo, descripcion, conceptos, autores, referen
             getOverflowDocumentCountText={(overflowCount: number) =>
               overflowCount - 2 > 0 && `+${overflowCount - 2} mas`
             }
-            previewImages={referencias.concat(["", ""]).map((r: string) => {
+            previewImages={item.referencias.concat(["", ""]).map((r: string) => {
               return { name: r, linkProps: { href: r, target: "_blank" } };
             })}
             styles={cardPreviewStyles}
@@ -171,8 +172,8 @@ export function Card({ id, title, tipo, descripcion, conceptos, autores, referen
         </Stack>
         <Stack>
           <DocumentCardActivity
-            activity={year}
-            people={autores.map((a: string) => {
+            activity={item.year}
+            people={item.autores.map((a: string) => {
               return { name: a, profileImageSrc: null };
             })}
           />
@@ -182,6 +183,7 @@ export function Card({ id, title, tipo, descripcion, conceptos, autores, referen
           />
         </Stack>
       </Stack>
+      <InfoPanel isOpen={isOpen} dismissPanel={dismissPanel} item={item} />
     </DocumentCard>
   );
 }

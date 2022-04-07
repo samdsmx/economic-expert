@@ -9,14 +9,7 @@ export function Cards({ items }) {
         return (
           <Card 
             key={index} 
-            id={item.id}
-            title={item.nombre} 
-            descripcion={item.descripcion}
-            year={item.year}
-            referencias={item.referencias}
-            tipo={item.tipo}
-            conceptos={item.conceptos}
-            autores={item.autores} 
+            item={item}
             />
           )
         }
