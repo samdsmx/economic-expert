@@ -6,10 +6,11 @@ import { Toggle } from '@fluentui/react/lib/Toggle';
 import { useAPIData } from '../Hooks/UseAPIData';
 import { PinsContext } from '../Hooks/PinsContext';
 import { useLocalStorage } from '../Hooks/UseLocalStorage';
+import { ApiContext } from 'Hooks/ApiContext';
 
 export function SearchPage() {
   const {parsedPinsMap, savePins} = useContext(PinsContext);
-  const {APIData, loading, error} = useAPIData();
+  const {APIData, loading, error} = useContext(ApiContext);
   const [conceptos, setConceptos] = useState([]);
   const [viewAll, setViewAll] = useLocalStorage('viewAll', false);
   const [theories, setTheories] = useState([]);

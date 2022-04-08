@@ -1,24 +1,54 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import CaptureForm from "./Sections/CaptureForm";
 import Graph from "react-graph-vis";
-import { Stack, IStackProps } from "@fluentui/react/lib/Stack";
+import { Stack } from "@fluentui/react/lib/Stack";
+import { ApiContext } from "../Hooks/ApiContext";
 
-function InsertPage() {
-  const graph = {
-    nodes: [
-      { id: 1, label: "Node 1", title: "node 1 tootip text", color: "#e04141" },
-      { id: 2, label: "Node 2", title: "node 2 tootip text" },
-      { id: 3, label: "Node 3", title: "node 3 tootip text" },
-      { id: 4, label: "Node 4", title: "node 4 tootip text" },
-      { id: 5, label: "Node 5", title: "node 5 tootip text" },
-    ],
-    edges: [
-      { from: 1, to: 2 },
-      { from: 1, to: 3 },
-      { from: 2, to: 4 },
-      { from: 2, to: 5 },
-    ],
-  };
+export function InsertPage() {
+  const { APIData, loading, error } = useContext(ApiContext);
+
+  const [graph, setGraph] = useState({
+    nodes: [],
+    edges: [],
+  });
+
+  useEffect(() => {
+    const nodes = [];
+    const edges = [];
+    const conceptos = new Map();
+    let index = 1;
+    APIData.forEach((r) => {
+      nodes.push({
+        id: index,
+        label: r["nombre"],
+        title: "node 1 tootip text",
+        color: r[`tipo`] === "Micro" ? "#9EDDF8" : "#FEC3B1",
+      });
+      r["conceptos"].forEach((c) => {
+        if (!conceptos.has(c)) {
+          conceptos.set(c, []);
+        }
+        conceptos.get(c).push(index);
+      });
+      index++;
+    });
+    conceptos.forEach((value, key) => {
+      nodes.push({
+        id: index,
+        label: key,
+        title: "node 1 tootip text",
+      });
+      value.forEach((v) => {
+        edges.push({ from: v, to: index });
+      });
+      index++;
+    });
+
+    setGraph({
+      nodes: nodes,
+      edges: edges,
+    });
+  }, [APIData]);
 
   const events = {
     select: function (event) {
@@ -27,18 +57,18 @@ function InsertPage() {
   };
 
   const options = {
+    physics: true,
     layout: {
-      hierarchical: false,
+      randomSeed: 23,
+      improvedLayout: true,
     },
-    edges: {
-      color: "#000000",
-    },
+    interaction: { hover: true },
   };
 
   return (
     <Stack
       horizontal
-      style={{ display: "flex", flexFlow: "wrap" }}
+      style={{ display: "flex", flex: 5 }}
       tokens={{ childrenGap: 15 }}
     >
       <CaptureForm />
@@ -46,10 +76,8 @@ function InsertPage() {
         graph={graph}
         options={options}
         events={events}
-        style={{ width: 800, height: 600 }}
+        style={{ height: "900px" }}
       />
     </Stack>
   );
 }
-
-export default InsertPage;

@@ -1,10 +1,11 @@
 import AboutPage from "Pages/AboutPage";
 import React, { useState } from "react";
 import { Header } from "./Pages/Sections/Header";
-import InsertPage from "./Pages/InsertPage";
+import { InsertPage } from "./Pages/InsertPage";
 import { SearchPage } from "./Pages/SearchPage";
-import { initializeIcons } from '@fluentui/react/lib/Icons';
+import { initializeIcons } from "@fluentui/react/lib/Icons";
 import { PinsProvider } from "./Hooks/PinsContext";
+import { ApiProvider } from "./Hooks/ApiContext";
 
 function App() {
   initializeIcons();
@@ -13,16 +14,16 @@ function App() {
 
   return (
     <React.Fragment>
-        <Header page={page} setPage={setPage}/>
-        {page==="insert" && <InsertPage />}
-        
-        {page==="search" && 
+      <Header page={page} setPage={setPage} />
+      <ApiProvider>
+        {page === "insert" && <InsertPage />}
+        {page === "search" && (
           <PinsProvider>
             <SearchPage />
           </PinsProvider>
-        }
-        
-        {page==="about" && <AboutPage />}
+        )}
+      </ApiProvider>
+      {page === "about" && <AboutPage />}
     </React.Fragment>
   );
 }
