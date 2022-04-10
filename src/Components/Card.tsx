@@ -20,10 +20,12 @@ import {
 import { useBoolean } from '@fluentui/react-hooks';
 import { PinsContext } from "../Hooks/PinsContext";
 import { InfoPanel } from "./InfoPanel";
+import { PageContext } from "../Hooks/PageContext";
 
 export function Card({ item }) {
   
   const {parsedPinsMap, savePins} = useContext(PinsContext);
+  const {selectModel, setPage} = useContext(PageContext);
   const [isOpen, { setTrue: openPanel, setFalse: dismissPanel }] = useBoolean(false);
 
   const onActionClick = (
@@ -116,6 +118,10 @@ export function Card({ item }) {
       {
         key: "modificar",
         text: "Modificar",
+        onClick: ()=>{
+          selectModel(item);
+          setPage(`insert`);
+        },
         iconProps: { iconName: "Edit" },
       },
       {

@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { TextField } from "@fluentui/react/lib/TextField";
 import { Stack, IStackProps } from "@fluentui/react/lib/Stack";
 import { Dropdown } from "@fluentui/react/lib/Dropdown";
 import styled from "styled-components";
-import { DefaultButton, PrimaryButton } from "@fluentui/react/lib/Button";
+import {
+  DefaultButton,
+  IconButton,
+  PrimaryButton,
+} from "@fluentui/react/lib/Button";
 import { InputPill } from "../../Components/InputPill";
 import axios from "axios";
+import { PageContext } from "../../Hooks/PageContext";
+import { IContextualMenuProps } from "@fluentui/react";
+import { ApiContext } from "../../Hooks/ApiContext";
 
 export default function CaptureForm() {
   const columnProps: Partial<IStackProps> = {
@@ -13,13 +20,15 @@ export default function CaptureForm() {
     styles: { root: { width: 300 } },
   };
 
-  const [nombre, setNombre] = useState("");
-  const [descripcion, setDescripcion] = useState("");
-  const [year, setYear] = useState("");
-  const [tipo, setTipo] = useState("");
-  const [conceptos, setConceptos] = useState([]);
-  const [autores, setAutores] = useState([]);
-  const [referencias, setReferencias] = useState([]);
+  const { setRefresh } = useContext(ApiContext);
+  const { model } = useContext(PageContext);
+  const [nombre, setNombre] = useState(model[`nombre`] || ``);
+  const [descripcion, setDescripcion] = useState(model[`descripcion`] || ``);
+  const [year, setYear] = useState(model[`year`] || ``);
+  const [tipo, setTipo] = useState(model[`tipo`] || ``);
+  const [conceptos, setConceptos] = useState(model[`conceptos`] || []);
+  const [autores, setAutores] = useState(model[`autores`] || []);
+  const [referencias, setReferencias] = useState(model[`referencias`] || []);
 
   const postData = () => {
     axios
@@ -32,10 +41,37 @@ export default function CaptureForm() {
         autores,
         referencias,
       })
-      .then((e) => {
-        console.log(`termino de salvar`);
-        console.log(e);
+      .then(() => {
+        setRefresh({});
       });
+  };
+
+  const updateData = () => {
+    const id = model[`id`];
+    axios
+      .put(`https://6244adda7701ec8f72484339.mockapi.io/theory/${id}`, {
+        nombre,
+        tipo,
+        descripcion,
+        year,
+        conceptos,
+        autores,
+        referencias,
+      })
+      .then(() => {
+        setRefresh({});
+      });
+  };
+
+  const menuProps: IContextualMenuProps = {
+    items: [
+      {
+        key: "saveAsNew",
+        text: "Guardar como nuevo",
+        iconProps: { iconName: "SaveAs" },
+        onClick: postData,
+      },
+    ],
   };
 
   return (
@@ -47,11 +83,13 @@ export default function CaptureForm() {
             label="Nombre"
             multiline
             autoAdjustHeight
+            value={nombre}
             onChange={(_e, newVal) => setNombre(newVal)}
           />
           <Dropdown
             placeholder="Selecione una opcion"
             label="Tipo"
+            defaultSelectedKey={tipo}
             onChange={(_e, newVal: { key: string; text: string }) =>
               setTipo(newVal.key)
             }
@@ -65,40 +103,70 @@ export default function CaptureForm() {
             label="Descripcion"
             multiline
             autoAdjustHeight
+            value={descripcion}
             onChange={(_e, newVal) => setDescripcion(newVal)}
           />
 
           <TextField
             label={`Año`}
             autoAdjustHeight
+            value={year}
             onChange={(_e, newVal) => setYear(newVal)}
           />
 
           <InputPill
             label={`Conceptos relacionados`}
             type={`pill`}
+            value={conceptos}
             onChange={(newVal) => setConceptos(newVal)}
           />
 
           <InputPill
             label={`Autores`}
             type={`person`}
+            value={autores}
             onChange={(newVal) => setAutores(newVal)}
           />
 
           <InputPill
             label={`Referencias`}
             type={`link`}
+            value={referencias}
             onChange={setReferencias}
           />
 
           <Stack
             horizontal
             horizontalAlign="space-around"
+            tokens={{ childrenGap: 10 }}
             style={{ padding: 20 }}
           >
-            <PrimaryButton text="Guardar" onClick={postData} />
-            <DefaultButton text="Cancelar" type="reset" />
+            {Object.keys(model).length == 0 && (
+              <PrimaryButton text="Guardar" onClick={postData} />
+            )}
+
+            {Object.keys(model).length > 0 && (
+              <PrimaryButton
+                text="Modificar"
+                split
+                onClick={updateData}
+                menuProps={menuProps}
+              />
+            )}
+
+            <DefaultButton
+              text="Cancelar"
+              type="reset"
+            />
+
+            <IconButton
+              style={{ color: "gray", paddingLeft: 40 }}
+              iconProps={{ iconName: "Delete" }}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+              }}
+            />
           </Stack>
         </Stack>
       </form>

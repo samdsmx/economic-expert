@@ -5,7 +5,7 @@ import { Stack } from "@fluentui/react/lib/Stack";
 import { ApiContext } from "../Hooks/ApiContext";
 
 export function InsertPage() {
-  const { APIData, loading, error } = useContext(ApiContext);
+  const { APIData } = useContext(ApiContext);
 
   const [graph, setGraph] = useState({
     nodes: [],

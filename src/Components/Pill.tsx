@@ -34,7 +34,6 @@ const Pill: React.FC<PillProps> = ({ category, type, removeFilter }) => {
     rootHovered: {
       background: 'none',
     }
-
   };
   return (
     <React.Fragment>

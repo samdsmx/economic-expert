@@ -6,9 +6,9 @@ import { Stack } from "@fluentui/react";
 import styled from "styled-components";
 import { useId } from "@fluentui/react-hooks";
 
-export function InputPill({ label="", type="pill", onChange=(_newVal: string[])=>{} }) {
+export function InputPill({ label="", value=[], type="pill", onChange=(_newVal: string[])=>{} }) {
 
-    const [conceptos, setConceptos] = React.useState([]);
+    const [conceptos, setConceptos] = React.useState(value);
     const [concepto, setConcepto] = React.useState('');
   
     const deleteConcept = (valor) => {

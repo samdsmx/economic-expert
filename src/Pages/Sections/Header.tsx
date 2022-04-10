@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 import Logo from '../../Resources/logoLine.png';
 import { Menu } from '../../Components/Menu';
 import InfoIcon from '@material-ui/icons/Info';
 import SchoolIcon from '@material-ui/icons/School';
+import { PageContext } from '../../Hooks/PageContext';
 
-export function Header({ page, setPage }) {
+export function Header() {
+
+    const {selectModel} = useContext(PageContext); 
 
     const menuItems = [
         {label: `Search`, page: `search`, icon: SchoolIcon },
-        {label: `Knowledge Base`, page: `insert`, icon: SchoolIcon },
+        {label: `Knowledge Base`, page: `insert`, icon: SchoolIcon, specialAction: selectModel },
         {label: `Acerca de`, page: `about`, icon: InfoIcon },
     ];
 
@@ -18,7 +21,7 @@ export function Header({ page, setPage }) {
             <HeaderLogo>
                 <img src={Logo} alt=""/>             
             </HeaderLogo>
-            <Menu page={page} setPage={setPage} items={menuItems}/>
+            <Menu items={menuItems}/>
         </Container>
     );
 }
