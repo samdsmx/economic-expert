@@ -24,7 +24,7 @@ export function InsertPage() {
         title: "node 1 tootip text",
         color: r[`tipo`] === "Micro" ? "#9EDDF8" : "#FEC3B1",
       });
-      r["conceptos"].forEach((c) => {
+      r["conceptos"] && r["conceptos"].forEach((c: any) => {
         if (!conceptos.has(c)) {
           conceptos.set(c, []);
         }
@@ -38,7 +38,7 @@ export function InsertPage() {
         label: key,
         title: "node 1 tootip text",
       });
-      value.forEach((v) => {
+      value.forEach((v: any) => {
         edges.push({ from: v, to: index });
       });
       index++;

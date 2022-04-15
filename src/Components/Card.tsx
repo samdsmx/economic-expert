@@ -162,7 +162,7 @@ export function Card({ item }) {
           />
           <DocumentCardTitle
             showAsSecondaryTitle
-            title={item.conceptos.join(", ")}
+            title={item.conceptos?.join(", ")}
             styles={cardSubTitleStyles}
           />
           <DocumentCardPreview
@@ -170,7 +170,7 @@ export function Card({ item }) {
             getOverflowDocumentCountText={(overflowCount: number) =>
               overflowCount - 2 > 0 && `+${overflowCount - 2} mas`
             }
-            previewImages={item.referencias.concat(["", ""]).map((r: string) => {
+            previewImages={[item.referencias || ''].concat(["", ""]).map((r: string) => {
               return { name: r, linkProps: { href: r, target: "_blank" } };
             })}
             styles={cardPreviewStyles}
@@ -179,9 +179,9 @@ export function Card({ item }) {
         <Stack>
           <DocumentCardActivity
             activity={item.year}
-            people={item.autores.map((a: string) => {
-              return { name: a, profileImageSrc: null };
-            })}
+            people={item.autores ? 
+              item.autores.map((a: string) => {
+                return { name: a, profileImageSrc: null } }) : [] }
           />
           <DocumentCardActions
             actions={documentCardActions}

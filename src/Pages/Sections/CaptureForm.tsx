@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { TextField } from "@fluentui/react/lib/TextField";
 import { Stack, IStackProps } from "@fluentui/react/lib/Stack";
 import { Dropdown } from "@fluentui/react/lib/Dropdown";
@@ -11,8 +11,9 @@ import {
 import { InputPill } from "../../Components/InputPill";
 import axios from "axios";
 import { PageContext } from "../../Hooks/PageContext";
-import { IContextualMenuProps } from "@fluentui/react";
+import { Dialog, DialogFooter, IContextualMenuProps, MessageBar, MessageBarType } from "@fluentui/react";
 import { ApiContext } from "../../Hooks/ApiContext";
+import { useBoolean } from '@fluentui/react-hooks';
 
 export default function CaptureForm() {
   const columnProps: Partial<IStackProps> = {
@@ -21,7 +22,7 @@ export default function CaptureForm() {
   };
 
   const { setRefresh } = useContext(ApiContext);
-  const { model } = useContext(PageContext);
+  const { model, selectModel } = useContext(PageContext);
   const [nombre, setNombre] = useState(model[`nombre`] || ``);
   const [descripcion, setDescripcion] = useState(model[`descripcion`] || ``);
   const [year, setYear] = useState(model[`year`] || ``);
@@ -29,6 +30,16 @@ export default function CaptureForm() {
   const [conceptos, setConceptos] = useState(model[`conceptos`] || []);
   const [autores, setAutores] = useState(model[`autores`] || []);
   const [referencias, setReferencias] = useState(model[`referencias`] || []);
+
+  useEffect(() => {
+    setNombre(model[`nombre`]);
+    setDescripcion(model[`descripcion`]);
+    setYear(model[`year`]);
+    setTipo(model[`tipo`]);
+    setConceptos(model[`conceptos`]);
+    setAutores(model[`autores`]);
+    setReferencias(model[`referencias`]);
+  }, [model]);
 
   const postData = () => {
     axios
@@ -42,7 +53,10 @@ export default function CaptureForm() {
         referencias,
       })
       .then(() => {
+        selectModel({});
         setRefresh({});
+        toggleShowMsg();
+        window.setTimeout(()=>{toggleShowMsg();}, 3000);
       });
   };
 
@@ -60,6 +74,19 @@ export default function CaptureForm() {
       })
       .then(() => {
         setRefresh({});
+        toggleShowMsg();
+        window.setTimeout(()=>{toggleShowMsg();}, 3000);
+      });
+  };
+
+  const deleteData = () => {
+    const id = model[`id`];
+    axios
+      .delete(`https://6244adda7701ec8f72484339.mockapi.io/theory/${id}`)
+      .then(() => {
+        setRefresh({});
+        selectModel({});
+        toggleHideDialog();
       });
   };
 
@@ -74,8 +101,23 @@ export default function CaptureForm() {
     ],
   };
 
+  const [hideDialog, { toggle: toggleHideDialog }] = useBoolean(true);
+  const [showMsg, { toggle: toggleShowMsg }] = useBoolean(false);
+
   return (
     <Styles>
+      <Dialog
+        hidden={hideDialog}
+        onDismiss={toggleHideDialog}
+        dialogContentProps={{
+          title: `Eliminar "${nombre}"`,
+          subText: `Esta seguro que quiere borrar el modelo?`,
+        }}>
+        <DialogFooter>
+          <PrimaryButton onClick={deleteData} text="Eliminar" />
+          <DefaultButton onClick={toggleHideDialog} text="Cancelar" />
+        </DialogFooter>
+      </Dialog>
       <form>
         <Stack {...columnProps}>
           <h1>Modelo Economico</h1>
@@ -135,13 +177,17 @@ export default function CaptureForm() {
             onChange={setReferencias}
           />
 
+          {showMsg && <MessageBar messageBarType={MessageBarType.success} isMultiline={false}>
+            {`Cambios guardados con exito!`}
+          </MessageBar>}
+
           <Stack
             horizontal
             horizontalAlign="space-around"
             tokens={{ childrenGap: 10 }}
             style={{ padding: 20 }}
           >
-            {Object.keys(model).length == 0 && (
+            {Object.keys(model).length === 0 && (
               <PrimaryButton text="Guardar" onClick={postData} />
             )}
 
@@ -159,14 +205,11 @@ export default function CaptureForm() {
               type="reset"
             />
 
-            <IconButton
+            { model[`id`] && <IconButton
               style={{ color: "gray", paddingLeft: 40 }}
               iconProps={{ iconName: "Delete" }}
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-              }}
-            />
+              onClick={toggleHideDialog} 
+            /> }
           </Stack>
         </Stack>
       </form>

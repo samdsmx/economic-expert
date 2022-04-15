@@ -5,7 +5,7 @@ interface APIContextType {
     APIData: any[];
     loading: boolean;
     error: boolean | string;
-    setRefresh: ({}) => void;
+    setRefresh: (arg0: any) => void;
 }
 
 export const ApiContext = React.createContext<APIContextType | undefined>(undefined);

@@ -3,7 +3,6 @@ import { Stack } from "@fluentui/react";
 import { Cards } from "../Components/Cards";
 import { InputPill } from "../Components/InputPill";
 import { Toggle } from '@fluentui/react/lib/Toggle';
-import { useAPIData } from '../Hooks/UseAPIData';
 import { PinsContext } from '../Hooks/PinsContext';
 import { useLocalStorage } from '../Hooks/UseLocalStorage';
 import { ApiContext } from 'Hooks/ApiContext';
@@ -21,7 +20,7 @@ export function SearchPage() {
       if (parsedPinsMap.get(row.id)) return true;
       let tempResult = false;
       for (const value of conceptos) {
-          tempResult = row.conceptos.includes(value) || row.autores.includes(value) || row.year == value || row.tipo === value  
+          tempResult = row.conceptos.includes(value) || row.autores.includes(value) || row.year === value || row.tipo === value  
           if (!tempResult) return false;
       }
       return tempResult;

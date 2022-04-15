@@ -1,6 +1,7 @@
 import { PageContext } from "../Hooks/PageContext";
 import React, { useContext } from "react";
 import styled from "styled-components";
+import { ActionButton } from "@fluentui/react";
 
 export function Menu({ items }) {
   const { page, setPage } = useContext(PageContext);
@@ -13,7 +14,7 @@ export function Menu({ items }) {
             label: string;
             page: string;
             icon: React.Component;
-            specialAction: ({}) => void;
+            specialAction: (arg0: any) => void;
           },
           index: any
         ) => (
@@ -39,10 +40,10 @@ function MenuItem({ label, icon, onClick, hidden }) {
   return (
     <React.Fragment>
       {!hidden && (
-        <a onClick={onClick}>
+        <ActionButton onClick={onClick} style={{ color: `white` }} >
           {React.createElement(icon, { style: { paddingRight: `5px` } })}
           {label}
-        </a>
+        </ActionButton>
       )}
     </React.Fragment>
   );
