@@ -18,9 +18,18 @@ export function InsertPage() {
     const conceptos = new Map();
     let index = 1;
     APIData.forEach((r) => {
+      const label = r["nombre"].split(' ').reduce((a, e, i) => {
+        if (i % 3 === 2){
+          a += '\n';
+        } else {
+          a+= ' ';
+        }
+        a+=e;
+        return a;
+      });
       nodes.push({
         id: index,
-        label: r["nombre"],
+        label: label,
         title: "node 1 tootip text",
         color: r[`tipo`] === "Micro" ? "#9EDDF8" : "#FEC3B1",
       });
@@ -58,6 +67,7 @@ export function InsertPage() {
 
   const options = {
     physics: true,
+    background: `red`,
     layout: {
       randomSeed: 23,
       improvedLayout: true,
@@ -76,7 +86,7 @@ export function InsertPage() {
         graph={graph}
         options={options}
         events={events}
-        style={{ height: "900px" }}
+        style={{ height: "900px", backgroundColor: `dimgray`, border: `2px solid #dedede` }}
       />
     </Stack>
   );

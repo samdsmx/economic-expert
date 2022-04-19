@@ -151,7 +151,7 @@ function AboutPage() {
                         textShadow: `4px 5px 6px black`,
                         textAlign: `center`,
                     }}>
-                        Sistema experto para el manejo de modelos macroeconómicos y microeconómicos</h1>
+                        Sistema experto para el manejo de modelos económicos: macroeconómicos y microeconómicos</h1>
                     <a href="https://www.unadmexico.mx" target="_blank" rel="noreferrer">
                         <img src={unadm} alt="uaz logo" style={imgStyle} />
                     </a>
@@ -167,8 +167,9 @@ function AboutPage() {
                     boxShadow: `1px 1px 15px #00040d`,
                     textAlign: `center`,
                     fontSize: `small`,
+                    padding: `0 10px`,
                 }}>
-                    <p>La variedad de las teorías en microeconomía y macroeconomía junto con sus características intrínsecas, llevan a los estudiantes e investigadores a plantearse cuál sería el modelo más adecuado que se ajuste a cada caso de estudio. por lo que en el presente trabajo se logra desarrollar un sistema experto computacional de fácil acceso y manejo con el fin de permitir la búsqueda entre las diferentes teorías económicas y sus modelos matemáticos relacionados en base de la construcción de un árbol de decisión a través de un grafo de conocimiento que estará capturando las características, parámetros y/o variables de los teorías y su aplicación mediante los modelos matemáticos correspondientes.</p>
+                    <p>La variedad de las teorías en microeconomía y macroeconomía junto con sus características intrínsecas, llevan a los estudiantes e investigadores a plantearse cuál sería el modelo más adecuado que se ajuste a cada caso de estudio. por lo que en el presente trabajo se logra desarrollar un sistema experto computacional de fácil acceso y manejo con el fin de permitir la búsqueda entre las diferentes teorías económicas y sus modelos matemáticos relacionados en base de la construcción de un árbol de decisión a través de un grafo de conocimiento que estará capturando las características, parámetros y/o variables de las teorías y su aplicación mediante los modelos matemáticos correspondientes.</p>
                     <div className="line" style={{ borderBottom: `1px solid whitesmoke`, width: `70%` }}></div>
                     <p><strong>Palabras claves: Modelos económicos, Sistema Experto, Herramienta pedagógica, Microeconomía y Macroeconomía</strong></p>
                 </div>

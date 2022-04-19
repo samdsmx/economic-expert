@@ -59,11 +59,11 @@ export function Card({ item }) {
       onClick: onClickPinButton,
       ariaLabel: "pin action",
     },
-    {
+    /*{
       iconProps: { iconName: "Ringer" },
       onClick: onActionClick.bind(this, "notifications"),
       ariaLabel: "notifications action",
-    },
+    },*/
   ],[parsedPinsMap]);
 
   const cardStyles: IDocumentCardStyles = {
@@ -124,11 +124,11 @@ export function Card({ item }) {
         },
         iconProps: { iconName: "Edit" },
       },
-      {
+     /* {
         key: "pdf",
         text: "Ver en PDF",
         iconProps: { iconName: "Print" },
-      },
+      },*/
     ],
   };
 
