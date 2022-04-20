@@ -4,6 +4,7 @@ import image from "../Resources/code.jpg";
 import uaz from "../Resources/UAZ.jpg";
 import unadm from "../Resources/unadm.png";
 import marlen from "../Resources/marlen.jpg";
+import imelda from "../Resources/imelda.jpg";
 import sergio from "../Resources/sergio.jpg";
 import male from "../Resources/male.jpg";
 import female from "../Resources/female.jpg";
@@ -204,19 +205,19 @@ function AboutPage() {
                     <Stack horizontal style={{ alignItems: 'baseline', paddingLeft: `35px`, display: "flex", flex: 5 }} tokens={{ childrenGap: 45 }}>
 
                         <Stack horizontalAlign="center">
-                            <img src={female} alt="female" style={picStyleSecondary} />
-                            <h4 style={nameStyle}>Dra Imelda Ortiz Medina</h4>
+                            <img src={imelda} alt="Dra. Imelda Ortiz Medina" style={picStyleSecondary} />
+                            <h4 style={nameStyle}>Dra. Imelda Ortiz Medina</h4>
                             <h5 style={nameStyle}>Colaboradora</h5>
                         </Stack>
 
                         <Stack horizontalAlign="center">
-                            <img src={female} alt="female" style={picStyleSecondary} />
+                            <img src={female} alt="M. en C. Sandra V. Garcia Carrillo" style={picStyleSecondary} />
                             <h4 style={nameStyle}>M. en C. Sandra V. Garcia Carrillo</h4>
                             <h5 style={nameStyle}>Colaboradora</h5>
                         </Stack>
 
                         <Stack horizontalAlign="center">
-                            <img src={male} alt="male" style={picStyleSecondary} />
+                            <img src={male} alt="Dr. Hector A. Duran Muñoz" style={picStyleSecondary} />
                             <h4 style={nameStyle}>Dr. Hector A. Duran Muñoz</h4>
                             <h5 style={nameStyle}>Colaborador</h5>
                         </Stack>

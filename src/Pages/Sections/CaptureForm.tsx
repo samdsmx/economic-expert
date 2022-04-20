@@ -14,6 +14,8 @@ import { PageContext } from "../../Hooks/PageContext";
 import { Dialog, DialogFooter, IContextualMenuProps, MessageBar, MessageBarType } from "@fluentui/react";
 import { ApiContext } from "../../Hooks/ApiContext";
 import { useBoolean } from '@fluentui/react-hooks';
+import EquationEditor from "equation-editor-react";
+import { Label } from '@fluentui/react/lib/Label';
 
 export default function CaptureForm() {
   const columnProps: Partial<IStackProps> = {
@@ -24,33 +26,39 @@ export default function CaptureForm() {
   const { setRefresh } = useContext(ApiContext);
   const { model, selectModel } = useContext(PageContext);
   const [nombre, setNombre] = useState(model[`nombre`] || ``);
+  const [teoria, setTeoria] = useState(model[`teoria`] || ``);
   const [descripcion, setDescripcion] = useState(model[`descripcion`] || ``);
   const [year, setYear] = useState(model[`year`] || ``);
   const [tipo, setTipo] = useState(model[`tipo`] || ``);
   const [conceptos, setConceptos] = useState(model[`conceptos`] || []);
   const [autores, setAutores] = useState(model[`autores`] || []);
   const [referencias, setReferencias] = useState(model[`referencias`] || []);
+  const [equation, setEquation] = useState(model[`equation`] || ``);
 
   useEffect(() => {
     setNombre(model[`nombre`]);
+    setTeoria(model[`teoria`]);
     setDescripcion(model[`descripcion`]);
     setYear(model[`year`]);
     setTipo(model[`tipo`]);
     setConceptos(model[`conceptos`]);
     setAutores(model[`autores`]);
     setReferencias(model[`referencias`]);
+    setEquation(model[`equation`]);
   }, [model]);
 
   const postData = () => {
     axios
       .post(`https://6244adda7701ec8f72484339.mockapi.io/theory`, {
         nombre,
+        teoria,
         tipo,
         descripcion,
         year,
         conceptos,
         autores,
         referencias,
+        equation,
       })
       .then(() => {
         selectModel({});
@@ -65,12 +73,14 @@ export default function CaptureForm() {
     axios
       .put(`https://6244adda7701ec8f72484339.mockapi.io/theory/${id}`, {
         nombre,
+        teoria,
         tipo,
         descripcion,
         year,
         conceptos,
         autores,
         referencias,
+        equation,
       })
       .then(() => {
         setRefresh({});
@@ -120,13 +130,18 @@ export default function CaptureForm() {
       </Dialog>
       <form>
         <Stack {...columnProps}>
-          <h1>Modelo Economico</h1>
+          <h1 style={{padding: `15px 0 0 0`, margin: 0}}>Modelo Economico</h1>
           <TextField
-            label="Nombre"
-            multiline
+            label="Nombre del modelo"
             autoAdjustHeight
             value={nombre}
             onChange={(_e, newVal) => setNombre(newVal)}
+          />
+          <TextField
+            label="Teoría económica relacionada"
+            autoAdjustHeight
+            value={teoria}
+            onChange={(_e, newVal) => setTeoria(newVal)}
           />
           <Dropdown
             placeholder="Selecione una opcion"
@@ -140,7 +155,6 @@ export default function CaptureForm() {
               { key: `Micro`, text: `Microeconomia` },
             ]}
           />
-
           <TextField
             label="Descripcion"
             multiline
@@ -148,6 +162,15 @@ export default function CaptureForm() {
             value={descripcion}
             onChange={(_e, newVal) => setDescripcion(newVal)}
           />
+          <Label htmlFor='formula'>{`Formula matemática`}</Label>
+          <div id='formula' className='innerSpan' style={{border: `1px solid rgb(96, 94, 92)`, margin: 0 }} >
+            <EquationEditor
+                  value={equation}
+                  onChange={setEquation}
+                  autoCommands="pi theta sqrt sum prod alpha beta gamma rho"
+                  autoOperatorNames="sin cos tan"
+                />
+          </div>
 
           <TextField
             label={`Año`}

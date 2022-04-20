@@ -67,7 +67,6 @@ export function InsertPage() {
 
   const options = {
     physics: true,
-    background: `red`,
     layout: {
       randomSeed: 23,
       improvedLayout: true,
