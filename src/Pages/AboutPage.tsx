@@ -6,6 +6,7 @@ import unadm from "../Resources/unadm.png";
 import marlen from "../Resources/marlen.jpg";
 import imelda from "../Resources/imelda.jpg";
 import sergio from "../Resources/sergio.jpg";
+import hector from "../Resources/hector.jpg";
 import male from "../Resources/male.jpg";
 import female from "../Resources/female.jpg";
 import { loadFull } from "tsparticles";
@@ -217,7 +218,7 @@ function AboutPage() {
                         </Stack>
 
                         <Stack horizontalAlign="center">
-                            <img src={male} alt="Dr. Hector A. Duran Muñoz" style={picStyleSecondary} />
+                            <img src={hector} alt="Dr. Hector A. Duran Muñoz" style={picStyleSecondary} />
                             <h4 style={nameStyle}>Dr. Hector A. Duran Muñoz</h4>
                             <h5 style={nameStyle}>Colaborador</h5>
                         </Stack>
