@@ -18,28 +18,30 @@ export function InsertPage() {
     const conceptos = new Map();
     let index = 1;
     APIData.forEach((r) => {
-      const label = r["nombre"].split(' ').reduce((a, e, i) => {
-        if (i % 3 === 2){
-          a += '\n';
-        } else {
-          a+= ' ';
-        }
-        a+=e;
-        return a;
-      });
-      nodes.push({
-        id: index,
-        label: label,
-        title: "node 1 tootip text",
-        color: r[`tipo`] === "Micro" ? "#9EDDF8" : "#FEC3B1",
-      });
-      r["conceptos"] && r["conceptos"].forEach((c: any) => {
-        if (!conceptos.has(c)) {
-          conceptos.set(c, []);
-        }
-        conceptos.get(c).push(index);
-      });
-      index++;
+      if (r["nombre"]){
+        const label = r["nombre"].split(' ').reduce((a, e, i) => {
+          if (i % 3 === 2){
+            a += '\n';
+          } else {
+            a+= ' ';
+          }
+          a+=e;
+          return a;
+        });
+        nodes.push({
+          id: index,
+          label: label,
+          title: "node 1 tootip text",
+          color: r[`tipo`] === "Micro" ? "#9EDDF8" : "#FEC3B1",
+        });
+        r["conceptos"] && r["conceptos"].forEach((c: any) => {
+          if (!conceptos.has(c)) {
+            conceptos.set(c, []);
+          }
+          conceptos.get(c).push(index);
+        });
+        index++;
+      }
     });
     conceptos.forEach((value, key) => {
       nodes.push({
