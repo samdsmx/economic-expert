@@ -7,7 +7,6 @@ import marlen from "../Resources/marlen.jpg";
 import imelda from "../Resources/imelda.jpg";
 import sergio from "../Resources/sergio.jpg";
 import hector from "../Resources/hector.jpg";
-import male from "../Resources/male.jpg";
 import female from "../Resources/female.jpg";
 import { loadFull } from "tsparticles";
 import { Stack } from "@fluentui/react";

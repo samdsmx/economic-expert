@@ -132,6 +132,18 @@ export function Card({ item }) {
     ],
   };
 
+  const isValidHttpUrl = (string) => {
+    let url;
+    
+    try {
+      url = new URL(string);
+    } catch (_) {
+      return false;  
+    }
+  
+    return url.protocol === "http:" || url.protocol === "https:";
+  }
+
   return (
     <DocumentCard styles={cardStyles}>
       <Stack verticalFill verticalAlign="space-between">
@@ -170,8 +182,12 @@ export function Card({ item }) {
             getOverflowDocumentCountText={(overflowCount: number) =>
               overflowCount - 2 > 0 && `+${overflowCount - 2} mas`
             }
-            previewImages={[item.referencias || ''].concat(["", ""]).map((r: string) => {
-              return { name: r, linkProps: { href: r, target: "_blank" } };
+            previewImages={item.referencias.concat(["", ""]).map((r: string) => {
+              let url = r;
+              if (!isValidHttpUrl(r)){
+                url = `http://google.com/search?q="${r}"`;
+              }
+              return { name: r, linkProps: { href: url, target: "_blank" } };
             })}
             styles={cardPreviewStyles}
           />
