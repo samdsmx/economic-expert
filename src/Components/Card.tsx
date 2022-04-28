@@ -22,6 +22,16 @@ import { PinsContext } from "../Hooks/PinsContext";
 import { InfoPanel } from "./InfoPanel";
 import { PageContext } from "../Hooks/PageContext";
 
+export const isValidHttpUrl = (v: string | URL) => {
+  let url: URL;
+  try {
+    url = new URL(v);
+  } catch (_) {
+    return false;  
+  }
+  return url.protocol === "http:" || url.protocol === "https:";
+}
+
 export function Card({ item }) {
   
   const {parsedPinsMap, savePins} = useContext(PinsContext);
@@ -131,18 +141,6 @@ export function Card({ item }) {
       },*/
     ],
   };
-
-  const isValidHttpUrl = (string) => {
-    let url;
-    
-    try {
-      url = new URL(string);
-    } catch (_) {
-      return false;  
-    }
-  
-    return url.protocol === "http:" || url.protocol === "https:";
-  }
 
   return (
     <DocumentCard styles={cardStyles}>

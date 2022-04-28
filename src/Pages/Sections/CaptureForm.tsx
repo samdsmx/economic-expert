@@ -36,15 +36,15 @@ export default function CaptureForm() {
   const [equation, setEquation] = useState(model[`equation`] || ``);
 
   useEffect(() => {
-    setNombre(model[`nombre`]);
-    setTeoria(model[`teoria`]);
-    setDescripcion(model[`descripcion`]);
-    setYear(model[`year`]);
-    setTipo(model[`tipo`]);
-    setConceptos(model[`conceptos`]);
-    setAutores(model[`autores`]);
-    setReferencias(model[`referencias`]);
-    setEquation(model[`equation`]);
+    setNombre(model[`nombre`] || ``);
+    setTeoria(model[`teoria`] || ``);
+    setDescripcion(model[`descripcion`] || ``);
+    setYear(model[`year`] || ``);
+    setTipo(model[`tipo`] || ``);
+    setConceptos(model[`conceptos`] || []);
+    setAutores(model[`autores`] || []);
+    setReferencias(model[`referencias`] || []);
+    setEquation(model[`equation`] || ``);
   }, [model]);
 
   const postData = () => {
@@ -61,8 +61,8 @@ export default function CaptureForm() {
         equation,
       })
       .then(() => {
-        selectModel({});
         setRefresh({});
+        selectModel({});
         toggleShowMsg();
         window.setTimeout(()=>{toggleShowMsg();}, 3000);
       });
@@ -165,11 +165,11 @@ export default function CaptureForm() {
           <Label htmlFor='formula'>{`Formula matemática`}</Label>
           <div id='formula' className='innerSpan' style={{border: `1px solid rgb(96, 94, 92)`, margin: 0 }} >
             <EquationEditor
-                  value={equation}
-                  onChange={setEquation}
-                  autoCommands="pi theta sqrt sum prod alpha beta gamma rho"
-                  autoOperatorNames="sin cos tan"
-                />
+              value={equation || ``}
+              onChange={(newVal) => setEquation(newVal)}
+              autoCommands="pi theta sqrt sum prod alpha beta gamma rho"
+              autoOperatorNames="sin cos tan"
+            />
           </div>
 
           <TextField

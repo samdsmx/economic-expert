@@ -13,6 +13,7 @@ import {
   PersonaSize,
   PersonaPresence,
 } from "@fluentui/react/lib/Persona";
+import { isValidHttpUrl } from "./Card";
 
 interface PillProps {
   category?: string;
@@ -23,6 +24,14 @@ interface PillProps {
 const Pill: React.FC<PillProps> = ({ category, type, removeFilter }) => {
   const buttonId = useId("callout-button");
   const deleteIcon: IIconProps = { iconName: "Delete" };
+
+  const searchURL = (v: string) => {
+    let url = v;
+    if (!isValidHttpUrl(v)){
+      url = `http://google.com/search?q="${v}"`;
+    }
+    return url;
+  }
 
   const customSplitButtonStyles: IButtonStyles = {
     root: {
@@ -50,7 +59,7 @@ const Pill: React.FC<PillProps> = ({ category, type, removeFilter }) => {
             role="link"
             title={category}
             target="_blank"
-            href={category}
+            href={searchURL(category)}
             underline
           >
             {category}

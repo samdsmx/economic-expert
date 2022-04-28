@@ -5,6 +5,7 @@ import { Text } from "@fluentui/react/lib/Text";
 import { Stack } from "@fluentui/react/lib/Stack";
 import { Label, Link } from "@fluentui/react";
 import EquationEditor from "equation-editor-react";
+import { isValidHttpUrl } from "./Card";
 
 export function InfoPanel({ isOpen, dismissPanel, item }) {
 
@@ -46,8 +47,12 @@ export function InfoPanel({ isOpen, dismissPanel, item }) {
       <Label>{`Referencias: `}</Label>
       {item.referencias && <Stack tokens={{ childrenGap: 10 }} >
         {item.referencias.map((referencia: string, index) => {
+          let url = referencia;
+          if (!isValidHttpUrl(referencia)){
+            url = `http://google.com/search?q="${referencia}"`;
+          }
           return (
-            <Link href={referencia} key={index} target="_blank" role="link" >
+            <Link href={url} key={index} target="_blank" role="link" >
               {referencia}
             </Link>
           );

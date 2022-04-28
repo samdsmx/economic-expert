@@ -8,7 +8,7 @@ import { useId } from "@fluentui/react-hooks";
 
 export function InputPill({ label="", value=[], type="pill", onChange=(_newVal: string[])=>{} }) {
 
-    const [conceptos, setConceptos] = React.useState(value);
+    const [conceptos, setConceptos] = React.useState(value || []);
     const [concepto, setConcepto] = React.useState('');
   
     const deleteConcept = (valor) => {
