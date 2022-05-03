@@ -24,6 +24,12 @@ export function InputPill({ label="", value=[], type="pill", onChange=(_newVal: 
       onChange(newConceptos);
     };
   
+    const clickPress = (event) => {
+      if (event.charCode === 13) {
+        addConcept();
+      }
+    }
+  
     const onChangeConcepto = (e) => {
       setConcepto(e.target.value);
     };
@@ -46,6 +52,7 @@ export function InputPill({ label="", value=[], type="pill", onChange=(_newVal: 
           id={inputId}
           type="text"
           value={concepto}
+          onKeyPress={clickPress}
           onChange={onChangeConcepto}
         ></HeaderSearchInput>
         <HeaderSearchIconContainer>

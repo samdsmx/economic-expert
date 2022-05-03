@@ -14,13 +14,27 @@ export function SearchPage() {
   const [viewAll, setViewAll] = useLocalStorage('viewAll', false);
   const [theories, setTheories] = useState([]);
 
+  const compareFunction = (a: string, b: string) => {
+    if (a === null || a === undefined || a === "" || b === null || b === undefined || b === "" ) {
+      return false;
+    }
+    const x = a.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const y = b.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    return x.includes(y) || y.includes(x);
+  }
+
   useEffect(()=>{
     let filteredTheories = APIData?.filter((row: any) => {
       if (viewAll && (!conceptos || conceptos.length === 0)) return true;
       if (parsedPinsMap.get(row.id)) return true;
       let tempResult = false;
       for (const value of conceptos) {
-          tempResult = row.conceptos.includes(value) || row.autores.includes(value) || row.year === value || row.tipo === value  
+          tempResult = 
+            row.conceptos.some((v) => compareFunction(v,value) || compareFunction(value,v)) || 
+            row.autores.some((v) => compareFunction(v,value)) ||
+            row.year === value || 
+            compareFunction(row.tipo, value) ||
+            compareFunction(row.nombre, value);
           if (!tempResult) return false;
       }
       return tempResult;
