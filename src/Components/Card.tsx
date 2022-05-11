@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import stringifyObject from 'stringify-object';
 import {
   DocumentCard,
   DocumentCardActions,
@@ -10,14 +11,16 @@ import {
   IDocumentCardStyles,
 } from "@fluentui/react/lib/DocumentCard";
 import {
+  DirectionalHint,
   HighContrastSelector,
   IButtonStyles,
   IconButton,
   IContextualMenuProps,
   IIconProps,
   Stack,
+  TeachingBubble,
 } from "@fluentui/react";
-import { useBoolean } from '@fluentui/react-hooks';
+import { useBoolean, useId } from '@fluentui/react-hooks';
 import { PinsContext } from "../Hooks/PinsContext";
 import { InfoPanel } from "./InfoPanel";
 import { PageContext } from "../Hooks/PageContext";
@@ -27,25 +30,17 @@ export const isValidHttpUrl = (v: string | URL) => {
   try {
     url = new URL(v);
   } catch (_) {
-    return false;  
+    return false;
   }
   return url.protocol === "http:" || url.protocol === "https:";
 }
 
 export function Card({ item }) {
-  
-  const {parsedPinsMap, savePins} = useContext(PinsContext);
-  const {selectModel, setPage} = useContext(PageContext);
-  const [isOpen, { setTrue: openPanel, setFalse: dismissPanel }] = useBoolean(false);
 
-  const onActionClick = (
-    action: string,
-    ev: React.SyntheticEvent<HTMLElement>
-  ): void => {
-    console.log(`You clicked the ${action} action`);
-    ev.stopPropagation();
-    ev.preventDefault();
-  };
+  const { parsedPinsMap, savePins } = useContext(PinsContext);
+  const { selectModel, setPage } = useContext(PageContext);
+  const [isOpen, { setTrue: openPanel, setFalse: dismissPanel }] = useBoolean(false);
+  const [teachingBubbleVisible, { toggle: toggleTeachingBubbleVisible }] = useBoolean(false);
 
   const onClickPinButton = (ev: React.SyntheticEvent<HTMLElement>) => {
     if (parsedPinsMap.get(item.id)) {
@@ -58,15 +53,28 @@ export function Card({ item }) {
     ev.preventDefault();
   };
 
+  const onClickShareButton = (ev: React.SyntheticEvent<HTMLElement>) => {
+    ev.stopPropagation();
+    ev.preventDefault();
+    if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+      toggleTeachingBubbleVisible();
+      return navigator.clipboard.writeText(stringifyObject(item, {
+        indent: '  ',
+        singleQuotes: false
+      }));
+    }
+    return Promise.reject('The Clipboard API is not available.');
+  };
+
   const documentCardActions = React.useMemo(() => [
     {
       iconProps: { iconName: "Share" },
-      onClick: onActionClick.bind(this, "share"),
+      onClick: onClickShareButton.bind(this),
       ariaLabel: "share action",
     },
     {
       iconProps: { iconName: parsedPinsMap.get(item.id) ? "Pinned" : "Pin" },
-      onClick: onClickPinButton,
+      onClick: onClickPinButton.bind(this),
       ariaLabel: "pin action",
     },
     /*{
@@ -74,7 +82,7 @@ export function Card({ item }) {
       onClick: onActionClick.bind(this, "notifications"),
       ariaLabel: "notifications action",
     },*/
-  ],[parsedPinsMap]);
+  ], [parsedPinsMap]);
 
   const cardStyles: IDocumentCardStyles = {
     root: { display: "inline-block", marginRight: 20, marginBottom: 20 },
@@ -85,7 +93,7 @@ export function Card({ item }) {
   };
 
   const cardSubTitleStyles: IDocumentCardStyles = {
-    root: { lineHeight: "normal", height: 'auto',  padding: '2px 16px' },
+    root: { lineHeight: "normal", height: 'auto', padding: '2px 16px' },
   };
 
   const cardPreviewStyles: IDocumentCardPreviewStyles = {
@@ -128,22 +136,24 @@ export function Card({ item }) {
       {
         key: "modificar",
         text: "Modificar",
-        onClick: ()=>{
+        onClick: () => {
           selectModel(item);
           setPage(`insert`);
         },
         iconProps: { iconName: "Edit" },
       },
-     /* {
-        key: "pdf",
-        text: "Ver en PDF",
-        iconProps: { iconName: "Print" },
-      },*/
+      /* {
+         key: "pdf",
+         text: "Ver en PDF",
+         iconProps: { iconName: "Print" },
+       },*/
     ],
   };
 
+  const buttonId = useId('targetButton');
+
   return (
-    <DocumentCard styles={cardStyles}>
+    <DocumentCard styles={cardStyles} id={buttonId}>
       <Stack verticalFill verticalAlign="space-between">
         <Stack>
           <Stack horizontal horizontalAlign="space-between">
@@ -164,7 +174,7 @@ export function Card({ item }) {
               onClick={openPanel}
             />
           </Stack>
-          <DocumentCardLocation location={item.tipo + `economia`}  styles={{ root: { paddingTop: 0, color: 'rgb(50, 49, 48)', pointerEvents: 'none', cursor: 'default' } }}/>
+          <DocumentCardLocation location={item.tipo + `economia`} styles={{ root: { paddingTop: 0, color: 'rgb(50, 49, 48)', pointerEvents: 'none', cursor: 'default' } }} />
           <DocumentCardTitle
             showAsSecondaryTitle
             title={item.descripcion?.length > 120 ? item.descripcion?.substring(0, 120) + '...' : item.descripcion}
@@ -182,7 +192,7 @@ export function Card({ item }) {
             }
             previewImages={item.referencias.concat(["", ""]).map((r: string) => {
               let url = r;
-              if (!isValidHttpUrl(r)){
+              if (!isValidHttpUrl(r)) {
                 url = `http://google.com/search?q="${r}"`;
               }
               return { name: r, linkProps: { href: url, target: "_blank" } };
@@ -193,14 +203,26 @@ export function Card({ item }) {
         <Stack>
           <DocumentCardActivity
             activity={item.year}
-            people={item.autores ? 
+            people={item.autores ?
               item.autores.map((a: string) => {
-                return { name: a, profileImageSrc: null } }) : [] }
+                return { name: a, profileImageSrc: null }
+              }) : []}
           />
           <DocumentCardActions
             actions={documentCardActions}
             views={Math.floor(Math.random() * 30)}
           />
+          {teachingBubbleVisible && (
+            <TeachingBubble
+              calloutProps={{ directionalHint: DirectionalHint.bottomCenter }}
+              target={`#${buttonId}`}
+              isWide={false}
+              hasCloseButton={true}
+              closeButtonAriaLabel="Close"
+              onDismiss={toggleTeachingBubbleVisible}>
+                Toda la información se ha copiado de este modelo se ha copiado en el portapapeles, compártelo con Ctrl+V en un área de texto.  
+            </TeachingBubble>
+          )}
         </Stack>
       </Stack>
       <InfoPanel isOpen={isOpen} dismissPanel={dismissPanel} item={item} />

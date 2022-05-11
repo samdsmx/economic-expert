@@ -28,7 +28,7 @@ export function InfoPanel({ isOpen, dismissPanel, item }) {
       </Stack>
 
       <Stack tokens={{ childrenGap: 1 }} style={{ paddingBottom: 15 }} >
-        <Label>{`Formula matemática: `}</Label>
+        <Label>{`Formula matemática (Modelo): `}</Label>
         <EquationEditor
           value={item.equation}
           onChange={() => {}}

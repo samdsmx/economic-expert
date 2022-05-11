@@ -162,7 +162,7 @@ export default function CaptureForm() {
             value={descripcion}
             onChange={(_e, newVal) => setDescripcion(newVal)}
           />
-          <Label htmlFor='formula'>{`Formula matemática`}</Label>
+          <Label htmlFor='formula'>{`Formula matemática (Modelo)`}</Label>
           <div id='formula' className='innerSpan' style={{border: `1px solid rgb(96, 94, 92)`, margin: 0 }} >
             <EquationEditor
               value={equation || ``}
