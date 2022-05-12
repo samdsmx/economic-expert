@@ -220,7 +220,7 @@ export function Card({ item }) {
               hasCloseButton={true}
               closeButtonAriaLabel="Close"
               onDismiss={toggleTeachingBubbleVisible}>
-                Toda la información se ha copiado de este modelo se ha copiado en el portapapeles, compártelo con Ctrl+V en un área de texto.  
+                Toda la información de este modelo se ha copiado en el portapapeles, compártelo con Ctrl+V en un área de texto.  
             </TeachingBubble>
           )}
         </Stack>
