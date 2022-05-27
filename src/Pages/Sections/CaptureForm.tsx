@@ -130,7 +130,7 @@ export default function CaptureForm() {
       </Dialog>
       <form>
         <Stack {...columnProps}>
-          <h1 style={{padding: `15px 0 0 0`, margin: 0}}>Modelo Economico</h1>
+          <h1 style={{padding: `15px 0 0 0`, margin: 0}}>Modelo Económico</h1>
           <TextField
             label="Nombre del modelo"
             autoAdjustHeight
@@ -156,7 +156,7 @@ export default function CaptureForm() {
             ]}
           />
           <TextField
-            label="Descripcion"
+            label="Descripción"
             multiline
             autoAdjustHeight
             value={descripcion}
