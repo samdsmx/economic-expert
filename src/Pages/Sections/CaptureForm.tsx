@@ -153,6 +153,9 @@ export default function CaptureForm() {
             options={[
               { key: `Macro`, text: `Macroeconomia` },
               { key: `Micro`, text: `Microeconomia` },
+              { key: `Publica`, text: `Economía de Finanzas Públicas` },
+              { key: `Regional`, text: `Economía Regional` },
+              { key: `Fisica`, text: `Economía Física` },
             ]}
           />
           <TextField
