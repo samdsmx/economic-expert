@@ -24,6 +24,7 @@ import { useBoolean, useId } from '@fluentui/react-hooks';
 import { PinsContext } from "../Hooks/PinsContext";
 import { InfoPanel } from "./InfoPanel";
 import { PageContext } from "../Hooks/PageContext";
+import axios from "axios";
 
 export const isValidHttpUrl = (v: string | URL) => {
   let url: URL;
@@ -150,6 +151,18 @@ export function Card({ item }) {
     ],
   };
 
+  const updateViews = () => {
+    const id = item.id;
+    const views = (item.views ?? 0) + 1;
+    axios
+      .put(`https://6244adda7701ec8f72484339.mockapi.io/theory/${id}`, {
+        views
+      })
+      .then(() => {
+        console.log(`views: ${views}`);
+      });
+  };
+
   const buttonId = useId('targetButton');
 
   return (
@@ -171,7 +184,10 @@ export function Card({ item }) {
               styles={customSplitButtonStyles}
               menuProps={menuProps}
               ariaLabel="New item"
-              onClick={openPanel}
+              onClick={() => {
+                updateViews();
+                openPanel(); 
+              }}
             />
           </Stack>
           <DocumentCardLocation location={item.tipo} styles={{ root: { paddingTop: 0, color: 'rgb(50, 49, 48)', pointerEvents: 'none', cursor: 'default' } }} />
@@ -210,7 +226,7 @@ export function Card({ item }) {
           />
           <DocumentCardActions
             actions={documentCardActions}
-            views={Math.floor(Math.random() * 30)}
+            views={item.views ?? 0}
           />
           {teachingBubbleVisible && (
             <TeachingBubble
