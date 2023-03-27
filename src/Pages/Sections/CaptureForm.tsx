@@ -151,11 +151,11 @@ export default function CaptureForm() {
               setTipo(newVal.key)
             }
             options={[
-              { key: `Macro`, text: `Macroeconomia` },
-              { key: `Micro`, text: `Microeconomia` },
-              { key: `Publica`, text: `Economía de Finanzas Públicas` },
-              { key: `Regional`, text: `Economía Regional` },
-              { key: `Fisica`, text: `Economía Física` },
+              { key: `Macroeconomia`, text: `Macroeconomia` },
+              { key: `Microeconomia`, text: `Microeconomia` },
+              { key: `Economía de Finanzas Públicas`, text: `Economía de Finanzas Públicas` },
+              { key: `Economía Regional`, text: `Economía Regional` },
+              { key: `Economía Física`, text: `Economía Física` },
             ]}
           />
           <TextField

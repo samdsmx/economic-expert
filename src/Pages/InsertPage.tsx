@@ -12,6 +12,14 @@ export function InsertPage() {
     edges: [],
   });
 
+  const colorTipo = new Map<string, string>([
+    ["Macroeconomia", "#ff6961"],
+    ["Microeconomia", "#c5c6c8"],
+    ["Economía de Finanzas Públicas", "#77dd77"],
+    ["Economía Regional", "#fdfd96"],
+    ["Economía Física", "#ff85d5"],
+  ]);; 
+
   useEffect(() => {
     const nodes = [];
     const edges = [];
@@ -32,7 +40,7 @@ export function InsertPage() {
           id: index,
           label: label,
           title: "node 1 tootip text",
-          color: r[`tipo`] === "Micro" ? "#9EDDF8" : "#FEC3B1",
+          color: colorTipo.get(r[`tipo`]),
         });
         r["conceptos"] && r["conceptos"].forEach((c: any) => {
           if (!conceptos.has(c)) {

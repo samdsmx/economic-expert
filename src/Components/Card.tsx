@@ -174,7 +174,7 @@ export function Card({ item }) {
               onClick={openPanel}
             />
           </Stack>
-          <DocumentCardLocation location={item.tipo + `economia`} styles={{ root: { paddingTop: 0, color: 'rgb(50, 49, 48)', pointerEvents: 'none', cursor: 'default' } }} />
+          <DocumentCardLocation location={item.tipo} styles={{ root: { paddingTop: 0, color: 'rgb(50, 49, 48)', pointerEvents: 'none', cursor: 'default' } }} />
           <DocumentCardTitle
             showAsSecondaryTitle
             title={item.descripcion?.length > 120 ? item.descripcion?.substring(0, 120) + '...' : item.descripcion}
