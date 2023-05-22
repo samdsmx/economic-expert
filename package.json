@@ -60,6 +60,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.24",
-    "tsparticles": "^2.0.6"
+    "tsparticles": "^2.0.6",
+    "@types/stringify-object": "^4.0.2",
   }
 }
