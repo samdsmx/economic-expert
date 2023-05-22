@@ -2,6 +2,7 @@
   "name": "economic-expert",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@fluentui/example-data": "^8.4.0",
     "@fluentui/react": "^8.62.1",
