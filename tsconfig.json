@@ -6,5 +6,6 @@
       "checkJs": true,
       "outDir": "./built",
       "esModuleInterop": true, 
+      "moduleResolution":"node",
     },
 }
