@@ -37,9 +37,14 @@ export function SearchPage() {
             compareFunction(row.nombre, value);
           if (!tempResult) return false;
       }
+      console.log(`tempResult`);
+      console.log(tempResult);
       return tempResult;
     }).slice() || [];
-    savePins(parsedPinsMap);
+    // savePins(parsedPinsMap);
+    console.log(`filteredTheories`);
+    console.log(filteredTheories);
+  
     setTheories(filteredTheories);
   },[APIData, conceptos, viewAll]);
 
@@ -57,7 +62,7 @@ export function SearchPage() {
             <p>{error && `Error`}</p>
             <p>{(!error && !loading) && `Ingresa tu consulta`}</p>
         </Stack>
-        <Cards items={theories} />
+        {false && <Cards items={theories} />}
       </Stack>
     </React.Fragment>
   );
