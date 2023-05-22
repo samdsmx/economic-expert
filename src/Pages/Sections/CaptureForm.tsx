@@ -14,7 +14,6 @@ import { PageContext } from "../../Hooks/PageContext";
 import { Dialog, DialogFooter, IContextualMenuProps, MessageBar, MessageBarType } from "@fluentui/react";
 import { ApiContext } from "../../Hooks/ApiContext";
 import { useBoolean } from '@fluentui/react-hooks';
-import EquationEditor from "equation-editor-react";
 import { Label } from '@fluentui/react/lib/Label';
 
 export default function CaptureForm() {
@@ -167,12 +166,6 @@ export default function CaptureForm() {
           />
           <Label htmlFor='formula'>{`Formula matemática (Modelo)`}</Label>
           <div id='formula' className='innerSpan' style={{border: `1px solid rgb(96, 94, 92)`, margin: 0 }} >
-            <EquationEditor
-              value={equation || ``}
-              onChange={(newVal) => setEquation(newVal)}
-              autoCommands="pi theta sqrt sum prod alpha beta gamma rho"
-              autoOperatorNames="sin cos tan"
-            />
           </div>
 
           <TextField

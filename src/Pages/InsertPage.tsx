@@ -25,7 +25,13 @@ export function InsertPage() {
     const edges = [];
     const conceptos = new Map();
     let index = 1;
-    APIData.forEach((r) => {
+    const array = Object.values(APIData);
+    if (Array.isArray(array)) {
+
+      console.log(`SI ------------------------------------------------------`);
+      console.log(APIData);
+      console.log(array);
+      array.forEach((r) => {
       if (r["nombre"]){
         const label = r["nombre"].split(' ').reduce((a, e, i) => {
           if (i % 3 === 2){
@@ -51,6 +57,7 @@ export function InsertPage() {
         index++;
       }
     });
+  }
     conceptos.forEach((value, key) => {
       nodes.push({
         id: index,

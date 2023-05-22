@@ -4,7 +4,6 @@ import { Persona, PersonaSize } from "@fluentui/react/lib/Persona";
 import { Text } from "@fluentui/react/lib/Text";
 import { Stack } from "@fluentui/react/lib/Stack";
 import { Label, Link } from "@fluentui/react";
-import EquationEditor from "equation-editor-react";
 import { isValidHttpUrl } from "./Card";
 
 export function InfoPanel({ isOpen, dismissPanel, item }) {
@@ -29,12 +28,6 @@ export function InfoPanel({ isOpen, dismissPanel, item }) {
 
       <Stack tokens={{ childrenGap: 1 }} style={{ paddingBottom: 15 }} >
         <Label>{`Formula matemática (Modelo): `}</Label>
-        <EquationEditor
-          value={item.equation}
-          onChange={() => {}}
-          autoCommands="pi theta sqrt sum prod alpha beta gamma rho"
-          autoOperatorNames="sin cos tan"
-        />
       </Stack>
 
       <Label>{`Autores: `}</Label>

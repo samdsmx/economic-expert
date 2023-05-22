@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import styled from 'styled-components';
 import Logo from '../../Resources/logoLine.png';
 import { Menu } from '../../Components/Menu';
-import InfoIcon from '@material-ui/icons/Info';
-import SchoolIcon from '@material-ui/icons/School';
+import SchoolIcon from '@mui/icons-material/School';
+import InfoIcon from '@mui/icons-material/Info';
 import { PageContext } from '../../Hooks/PageContext';
 
 export function Header() {

@@ -1,5 +1,5 @@
 import React from "react";
-import AddIcon from "@material-ui/icons/Add";
+import AddIcon from '@mui/icons-material/Add';
 import { Pill } from "./Pill";
 import { Label } from '@fluentui/react/lib/Label';
 import { Stack } from "@fluentui/react";

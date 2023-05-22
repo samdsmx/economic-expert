@@ -5,7 +5,7 @@ import { InputPill } from "../Components/InputPill";
 import { Toggle } from '@fluentui/react/lib/Toggle';
 import { PinsContext } from '../Hooks/PinsContext';
 import { useLocalStorage } from '../Hooks/UseLocalStorage';
-import { ApiContext } from 'Hooks/ApiContext';
+import { ApiContext } from '../Hooks/ApiContext';
 
 export function SearchPage() {
   const {parsedPinsMap, savePins} = useContext(PinsContext);
@@ -24,7 +24,8 @@ export function SearchPage() {
   }
 
   useEffect(()=>{
-    let filteredTheories = APIData?.filter((row: any) => {
+    const array = Object.values(APIData);
+    let filteredTheories = array?.filter((row: any) => {
       if ((viewAll && false) && (!conceptos || conceptos.length === 0)) return true;
       if (parsedPinsMap.get(row.id)) return true;
       let tempResult = false;
@@ -37,14 +38,9 @@ export function SearchPage() {
             compareFunction(row.nombre, value);
           if (!tempResult) return false;
       }
-      console.log(`tempResult`);
-      console.log(tempResult);
       return tempResult;
     }).slice() || [];
-    // savePins(parsedPinsMap);
-    console.log(`filteredTheories`);
-    console.log(filteredTheories);
-  
+    savePins(parsedPinsMap);
     setTheories(filteredTheories);
   },[APIData, conceptos, viewAll]);
 
@@ -62,7 +58,7 @@ export function SearchPage() {
             <p>{error && `Error`}</p>
             <p>{(!error && !loading) && `Ingresa tu consulta`}</p>
         </Stack>
-        {false && <Cards items={theories} />}
+        <Cards items={theories} />
       </Stack>
     </React.Fragment>
   );
