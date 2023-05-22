@@ -1,4 +1,4 @@
-import AboutPage from "Pages/AboutPage";
+import AboutPage from "./Pages/AboutPage";
 import React, { useContext } from "react";
 import { Header } from "./Pages/Sections/Header";
 import { InsertPage } from "./Pages/InsertPage";
