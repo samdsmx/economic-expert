@@ -49,7 +49,7 @@ export default function CaptureForm() {
 
   const postData = () => {
     axios
-      .post(`https://6244adda7701ec8f72484339.mockapi.io/theory`, {
+      .post(`https://economic-expert-default-rtdb.firebaseio.com/data.json`, {
         nombre,
         teoria,
         tipo,
@@ -71,7 +71,7 @@ export default function CaptureForm() {
   const updateData = () => {
     const id = model[`id`];
     axios
-      .put(`https://6244adda7701ec8f72484339.mockapi.io/theory/${id}`, {
+      .put(`https://economic-expert-default-rtdb.firebaseio.com/data/${id}.json`, {
         nombre,
         teoria,
         tipo,
@@ -92,7 +92,7 @@ export default function CaptureForm() {
   const deleteData = () => {
     const id = model[`id`];
     axios
-      .delete(`https://6244adda7701ec8f72484339.mockapi.io/theory/${id}`)
+      .delete(`https://economic-expert-default-rtdb.firebaseio.com/data/${id}.json`)
       .then(() => {
         setRefresh({});
         selectModel({});

@@ -155,7 +155,7 @@ export function Card({ item }) {
     const id = item.id;
     const views = (item.views ?? 0) + 1;
     axios
-      .put(`https://6244adda7701ec8f72484339.mockapi.io/theory/${id}`, {
+      .put(`https://economic-expert-default-rtdb.firebaseio.com/data/${id}.json`, {
         views
       })
       .then(() => {

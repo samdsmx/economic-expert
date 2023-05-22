@@ -9,7 +9,7 @@ export function useAPIData() {
 
   useEffect(() => {
     axios
-      .get(`https://6244adda7701ec8f72484339.mockapi.io/theory`)
+      .get(`https://economic-expert-default-rtdb.firebaseio.com/data.json`)
       .then((response) => {
         setAPIData(response.data);
         setLoading(false);
