@@ -11,7 +11,6 @@ export function useAPIData() {
     axios
       .get(`https://economic-expert-default-rtdb.firebaseio.com/data.json`)
       .then((response) => {
-        console.log(response);
         setAPIData(response.data);
         setLoading(false);
       })

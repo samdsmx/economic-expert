@@ -25,15 +25,11 @@ export function SearchPage() {
 
   useEffect(()=>{
     const array = Object.entries(APIData);
-    console.log(`array`);
-    console.log(array);
     let filteredTheories = array?.filter(([key, row]: any) => {
       if (row === null) return false;
       if (viewAll && (!conceptos || conceptos.length === 0)) return true;
       if (parsedPinsMap.get(key)) return true;
       let tempResult = false;
-      console.log(`filter`);
-      console.log([key, row]);
       for (const value of conceptos) {
           tempResult = 
             row.conceptos.some((v) => compareFunction(v,value) || compareFunction(value,v)) || 
@@ -46,8 +42,6 @@ export function SearchPage() {
       return tempResult;
     }).slice() || [];
     savePins(parsedPinsMap);
-    console.log(`filteredTheories`);
-    console.log(filteredTheories);
     setTheories(filteredTheories);
   },[APIData, conceptos, viewAll]);
 
