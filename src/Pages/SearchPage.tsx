@@ -43,6 +43,8 @@ export function SearchPage() {
       return tempResult;
     }).slice() || [];
     savePins(parsedPinsMap);
+    console.log(`filteredTheories`);
+    console.log(filteredTheories);
     setTheories(filteredTheories);
   },[APIData, conceptos, viewAll]);
 
