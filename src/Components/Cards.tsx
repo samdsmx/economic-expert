@@ -5,7 +5,7 @@ import { Card } from "./Card";
 export function Cards({ items }) {
   return (
     <Stack horizontal style={{ display: "flex", flexFlow: "wrap" }}>
-      {items.slice(0,10).map((item, index) => {
+      {items.slice(0,5).map((item, index) => {
         console.log(`items`);
         console.log(items);
         return (
