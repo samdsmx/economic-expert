@@ -8,8 +8,6 @@ export function Cards({ items }) {
   return (
     <Stack horizontal style={{ display: "flex", flexFlow: "wrap" }}>
       {items.map((item, index) => {
-        console.log(index);
-        console.log(item);
         return (
           <Card 
             key={index} 

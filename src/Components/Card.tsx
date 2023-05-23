@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import stringifyObject from 'stringify-object';
 import {
   DocumentCard,
   DocumentCardActions,
@@ -37,6 +36,8 @@ export const isValidHttpUrl = (v: string | URL) => {
 }
 
 export function Card({ item }) {
+  console.log(`item`);
+  console.log(item);
 
   const { parsedPinsMap, savePins } = useContext(PinsContext);
   const { selectModel, setPage } = useContext(PageContext);
@@ -59,10 +60,7 @@ export function Card({ item }) {
     ev.preventDefault();
     if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
       toggleTeachingBubbleVisible();
-      return navigator.clipboard.writeText(stringifyObject(item, {
-        indent: '  ',
-        singleQuotes: false
-      }));
+      return navigator.clipboard.writeText(JSON.stringify(item));
     }
     return Promise.reject('The Clipboard API is not available.');
   };
