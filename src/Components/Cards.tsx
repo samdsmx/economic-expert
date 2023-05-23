@@ -3,11 +3,11 @@ import { Stack } from "@fluentui/react";
 import { Card } from "./Card";
 
 export function Cards({ items }) {
-  console.log(`items`);
-  console.log(items);
   return (
     <Stack horizontal style={{ display: "flex", flexFlow: "wrap" }}>
-      {items.map((item, index) => {
+      {items.slice(0,1).map((item, index) => {
+          console.log(`items`);
+          console.log(items);
         return (
           <Card 
             key={index} 
