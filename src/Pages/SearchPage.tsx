@@ -25,6 +25,8 @@ export function SearchPage() {
 
   useEffect(()=>{
     const array = Object.entries(APIData);
+    console.log(`array`);
+    console.log(array);
     let filteredTheories = array?.filter(([key, row]: any) => {
       if (viewAll && (!conceptos || conceptos.length === 0)) return true;
       if (parsedPinsMap.get(key)) return true;

@@ -12,7 +12,7 @@ export function useAPIData() {
       .get(`https://economic-expert-default-rtdb.firebaseio.com/data.json`)
       .then((response) => {
         console.log(response);
-        setAPIData(response.data.filter(item => item !== null));
+        setAPIData(response.data);
         setLoading(false);
       })
       .catch(error => {
