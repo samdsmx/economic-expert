@@ -28,6 +28,7 @@ export function SearchPage() {
     console.log(`array`);
     console.log(array);
     let filteredTheories = array?.filter(([key, row]: any) => {
+      if (row === null) return false;
       if (viewAll && (!conceptos || conceptos.length === 0)) return true;
       if (parsedPinsMap.get(key)) return true;
       let tempResult = false;
