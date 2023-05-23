@@ -46,7 +46,7 @@ export function InfoPanel({ isOpen, dismissPanel, item }) {
 
       <Label>{`Referencias: `}</Label>
       {item.referencias && <Stack tokens={{ childrenGap: 10 }} >
-        {item.referencias?.map((referencia: string, index) => {
+        {item.referencias.map((referencia: string, index) => {
           let url = referencia;
           if (!isValidHttpUrl(referencia)){
             url = `http://google.com/search?q="${referencia}"`;

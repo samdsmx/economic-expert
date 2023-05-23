@@ -6,8 +6,6 @@ export function Cards({ items }) {
   return (
     <Stack horizontal style={{ display: "flex", flexFlow: "wrap" }}>
       {items.map((item, index) => {
-        console.log(`items`);
-        console.log(items);
         return (
           <Card 
             key={index} 

@@ -37,8 +37,6 @@ export const isValidHttpUrl = (v: string | URL) => {
 }
 
 export function Card({ item }) {
-  console.log(`item`);
-  console.log(item);
 
   const { parsedPinsMap, savePins } = useContext(PinsContext);
   const { selectModel, setPage } = useContext(PageContext);
@@ -208,9 +206,7 @@ export function Card({ item }) {
             getOverflowDocumentCountText={(overflowCount: number) =>
               overflowCount - 2 > 0 && `+${overflowCount - 2} mas`
             }
-            previewImages={item.referencias?.concat(["", ""]).map((r: string) => {
-              console.log(`ref:`);
-              console.log(r);
+            previewImages={item.referencias.concat(["", ""]).map((r: string) => {
               let url = r;
               if (!isValidHttpUrl(r)) {
                 url = `http://google.com/search?q="${r}"`;
