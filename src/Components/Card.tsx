@@ -209,6 +209,8 @@ export function Card({ item }) {
               overflowCount - 2 > 0 && `+${overflowCount - 2} mas`
             }
             previewImages={item.referencias?.concat(["", ""]).map((r: string) => {
+              console.log(`ref:`);
+              console.log(r);
               let url = r;
               if (!isValidHttpUrl(r)) {
                 url = `http://google.com/search?q="${r}"`;
