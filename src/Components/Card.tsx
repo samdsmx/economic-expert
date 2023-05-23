@@ -139,7 +139,7 @@ export function Card({ row }) {
         key: "modificar",
         text: "Modificar",
         onClick: () => {
-          selectModel(row);
+          selectModel({...item, id: key});
           setPage(`insert`);
         },
         iconProps: { iconName: "Edit" },
