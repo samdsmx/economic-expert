@@ -36,7 +36,8 @@ export const isValidHttpUrl = (v: string | URL) => {
   return url.protocol === "http:" || url.protocol === "https:";
 }
 
-export function Card({ item }) {
+export function Card({ row }) {
+  const [key, item] = row;
 
   const { parsedPinsMap, savePins } = useContext(PinsContext);
   const { selectModel, setPage } = useContext(PageContext);
@@ -44,10 +45,10 @@ export function Card({ item }) {
   const [teachingBubbleVisible, { toggle: toggleTeachingBubbleVisible }] = useBoolean(false);
 
   const onClickPinButton = (ev: React.SyntheticEvent<HTMLElement>) => {
-    if (parsedPinsMap.get(item.id)) {
-      parsedPinsMap.delete(item.id);
+    if (parsedPinsMap.get(key)) {
+      parsedPinsMap.delete(key);
     } else {
-      parsedPinsMap.set(item.id, true);
+      parsedPinsMap.set(key, true);
     }
     savePins(parsedPinsMap);
     ev.stopPropagation();
@@ -74,7 +75,7 @@ export function Card({ item }) {
       ariaLabel: "share action",
     },
     {
-      iconProps: { iconName: parsedPinsMap.get(item.id) ? "Pinned" : "Pin" },
+      iconProps: { iconName: parsedPinsMap.get(key) ? "Pinned" : "Pin" },
       onClick: onClickPinButton.bind(this),
       ariaLabel: "pin action",
     },
@@ -138,7 +139,7 @@ export function Card({ item }) {
         key: "modificar",
         text: "Modificar",
         onClick: () => {
-          selectModel(item);
+          selectModel(row);
           setPage(`insert`);
         },
         iconProps: { iconName: "Edit" },
@@ -152,10 +153,9 @@ export function Card({ item }) {
   };
 
   const updateViews = () => {
-    const id = item.id;
     const views = (item.views ?? 0) + 1;
     axios
-      .put(`https://economic-expert-default-rtdb.firebaseio.com/data/${id}.json`, {
+      .put(`https://economic-expert-default-rtdb.firebaseio.com/data/${key}.json`, {
         views
       })
       .then(() => {

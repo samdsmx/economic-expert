@@ -9,7 +9,7 @@ export function Cards({ items }) {
         return (
           <Card 
             key={index} 
-            item={item}
+            row={item}
             />
           )
         }

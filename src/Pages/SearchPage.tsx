@@ -24,10 +24,11 @@ export function SearchPage() {
   }
 
   useEffect(()=>{
-    const array = Object.values(APIData);
-    let filteredTheories = array?.filter((row: any) => {
+    const array = Object.entries(APIData);
+    console.log(array);
+    let filteredTheories = array?.filter(([key, row]: any) => {
       if (viewAll && (!conceptos || conceptos.length === 0)) return true;
-      if (parsedPinsMap.get(row.id)) return true;
+      if (parsedPinsMap.get(key)) return true;
       let tempResult = false;
       for (const value of conceptos) {
           tempResult = 

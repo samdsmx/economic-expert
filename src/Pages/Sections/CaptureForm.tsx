@@ -36,6 +36,8 @@ export default function CaptureForm() {
   const [equation, setEquation] = useState(model[`equation`] || ``);
 
   useEffect(() => {
+    console.log(`model:`);
+    console.log(model);
     setNombre(model[`nombre`] || ``);
     setTeoria(model[`teoria`] || ``);
     setDescripcion(model[`descripcion`] || ``);
