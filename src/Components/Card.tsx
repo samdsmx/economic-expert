@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import stringifyObject from 'stringify-object';
 import {
   DocumentCard,
   DocumentCardActions,
@@ -60,7 +61,10 @@ export function Card({ item }) {
     ev.preventDefault();
     if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
       toggleTeachingBubbleVisible();
-      return navigator.clipboard.writeText(JSON.stringify(item));
+      return navigator.clipboard.writeText(stringifyObject(item, {
+        indent: '  ',
+        singleQuotes: false
+      }));
     }
     return Promise.reject('The Clipboard API is not available.');
   };
@@ -204,7 +208,7 @@ export function Card({ item }) {
             getOverflowDocumentCountText={(overflowCount: number) =>
               overflowCount - 2 > 0 && `+${overflowCount - 2} mas`
             }
-            previewImages={item.referencias.concat(["", ""]).map((r: string) => {
+            previewImages={item.referencias?.concat(["", ""]).map((r: string) => {
               let url = r;
               if (!isValidHttpUrl(r)) {
                 url = `http://google.com/search?q="${r}"`;

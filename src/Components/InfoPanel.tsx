@@ -30,7 +30,7 @@ export function InfoPanel({ isOpen, dismissPanel, item }) {
       <Stack tokens={{ childrenGap: 1 }} style={{ paddingBottom: 15 }} >
         <Label>{`Formula matemática (Modelo): `}</Label>
         <EquationEditor
-          value={'x'}
+          value={item.equation}
           onChange={() => {}}
           autoCommands="pi theta sqrt sum prod alpha beta gamma rho"
           autoOperatorNames="sin cos tan"
