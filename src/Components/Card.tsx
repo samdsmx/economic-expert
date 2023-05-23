@@ -203,7 +203,7 @@ export function Card({ item }) {
             title={item.conceptos?.join(", ")}
             styles={cardSubTitleStyles}
           />
-          <DocumentCardPreview
+          { item.referencias && <DocumentCardPreview
             maxDisplayCount={3}
             getOverflowDocumentCountText={(overflowCount: number) =>
               overflowCount - 2 > 0 && `+${overflowCount - 2} mas`
@@ -218,7 +218,7 @@ export function Card({ item }) {
               return { name: r, linkProps: { href: url, target: "_blank" } };
             })}
             styles={cardPreviewStyles}
-          />
+          />}
         </Stack>
         <Stack>
           <DocumentCardActivity
