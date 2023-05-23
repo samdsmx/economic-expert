@@ -25,9 +25,9 @@ export function InsertPage() {
     const edges = [];
     const conceptos = new Map();
     let index = 1;
-    const array = Object.values(APIData);
-    array.forEach((r) => {
-      if (r["nombre"]){
+    const array = Object.entries(APIData);
+    array.forEach(([key, r]) => {
+      if (r && r["nombre"]){
         const label = r["nombre"].split(' ').reduce((a, e, i) => {
           if (i % 3 === 2){
             a += '\n';
