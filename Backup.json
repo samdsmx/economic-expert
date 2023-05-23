@@ -1,1730 +1,1730 @@
-[
-    {
-     "id": "4",
-     "nombre": "Ahorro de las familias",
-     "tipo": "Macroeconomia",
-     "descripcion": "En función de sus ingresos",
-     "year": "",
-     "conceptos": [
-      "Ingreso",
-      "Ahorro"
-     ],
-     "autores": [
-      "José María Caridad y Ocerín"
-     ],
-     "referencias": [
-      "Econometría: Modelos Econométricos y Series temporales."
-     ],
-     "teoria": "",
-     "equation": "A=f\\left(I\\right)",
-     "views": 1
-    },
-    {
-     "id": "5",
-     "nombre": "Consumo de un país",
-     "tipo": "Macroeconomia",
-     "descripcion": "En función de la renta nacional",
-     "year": "",
-     "conceptos": [
-      "Consumo",
-      "Renta"
-     ],
-     "autores": [
-      "José María Caridad y Ocerín"
-     ],
-     "referencias": [
-      "Econometría: Modelos Econométricos y Series temporales."
-     ],
-     "teoria": "",
-     "equation": "C=g\\left(R\\right)",
-     "views": 3
-    },
-    {
-     "id": "6",
-     "nombre": "Modelo aplicando ecuación Cobb-Douglas (con avance tecnológico)",
-     "tipo": "Microeconomia",
-     "descripcion": "Fuerza de trabajo N\nCapital K \nAvance tecnológico A\nLas cuales definen el producto Y.",
-     "year": "",
-     "conceptos": [
-      "Capital",
-      "Avance tecnologico",
-      "Fuerza de trabajo",
-      "Producto"
-     ],
-     "autores": [],
-     "referencias": [
-      "https://www.econlink.com.ar/crecimiento-econ/modelo-de-solow"
-     ],
-     "teoria": "",
-     "equation": "Y=A\\cdot F(K,N)"
-    },
-    {
-     "id": "8",
-     "nombre": "Residuo de Solow",
-     "tipo": "Macroeconomia",
-     "descripcion": "Algunos autores definen A como la productividad Marginal de todos los factores, y debido a que los factores y los productos son observables pero A no lo es, entonces simplemente se da vuelta a la ecuación de la tasa de crecimiento,",
-     "year": "",
-     "conceptos": [
-      "Productividad",
-      "Productos",
-      "Tasa",
-      "Crecimiento"
-     ],
-     "autores": [],
-     "referencias": [
-      "https://www.econlink.com.ar/crecimiento-econ/modelo-de-solow"
-     ],
-     "views": 2
-    },
-    {
-     "id": "9",
-     "nombre": "TERCERA LEY DE KALDOR",
-     "tipo": "Macroeconomia",
-     "descripcion": "Cuanto más rápido es el crecimiento del producto manufacturero más rápida es la tasa de transferencia de trabajo de los sectores no manufactureros a la industria, de modo que el crecimiento de la productividad total de la economía está asociado positivamente con el crecimiento del producto y del empleo industrial y correlacionado negativamente con el crecimiento del empleo fuera del sector manufacturero.",
-     "year": "",
-     "conceptos": [
-      "Manufactura",
-      "Industria",
-      "Productividad",
-      "Empleo",
-      "Trabajo"
-     ],
-     "autores": [],
-     "referencias": [],
-     "teoria": "",
-     "equation": "",
-     "views": 2
-    },
-    {
-     "id": "10",
-     "nombre": "SEGUNDA LEY DE KALDOR",
-     "tipo": "Macroeconomia",
-     "descripcion": "Existe una fuerte relación positiva entre el crecimiento de la productividad en la industria manufacturera y la tasa de crecimiento del producto.",
-     "year": "",
-     "conceptos": [
-      "Crecimiento",
-      "Producto",
-      "Productividad"
-     ],
-     "autores": [],
-     "referencias": []
-    },
-    {
-     "id": "11",
-     "nombre": "PRIMERA LEY DE KALDOR",
-     "tipo": "Macroeconomia",
-     "descripcion": "Existe una fuerte relación de causalidad que va del crecimiento del producto manufacturero al crecimiento del PIB.",
-     "year": "",
-     "conceptos": [
-      "Crecimiento",
-      "Producto",
-      "PIB"
-     ],
-     "autores": [],
-     "referencias": [],
-     "views": 2
-    },
-    {
-     "id": "12",
-     "nombre": "Crecimiento Económico",
-     "tipo": "Macroeconomia",
-     "descripcion": "De la condición de equilibrio macroeconómico tenemos:",
-     "year": "",
-     "conceptos": [
-      "Equilibrio"
-     ],
-     "autores": [],
-     "referencias": [],
-     "views": 1
-    },
-    {
-     "id": "13",
-     "nombre": "Participación de los beneficios en el ingreso nacional",
-     "tipo": "Macroeconomia",
-     "descripcion": "Dividiendo entre Y (ingresos),Esto significa que depende directamente del coeficiente de inversión dado las diversas propensiones marginales ahorrar.",
-     "year": "",
-     "conceptos": [
-      "Ingreso",
-      "Ahorro"
-     ],
-     "autores": [],
-     "referencias": []
-    },
-    {
-     "id": "14",
-     "nombre": "Ecuación de ahorro de Kaldor",
-     "tipo": "Macroeconomia",
-     "descripcion": "Plantea que el ahorro agregado va depender directamente del ingreso nacional y de los beneficios dado el producto marginal ahorrar ( PMgs) de las clases sociales.",
-     "year": "",
-     "conceptos": [
-      "Ingreso",
-      "Ahorro",
-      "Beneficios"
-     ],
-     "autores": [],
-     "referencias": []
-    },
-    {
-     "id": "15",
-     "nombre": "Ecuación de comportamiento",
-     "teoria": "",
-     "tipo": "Macroeconomia",
-     "descripcion": "El ahorro de los capitalistas ( c s ), depende directamente de su ingreso de los beneficios dado su producto marginal ahorrar de los capitalistas ( PMgsc ), donde; PMgsc =1",
-     "year": "",
-     "conceptos": [
-      "Ingreso",
-      "Ahorro"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": ""
-    },
-    {
-     "id": "16",
-     "nombre": "Modelo de Kaldor",
-     "teoria": "",
-     "tipo": "Macroeconomia",
-     "descripcion": "El producto por el lado del ingreso es igual a la suma de la masa de salario y la masa de beneficio.",
-     "year": "",
-     "conceptos": [
-      "Producto",
-      "Salario",
-      "Ahorro",
-      "Capitalistas",
-      "Trabajadores"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "",
-     "views": 2
-    },
-    {
-     "id": "17",
-     "nombre": "MODELO IS-LM",
-     "teoria": "TEORIA KEYNESIANA Y NEOCLÁSICA",
-     "tipo": "Macroeconomia",
-     "descripcion": "ES UN MODELO MACROECONÓMICO QUE MUESTRA LOS EQUILIBRIOS SIMULTANEOS DEL MERCADO DE BIENES Y DE DINERO",
-     "year": "1937",
-     "conceptos": [
-      "Demanda agregada",
-      "Mercado de bienes",
-      "Mercado de dinero",
-      "Inversión",
-      "Gasto agregado"
-     ],
-     "autores": [
-      "John Hicks",
-      "Alvin Hansen"
-     ],
-     "referencias": [
-      "Macroeconomía de Blanchard",
-      "Macroeconomía de Felipe Larraín",
-      "Macroeconomía de Krugman",
-      "Macroeconomía de Mankiw"
-     ],
-     "equation": "IS\\ =\\ LM",
-     "views": 1
-    },
-    {
-     "id": "18",
-     "nombre": "Modelo de Consumo",
-     "teoria": "Teoría keynesiana de consumo",
-     "tipo": "Macroeconomia",
-     "descripcion": "Keynes postula que la propensión marginal a consumir (b), es decir, la tasa de cambio del consumo generado por una unidad (digamos, un dólar) de cambio en el ingreso (I), es mayor que cero pero menor que uno. C-Consumo",
-     "year": "2010",
-     "conceptos": [
-      "Consumo",
-      "Ingreso"
-     ],
-     "autores": [
-      "Damodar N. Gujarati",
-      "Dawn C. Porter"
-     ],
-     "referencias": [],
-     "equation": "C\\ =\\ a\\ +\\ b\\ I",
-     "views": 3
-    },
-    {
-     "id": "19",
-     "nombre": "Multiplicador del ingreso",
-     "teoria": "Teoría macroeconómica",
-     "tipo": "Macroeconomia",
-     "descripcion": "M-Multiplicador del ingreso \nPMC-Propensión Marginal de Consumo",
-     "year": "2010",
-     "conceptos": [
-      "Multiplicador del ingreso",
-      "Propensión Marginal de Consumo"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "M\\ =\\frac{1}{1-PMC}",
-     "views": 1
-    },
-    {
-     "id": "20",
-     "nombre": "CAPM",
-     "teoria": "Moderna de portafolios",
-     "tipo": "Macroeconomia",
-     "descripcion": "CAPM-asignación de precios de activos de capital ERi = tasa esperada de rendimiento del título i. ERm = tasa esperada de rendimiento del portafolios del mercado como la representa. rf = tasa de rendimiento libre de riesgo. Bi = riesgo sistemático, es decir, es una medida del grado en el cual la i-ésima tasa de rendimiento del título se mueve con el mercado. Un Bi > 1 implica un título volátil o riesgoso, mientras que βi < 1 es un título seguro. (Nota: No confunda esta βi con el coeficiente de la pendiente)",
-     "year": "2010",
-     "conceptos": [
-      "Precios",
-      "Activos de capital",
-      "Rendimiento del portafolio",
-      "Rendimiento del título",
-      "Riesgo sistemático"
-     ],
-     "autores": [
-      "Gujarati"
-     ],
-     "referencias": [
-      "Gujarati (2010) Econometría"
-     ],
-     "equation": "\\left(ERi-Erf\\right)=\\left(ERm-rf\\right)Bi"
-    },
-    {
-     "id": "21",
-     "nombre": "Producción Cobb-Douglas",
-     "teoria": "Teoría de producción",
-     "tipo": "Microeconomia",
-     "descripcion": "Y = producción X2 = insumo trabajo X3 = insumo capital u = término de perturbación estocástica e = base del logaritmo natural β2 es la elasticidad (parcial) de la producción respecto del insumo trabajo, con el insumo capital constante β3 es la elasticidad (parcial) de la producción respecto del insumo capital, con el insumo trabajo constante. (β2 + β3) da información sobre los rendimientos a escala",
-     "year": "2010",
-     "conceptos": [
-      "Insumo de trabajo",
-      "Producción",
-      "Insumo de capital"
-     ],
-     "autores": [
-      "Gujarati"
-     ],
-     "referencias": [
-      "Gujarati (2010) Econometría"
-     ],
-     "equation": "Y=AK^{\\alpha}L^{\\beta}",
-     "views": 1
-    },
-    {
-     "id": "22",
-     "nombre": "Costo de corto plazo",
-     "teoria": "Teoría elemental de precios",
-     "tipo": "Microeconomia",
-     "descripcion": "En el corto plazo, las curvas de costo marginal de producción (CM) y de costo promedio (CP) en general tienen forma de U (al principio), a medida que la producción aumenta tanto el CM como el CP decrecen, pero, después de un nivel dado de producción, ambas vuelven a aumentar, de nuevo como consecuencia de la ley de rendimientos decrecientes. Y = costo total y X = producción. Si se desea observar las curvas de costo marginal y promedio de corto plazo en la forma típica de U: 1. β0, β1 y β3 > 0 2. β2 < 0 3. β2 2 < 3β1β3",
-     "year": "2010",
-     "conceptos": [
-      "Costo total",
-      "Producción"
-     ],
-     "autores": [],
-     "referencias": [
-      "Gujarati (2010) Econometría"
-     ],
-     "equation": "Y_i=B_0+B_1X_i+B_2X_i^2+B_3X_i^3",
-     "views": 1
-    },
-    {
-     "id": "23",
-     "nombre": "DEMANDA MONETARIA",
-     "teoria": "Teoria neoclásica",
-     "tipo": "Macroeconomia",
-     "descripcion": "La demanda monetaria es la cantidad de dinero que requieren o solicitan los agentes económicos. Nos muestra la cantidad de dinero que se demanda a un determinado ingreso y una determinada tasa de interés. Un aumento del ingreso desplaza la demanda hacia arriba. Mientras que los cambios en las tasas de interés provocan un movimiento a lo largo de la curva; a mayor tasa de interés menor cantidad de dinero demandada.",
-     "year": "1950",
-     "conceptos": [
-      "Tasas de interés",
-      "Ingreso"
-     ],
-     "autores": [
-      "Mill",
-      "Wicksell",
-      "Fisher",
-      "Walras"
-     ],
-     "referencias": [
-      "Mankiw",
-      "Krugman",
-      "Blanchard"
-     ],
-     "equation": "DM=KY-Hi",
-     "views": 1
-    },
-    {
-     "id": "24",
-     "nombre": "El índice I de Moran",
-     "teoria": "El índice I de Moran",
-     "tipo": "Economía Regional",
-     "descripcion": "es una adaptación de una medida de correlación no-espacial a un contexto espacial y se aplica normalmente a unidades espaciales donde hay disponibilidad de información en forma de razones o intervalos",
-     "year": "2008",
-     "conceptos": [
-      "observación, desviación",
-      "espacio, información"
-     ],
-     "autores": [
-      "Oscar Luis Alonso Cienfuegos",
-      "Ingrid Acevedo Bohórquez Ermilson Velásquez Ceballos"
-     ],
-     "referencias": [
-      "Acevedo Bohorquez, I., Velasquez Ceballos, E., (2008)Algunos conceptos de la econometria espacial yel analisis exploratorio de datos espaciales. Ecos de Economía, (27) 9-34."
-     ],
-     "equation": "I=(n/ƩƩwij)(y´Wy/yý)"
-    },
-    {
-     "id": "25",
-     "nombre": "Cocientes de localización y especialización",
-     "teoria": "Indicadores estáticos de estructura",
-     "tipo": "Economía Regional",
-     "descripcion": "la contribución a la economía nacional de cada región (j) sector por sector, la contribución a la economía nacional de cada sector (i) región por región",
-     "year": "2010",
-     "conceptos": [
-      "espacio, información"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "(Xij/ƩXij)/(ƩiXij/ƩiƩjXij)"
-    },
-    {
-     "id": "26",
-     "nombre": "Participación",
-     "teoria": "indicadores estáticos de estructura",
-     "tipo": "Economía Regional",
-     "descripcion": "Una relación que mide la participación relativa por sector al interior de cada región",
-     "year": "2010",
-     "conceptos": [
-      "contribución región",
-      "participación relativa, sector"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Xij/ƩXij"
-    },
-    {
-     "id": "27",
-     "nombre": "La productividad y crecimiento del producto",
-     "teoria": "La teoría de la causación acumulativa",
-     "tipo": "Economía Regional",
-     "descripcion": "La tasa de crecimiento de la productividad esta en función de la tasa de crecimiento del producto de manera que las regiones incrementan la productividad tanto mas intensamente crece su producto.",
-     "year": "2010",
-     "conceptos": [
-      "participación relativa, sector"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "\\pi i=f1i(y2/yi)"
-    },
-    {
-     "id": "28",
-     "nombre": "Base económica regional",
-     "teoria": "Indicadores de competitividad",
-     "tipo": "Economía Regional",
-     "descripcion": "Valor de la producción exportable del sector u de la región asumiendo un posible factor de competitividad.",
-     "year": "2010",
-     "conceptos": [
-      "participación relativa, sector",
-      "producción, región, factor"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "PBj=\\sum_{ }^{ }(i=1)^nPBij=PBj"
-    },
-    {
-     "id": "29",
-     "nombre": "coeficiente de localización concentración.",
-     "teoria": "Indicadores de distribución",
-     "tipo": "Economía Regional",
-     "descripcion": "Una medida al grado de similitud de la distribución interregional de cada sector con respecto a la distribución del patrón de comparación, que generalmente es la distribución del total de la actividad económica nacional.",
-     "year": "2010",
-     "conceptos": [
-      "distribución, patrón de comparación"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "CfLi=1/2Ʃ(n/J=I)I(Xij/(Ʃ(n/J=1)=XiJ)-(Ʃ(n/J=1)=XiJ)/(Ʃ(n/i=I))(Ʃ(n/j=I))=XijI"
-    },
-    {
-     "id": "30",
-     "nombre": "Coeficiente de asociación geográfica",
-     "teoria": "Indicadores de distribución",
-     "tipo": "Economía Regional",
-     "descripcion": "Una medida al grado de la relación aproximación entre la participación de un sector dentro de la economía regional y la participación de otro sector.",
-     "year": "2010",
-     "conceptos": [
-      "distribución, patrón de comparación, región, factor",
-      "grado de relación"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Cai,k=1/2(Ʃ(n/j=1)I((Xij/Ʃ(n/j=1)=Xij)-(Xkj/(n/j=1)=Xkj)"
-    },
-    {
-     "id": "31",
-     "nombre": "Coeficientes de localización simple.",
-     "teoria": "Técnicas indirectas (non-survey)",
-     "tipo": "Economía Regional",
-     "descripcion": "Proveen estimaciones de flujos y coeficientes de comercio regional al comparar la participación porcentual de una industria en una región con la participación porcentual de esa misma industria a nivel nacional.",
-     "year": "2017",
-     "conceptos": [
-      "distribución, patrón de comparación, región, factor",
-      "grado de relación",
-      "estimación de flujos, porcentual, industria"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "SLQ=(VBPSi,Ru/VBPRu)/(VBPSi.TP/VBPTP)"
-    },
-    {
-     "id": "32",
-     "nombre": "Coeficientes de localización solo de compra",
-     "teoria": "Técnicas indirectas (non-survey)",
-     "tipo": "Economía Regional",
-     "descripcion": "\"Proponen como variante que la suma de la produccion total usada en el calculo del coeficiente de localizacion deberia ser limitada solo a aquellas industrias que hacen compras de la industria i en la region y en la nacion respecificamente. XjR(X¡N) es el producto del sector i regional (nacional), X*R (X*N) representan el output \nde aquellos sectores regionales y nacionales que utilizan el input i.\"",
-     "year": "2017",
-     "conceptos": [
-      "estimación de flujos, porcentual, industria",
-      "producción, región, factor",
-      "producción, localización"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "q*i=(X_t^R/X*R)/(X_i^N/X*N)"
-    },
-    {
-     "id": "33",
-     "nombre": "Coeficientes de localización interindustrial (industria cruzada)",
-     "teoria": "Técnicas indirectas (non-survey)",
-     "tipo": "Economía Regional",
-     "descripcion": "Toma en cuenta la importancia relativa de la industria vendedora i en la region, asi como tambien la industria compradora j. El coeficiente compra la proporcion de la produccion nacional de la industria vendedora i en la region, con la proporcion para la industria compradora j. Donde, VBPSi,Ru es el valor bruto de producción del sector i en la región u, VBPSi,TP es el valor bruto de producción del sector i en el total del país, VBPSj,Ru es el valor bruto de producción del sector j en la región u, y VBPSj,TP es el valor bruto de producción del sector j en el total del país. \n",
-     "year": "2017",
-     "conceptos": [
-      "contribución región",
-      "espacio, información",
-      "coeficiente compra, industria"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "CILQij=(VBPSi,Ru/VBPSi,TP)/(VBPSj,Ru/VBPSj,TP)=SLQi/SLQj"
-    },
-    {
-     "id": "34",
-     "nombre": "Consistencia de la matriz regional",
-     "teoria": "Producción tipo Leontief",
-     "tipo": "Economía Regional",
-     "descripcion": "Se trata de resolver de la manera expuesta en el punto anterior considerando las adecuaciones pertinentes para el caso de una matriz regional.",
-     "year": "2017",
-     "conceptos": [
-      "contribución región",
-      "producción, región, factor",
-      "producción, localización",
-      "producción, matriz"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "RX+Y=X"
-    },
-    {
-     "id": "35",
-     "nombre": "Renta del suelo",
-     "teoria": "Espacio rural",
-     "tipo": "Economía Regional",
-     "descripcion": "sistema de localizaciones optimas, representando a la renta del suelo R representa la diferencia entre un precio de venta P que se supone constante un coste de producción C igualmente fijo y el coste de transporte T que se eleva con la distancia.",
-     "year": "1983",
-     "conceptos": [
-      "contribución región",
-      "producción, localización",
-      "localización, optimización"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "R=P-C-T=B-ad"
-    },
-    {
-     "id": "36",
-     "nombre": "Concentración ",
-     "teoria": "Concentración",
-     "tipo": "Economía Regional",
-     "descripcion": "Una medida simple de la concentración es el porcentaje de las empresas mas grandes en total industria.",
-     "year": "2012",
-     "conceptos": [
-      "localización, optimización",
-      "coeficiente compra, industria",
-      "porcentaje, industria "
-     ],
-     "autores": [
-      "Flor Brown y Lilia Domínguez"
-     ],
-     "referencias": [
-      "Brown Grossman, F., & Dominguez Villalobos, L. (2012). Organización Industrial teoría y aplicaciones al caso mexicano (2nd ed.)."
-     ],
-     "equation": "C=Ʃ((k)(i=1))Si"
-    },
-    {
-     "id": "37",
-     "nombre": "Coeficientes corrientes",
-     "teoria": "Insumo-producto",
-     "tipo": "Economía Regional",
-     "descripcion": "se establece una matriz diagonal con los coeficientes corrientes por filas obtenidos por cocientes entre el total conocido de insumos intermedios por filas y el estimado.",
-     "year": "2017",
-     "conceptos": [
-      "localización, optimización",
-      "coeficiente compra, industria",
-      "coeficientes, insumos intermediarios"
-     ],
-     "autores": [
-      "(Pino & Illanes), Edgar D. Edgar D. Gaytan Alfaro, Rigoberto Jiménez Diaz y Aldo A. Pérez Escatel."
-     ],
-     "referencias": [
-      "Alfaro, É. D. G., Jiménez Díaz, R., & Pérez Escatel, A. A. (2019). Matriz de insumo-producto para la economía del estado de Zacatecas, un enfoque de clústers. Colofón, S.A. de C.V."
-     ],
-     "equation": "r1=[u1]*[u1]-1"
-    },
-    {
-     "id": "38",
-     "nombre": "multiplicadores de insumo producto",
-     "teoria": "interregional",
-     "tipo": "Economía Regional",
-     "descripcion": "Su planteamiento es importante dado que de este deriva la estimación de multiplicadores directos, directos-indirectos y ponderados",
-     "year": "2017",
-     "conceptos": [
-      "multiplicadores, directos, producto"
-     ],
-     "autores": [
-      "(Leontief, Miller y Blair)Edgar D. Edgar D. Gaytán Alfaro, Rigoberto Jiménez Diaz y Aldo A. Pérez Escatel."
-     ],
-     "referencias": [
-      "Alfaro, É. D. G., Jiménez Díaz, R., & Pérez Escatel, A. A. (2019). Matriz de insumo-producto para la economía del estado de Zacatecas, un enfoque de clústers. Colofón, S.A. de C.V."
-     ],
-     "equation": "X´=(I-A)-1f"
-    },
-    {
-     "id": "39",
-     "nombre": "multiplicadores hacia atrás",
-     "teoria": "multiplicadores hacia atrás",
-     "tipo": "Economía Regional",
-     "descripcion": "miden la capacidad de una actividad de provocar o arrastrar el desarrollo de otras, dado que utiliza insumos procedentes de estas, con este multiplicador se registra el incremento en el valor bruto de la producción que es necesario llevar acabo en los diversos subsectores.",
-     "year": "2017",
-     "conceptos": [
-      "multiplicadores, directos, producto",
-      "capacidad, arrastre insumos"
-     ],
-     "autores": [
-      "(Leontief, Miller y Blair)Edgar D. Edgar D. Gaytán Alfaro, Rigoberto Jiménez Diaz y Aldo A. Pérez Escatel."
-     ],
-     "referencias": [],
-     "equation": "Lj=Ʃ((n)(i=1))lij"
-    },
-    {
-     "id": "40",
-     "nombre": "multiplicadores hacia adelante",
-     "teoria": "multiplicadores hacia adelante",
-     "tipo": "Economía Regional",
-     "descripcion": "Se presentan cuando una actividad ofrece determinado producto resulta ser el insumo de otro sector, que a su vez opera como estimulo para un tercer sector, este tipo de multiplicador cuantifica el incremento que alcanza en el valor bruto de la producción en un subsector ante un aumento unitario en la demanda final de todos los demás subsectores.",
-     "year": "2017",
-     "conceptos": [
-      "capacidad, arrastre insumos",
-      "producto, insumo, estimulo"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Li=Ʃ((n)(j=1))lij"
-    },
-    {
-     "id": "41",
-     "nombre": "localización de los productores",
-     "teoria": "Igualdad de precios de producción",
-     "tipo": "Economía Regional",
-     "descripcion": "la ecuación es un circulo centrado sobre la localización de los productos.",
-     "year": "1983",
-     "conceptos": [
-      "localización, optimización",
-      "localización, Precios"
-     ],
-     "autores": [
-      "Palender"
-     ],
-     "referencias": [
-      "Derycke, Pierre, H. (1983). La ciudad, el espacio y la teoría económica. Economía y planificación urbanas. Ed. Madrid: instituto de estudios de administración local. Pp. (81- 150)"
-     ],
-     "equation": "r=PB-PA/TA-TB"
-    },
-    {
-     "id": "42",
-     "nombre": "Función de producción largo plazo",
-     "teoria": "Teoría neoclásica",
-     "tipo": "Economía Regional",
-     "descripcion": "Explica el porque del crecimiento económico junto con sus variables a largo plazo",
-     "year": "2015",
-     "conceptos": [
-      "crecimiento económico"
-     ],
-     "autores": [
-      "Robert Solow"
-     ],
-     "referencias": [],
-     "equation": "Y=Ka(AL)l-a",
-     "views": 2
-    },
-    {
-     "id": "43",
-     "nombre": "Función de producción largo plazo",
-     "teoria": "Teoría neoclásica",
-     "tipo": "Economía Regional",
-     "descripcion": "Explica el porque del crecimiento económico junto con sus variables a largo plazo",
-     "year": "2015",
-     "conceptos": [
-      "crecimiento económico"
-     ],
-     "autores": [
-      "Robert Solow"
-     ],
-     "referencias": [],
-     "equation": "Y=Ka(AL)l-a",
-     "views": 2
-    },
-    {
-     "id": "44",
-     "nombre": "Crecimiento económico a corto plazo",
-     "teoria": "Teoría neoclásica",
-     "tipo": "Economía Regional",
-     "descripcion": "Mediante la idea de ciclo económico alrededor de una tendencia estocástica equivale al concepto de serie tiempo con tendencia en la media y en la varianza.",
-     "year": "2015",
-     "conceptos": [
-      "crecimiento económico",
-      "tiempo, tendencia, media y variable"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Yt=a+BYt-1+£t"
-    },
-    {
-     "id": "45",
-     "nombre": "Efectos de nivel",
-     "teoria": "Teoría neoclásica",
-     "tipo": "Economía Regional",
-     "descripcion": "El crecimiento es inducido por una variación externa en la tasa de aumento de la población o por una innovación, que harían el capital mas escaso y elevarían su productividad marginal.",
-     "year": "2015",
-     "conceptos": [
-      "crecimiento económico",
-      "tiempo, tendencia, media y variable",
-      "población, innovación, capital, productividad"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "K/Y=(K/L)(L/Y)"
-    },
-    {
-     "id": "46",
-     "nombre": "Productividad total de factores",
-     "teoria": "Teoría neoclásica",
-     "tipo": "Economía Regional",
-     "descripcion": "La diferenciación de los niveles y los de crecimiento y esa diferenciación afecta la tasa de crecimiento, en tanto que los efectos de nivel solo alteran la posición del sendero de crecimiento pero no la tasa.",
-     "year": "2015",
-     "conceptos": [
-      "crecimiento económico",
-      "tiempo, tendencia, media y variable",
-      "diferenciación, crecimiento"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "PTF=(0Y/Y-A(0K/K)-(1-a)0L/L"
-    },
-    {
-     "id": "47",
-     "nombre": "Crecimiento económico",
-     "teoria": "Teoría neoclásica",
-     "tipo": "Economía Regional",
-     "descripcion": "Con el incremento de la tasa de crecimiento de la productividad total de los factores y las elasticidades producto del capital y del trabajo en fuentes de crecimiento.",
-     "year": "2015",
-     "conceptos": [
-      "crecimiento económico",
-      "tiempo, tendencia, media y variable",
-      "diferenciación, crecimiento",
-      "incremento, elasticidad,crecimiento"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Yt=ΔPTF+ak+βl"
-    },
-    {
-     "id": "48",
-     "nombre": "Concentración económica espacial",
-     "teoria": "Concentración económica espacial",
-     "tipo": "Economía Regional",
-     "descripcion": "La ecuación de la concentración económica espacial es una relación que establece la interacción entre sitios económicos ij, entre las diferencias de producto endógeno creado en el sitio n, donde n=i,j, n, y la diferencia acumulada en el tiempo t del producto endógeno de los sitios n.",
-     "year": "2015",
-     "conceptos": [
-      "crecimiento económico"
-     ],
-     "autores": [
-      "Robert Solow",
-      "Normand Asuad Sanen."
-     ],
-     "referencias": [],
-     "equation": "CEEYi\")~((AkaI!'T\"JiU)+~(yAkiu)-yAkj(i)lJ-[(AkaI!'T\")j(i)+t,(yAkj(i)+yAki(i)l]",
-     "views": 1
-    },
-    {
-     "id": "49",
-     "nombre": "Producción endógena",
-     "teoria": "Concentración económica espacial",
-     "tipo": "Economía Regional",
-     "descripcion": "Especifica como una función de producción compuesta de tecnología endógena de rendimientos crecientes, Rc, del tipo Cobb-Douglas, cuya producción adicional es resultado de externalidades espaciales, ExE, que corresponden a externalidades de mercado T, que integran como un vector único la sinergia de externalidades tecnológicas k y de mercado Z del sitio i.",
-     "year": "2016",
-     "conceptos": [
-      "crecimiento económico",
-      "producto, endógeno",
-      "tecnología, rendimientos, crecimiento."
-     ],
-     "autores": [
-      "Robert Solow",
-      "Normand Asuad Sanen.",
-      "Pablo Jesús Medina Alias"
-     ],
-     "referencias": [
-      "Medina Alias, P. J. (2016), Las teorias de la localizacion en el contexto de la nueva geografia economica, Facultad de ciencias economicas y empresariales. Universidad de Almería."
-     ],
-     "equation": "YAki=AKatLβtTλt",
-     "views": 1
-    },
-    {
-     "id": "50",
-     "nombre": "Gradiante de diversificación",
-     "teoria": "Concentración económica espacial",
-     "tipo": "Economía Regional",
-     "descripcion": "Implica en todas direcciones al aumentar la distancia con respecto al centro la diversificación disminuye.",
-     "year": "2016",
-     "conceptos": [
-      "crecimiento económico",
-      "producto, endógeno",
-      "tecnología, rendimientos, crecimiento.",
-      "localización, precios",
-      "distancia, localización"
-     ],
-     "autores": [
-      "Pablo Jesús Medina Alias"
-     ],
-     "referencias": [],
-     "equation": "Si>dr<Sj"
-    },
-    {
-     "id": "51",
-     "nombre": "Modelo de efectos fijos",
-     "teoria": "Concentración económica espacial",
-     "tipo": "Economía Regional",
-     "descripcion": "la interpretación de esta prueba se realiza observando el valor de la hipótesis nula, Ho, que establece que el valor del intercepto es cero, al agregar variables que afectan el valor del intercepto, frente a la hipótesis alternativa de que es diferente de cero.",
-     "year": "2016",
-     "conceptos": [
-      "localización, precios",
-      "distancia, localización",
-      "intercepto, localización"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "F=((ESS1-ESS2)/(N-1))/(ESS2)/(TN-N-K))=F(N-1)(TN-N-K)"
-    },
-    {
-     "id": "52",
-     "nombre": "dependencia espacial",
-     "teoria": "dependencia espacial",
-     "tipo": "Economía Regional",
-     "descripcion": "Una colección de observaciones de datos muestrales se refiere al hecho de que una observación asociada con una localización la cual se puede denominar i, depende de otras observaciones asociadas con localizaciones ji",
-     "year": "2008",
-     "conceptos": [
-      "localización, precios",
-      "distancia, localización",
-      "intercepto, localización",
-      "localizacion, muestra."
-     ],
-     "autores": [
-      "Ingrid Acevedo Bohórquez Ermilson Velásquez Ceballos"
-     ],
-     "referencias": [
-      "Acevedo Bohorquez, I., Velasquez Ceballos, E., (2008)Algunos conceptos de la econometria espacial yel analisis exploratorio de datos espaciales. Ecos de Economía, (27) 9-34."
-     ],
-     "equation": "yi=f(yj)i=1,...,nji"
-    },
-    {
-     "id": "53",
-     "nombre": "Heterogeneidad Espacial",
-     "teoria": "Heterogeneidad Espacial",
-     "tipo": "Economía Regional",
-     "descripcion": "Se refiere a la variación en las relaciones sobre el espacio. En el más general de los casos se podría considerar que una relación diferente se presente para cada punto en el espacio.",
-     "year": "2008",
-     "conceptos": [
-      "localización, precios",
-      "distancia, localización",
-      "intercepto, localización",
-      "localizacion, muestra.",
-      "variación, espacio."
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "yi=XiEi+Hii=1,...,n"
-    },
-    {
-     "id": "54",
-     "nombre": "Heteroscedasticidad Espacial",
-     "teoria": "Heteroscedasticidad Espacial",
-     "tipo": "Economía Regional",
-     "descripcion": "consiste en la ausencia de estabilidad en la dispersión de un fenómeno, como sucede muchas veces con los residuos de una regresión.",
-     "year": "2008",
-     "conceptos": [
-      "estabilidad, región"
-     ],
-     "autores": [
-      "Ingrid Acevedo Bohórquez Ermilson Velásquez Ceballos"
-     ],
-     "referencias": [
-      "Acevedo Bohorquez, I., Velasquez Ceballos, E., (2008)Algunos conceptos de la econometria espacial yel analisis exploratorio de datos espaciales. Ecos de Economía, (27) 9-34."
-     ],
-     "equation": "Var(ui)=σ2i"
-    },
-    {
-     "id": "55",
-     "nombre": "Tiempo de concentración",
-     "teoria": "Tiempo de concentración",
-     "tipo": "Economía Regional",
-     "descripcion": "El tiempo de concentración (tc) se determina con la longitud (L) y pendiente del cauce principal (S), donde tc en h, L en m y S en decimales es determinada con el método de la pendiente media.",
-     "year": "2016",
-     "conceptos": [
-      "distancia, localización",
-      "variación, espacio.",
-      "concentración, longitud"
-     ],
-     "autores": [
-      "Domínguez-Mora, Ramón, Arganis-Juárez, Maritza L., Guzmán-García, Humberto, Carrizosa-Elizondo, Eliseo, Esquivel-Garduño, Gabriela, & Fuentes-Mariles, Guadalupe E.."
-     ],
-     "referencias": [
-      "Domínguez-Mora, Ramón, Arganis-Juárez, Maritza L., Guzmán-García, Humberto, Carrizosa-Elizondo, Eliseo, Esquivel-Garduño, Gabriela, & Fuentes-Mariles, Guadalupe E.. (2016). Modelos regionales de escurrimientos máximos instantáneos en la república mexicana. Tecnología y ciencias del agua, 7(5), 15-32. Recuperado en 07 de marzo de 2023, de http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2007-24222016000500015&lng=es&tlng=es."
-     ],
-     "equation": "tc=0.000325L0.77/S0.385"
-    },
-    {
-     "id": "56",
-     "nombre": "Curvas regionales para estimar la MQMIA",
-     "teoria": "Escurrimiento Hídrico",
-     "tipo": "Economía Regional",
-     "descripcion": "Donde MQMIA es la media de los gastos máximos anuales obtenida para cada estación hidrométrica de la región o grupo de regiones considerada, en m3/s; A, el área de la cuenca, en km2; tc, el tiempo de concentración en h; V, un indicador del volumen de precipitación en la cuenca, obtenido al multiplicar el área (km2) por la precipitación hp (mm) (determinada como el promedio en la cuenca de la media de las precipitaciones diarias máximas anuales.",
-     "year": "2016",
-     "conceptos": [
-      "variación, espacio.",
-      "concentración, longitud",
-      "hídrico, concentración"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "1MQMIA=C1AC22MQMIA=C1AC2tcc3"
-    },
-    {
-     "id": "57",
-     "nombre": "Coeficiente regional",
-     "teoria": "TECNICAS INDIRECTAS DE REGIONALIZACIÓN",
-     "tipo": "Economía Regional",
-     "descripcion": "Los coeficientes de comercio regional difieren de los nacionales sólo por un factor de participación del comercio regional ( q;) ·",
-     "year": "2001",
-     "conceptos": [
-      "participación relativa, sector",
-      "producción, localización",
-      "participación, comercio."
-     ],
-     "autores": [
-      "NOE ARON FUENTES, ALEJANDRO BRUGUÉS"
-     ],
-     "referencias": [
-      "Fuentes A. N., Burgues A., Modelos de insumo - producto regionales y procedimientes de regionalizacion. Revista Colombiana de Educacion. http://revistas.bancomext.gob.mx/rce/magazines/38/2/RCE.pdf"
-     ],
-     "equation": "rij=qij*aij"
-    },
-    {
-     "id": "58",
-     "nombre": "Coeficiente de localización interindustrial",
-     "teoria": "TECNICAS INDIRECTAS DE REGIONALIZACIÓN",
-     "tipo": "Economía Regional",
-     "descripcion": "El CLI considera la importancia relativa de la industria vendedora i en la región, así como la industria compradora}. El coeficiente compara la proporción de la producción nacional de la industria vendedora i en la región con la respectiva de la industria compradora j.",
-     "year": "2001",
-     "conceptos": [
-      "participación relativa, sector",
-      "producción, localización",
-      "participación, comercio.",
-      "industria compradora, proporción, producción"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "CLIrij=(Xri/Xni)/(Xrj/Xnj)"
-    },
-    {
-     "id": "59",
-     "nombre": "Coeficiente de localización semilogarítmico",
-     "teoria": "TECNICAS INDIRECTAS DE REGIONALIZACION",
-     "tipo": "Economía Regional",
-     "descripcion": "Los coeficientes de localización semilogarítmicos {CLS) proporcionan ajustes en los coeficientes regionales en tres sentidos: a] por el tamaño relativo del sector vendedor i; b] por el tamaño relativo del sector comprador, y e] por el tamaño relativo de la región. Ésta constituye una de las propuesta más recientes para estimar la economía regional, cuando la idea subyacente es encontrar un coeficiente q .. óptimo.",
-     "year": "2001",
-     "conceptos": [
-      "producción, localización",
-      "industria compradora, proporción, producción",
-      "proporción, localización, estimación, subyacente"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "λ=(Ert/Ent)/(log(1+Ert/Ent))"
-    },
-    {
-     "id": "60",
-     "nombre": "Ajustes de oferta-demanda",
-     "teoria": "TECNICAS INDIRECTAS DE REGIONALIZACION",
-     "tipo": "Economía Regional",
-     "descripcion": "El ajuste de oferta y demanda consiste en estimar balanzas comerciales regionales entre la producción regional de un bien y los requerimientos regionales del bien.",
-     "year": "2001",
-     "conceptos": [
-      "industria compradora, proporción, producción",
-      "oferta, demanda"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Ort=Xrt(i=1\\dots.n)",
-     "views": 1
-    },
-    {
-     "id": "61",
-     "nombre": "Modelo de regresión espacial",
-     "teoria": "Modelo de regresión espacial",
-     "tipo": "Economía Regional",
-     "descripcion": "La especificación correcta para una variable que presenta autocorrelación espacial, sólo en el caso de que este efecto espacial esté totalmente explicado por los valores de una o más variables explicativas, es decir, por condicionantes internos referidos a dicho lugar",
-     "year": "2015",
-     "conceptos": [
-      "autocorrelación, espacial"
-     ],
-     "autores": [
-      "Oscar Luis Alonso Cienfuegos"
-     ],
-     "referencias": [
-      "Cienfuegos A., L., O. (2015). La econometría espacial un enfoque para el estudio a nivel de datos micro territoriales de la eficacia de las políticas de desarrollo rural cofinanciadas por la unión europea el caso de Austrias. (Tesis en doctorado en ciencias económicas y empresariales, Universidad de Magala)"
-     ],
-     "equation": "y=Xβ+u"
-    },
-    {
-     "id": "62",
-     "nombre": "Diagrama de dispersión de Moran.",
-     "teoria": "Diagrama de dispersión de Moran.",
-     "tipo": "Economía Regional",
-     "descripcion": "N es el nº observaciones, S0 es la suma de todos los elementos de la matriz de pesos espaciales, y’es el vector de observaciones en desviaciones a la media, Wy’ es el retardo espacial asociado a la variable y en desviaciones a la media. Donde S0 es igual a N al estandarizar por filas la matriz de pesos espaciales haciendo que estas sumen I.",
-     "year": "2015",
-     "conceptos": [
-      "autocorrelación, espacial",
-      "variación",
-      "observación, desviación"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "I=Ny′WyS^yjy"
-    },
-    {
-     "id": "63",
-     "nombre": "operador de retardo espacial",
-     "teoria": "operador de retardo espacial",
-     "tipo": "Economía Regional",
-     "descripcion": "El retardo espacial considera la suma ponderada de todos los valores de una variable que pertenecen a un mismo criterio de contigüidad (torre/alfil/reina), en vez de tomar individualmente cada uno de ellos. Los términos de esta suma se obtienen multiplicando las observaciones en cuestión (yi) por sus correspondientes pesos de la matriz de ponderaciones W",
-     "year": "2015",
-     "conceptos": [
-      "autocorrelación, espacial",
-      "observación, desviación",
-      "retardo, multiplicador, ponderación"
-     ],
-     "autores": [
-      "Oscar Luis Alonso Cienfuegos"
-     ],
-     "referencias": [
-      "Cienfuegos A., L., O. (2015). La econometría espacial un enfoque para el estudio (Tesis en doctorado en ciencias económicas y empresariales, Universidad de Magala)"
-     ],
-     "equation": "Bsyi=\\sum_{ }^{ }jwijyj"
-    },
-    {
-     "id": "64",
-     "nombre": "Modelo autorregresivo de regresión espacial.",
-     "teoria": "Modelo autorregresivo de regresión espacial.",
-     "tipo": "Economía Regional",
-     "descripcion": "n los casos en los que se detecta la existencia de dependencia entre los valores que toma una variable en un lugar concreto (i) y los valores que toma la misma variable en otras zonas del espacio (j). Es decir la Cov (yi yj) ≠ 0",
-     "year": "2015",
-     "conceptos": [
-      "autocorrelación, espacial",
-      "zona, espacio"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "V=àâV+ãu\\approx N(0,σ2I)"
-    },
-    {
-     "id": "65",
-     "nombre": "Modelo del error espacial.",
-     "teoria": "Modelo del error espacial.",
-     "tipo": "Economía Regional",
-     "descripcion": "Suele ocurrir cuando se da una incorrecta especificación del modelo básico de regresión espacial, lo que hace que el término de perturbación aleatoria recoja las características propias de dependencia espacial que se dan en la variable endógena y que no son consideradas por las variables explicativas.",
-     "year": "2015",
-     "conceptos": [
-      "autocorrelación, espacial",
-      "zona, espacio",
-      "especificación, regresión, perturbación"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "V=åç+ãu=λWu+εε\\approx N(0,σ2I)"
-    },
-    {
-     "id": "66",
-     "nombre": "Modelo básico de regresión espacial.",
-     "teoria": "Modelo básico de regresión espacial.",
-     "tipo": "Economía Regional",
-     "descripcion": "El MBRL será la especificación correcta para una variable que presenta autocorrelación espacial, sólo en el caso de que este efecto espacial esté totalmente explicado por los valores de una o más variables explicativas, es decir, por condicionantes internos referidos a dicho lugar i",
-     "year": "2015",
-     "conceptos": [
-      "autocorrelación, espacial",
-      "zona, espacio",
-      "especificación, regresión, perturbación",
-      "espacio, autocorrelación"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "V=åç+ãu\\approx N(0,σ2I)"
-    },
-    {
-     "id": "67",
-     "nombre": "Modelo del retardo espacial.",
-     "teoria": "ANÁLISIS CONFIRMATORIO DE DATOS ESPACIALES",
-     "tipo": "Economía Regional",
-     "descripcion": "El modelo básico de regresión espacial tampoco recoge en su totalidad la autocorrelación espacial a través de las variables explicativas. Esto hace que se incorpore en este modelo una variable dependiente espacialmente retardada que lo recoja.",
-     "year": "2015",
-     "conceptos": [
-      "regresion, espacio"
-     ],
-     "autores": [
-      "Oscar Luis Alonso Cienfuegos"
-     ],
-     "referencias": [
-      "Cienfuegos A., L., O. (2015). La econometría espacial un enfoque para el estudio (Tesis en doctorado en ciencias económicas y empresariales, Universidad de Magala)"
-     ],
-     "equation": "V=àâV+åç+ãu\\approx N(0,σ2I)"
-    },
-    {
-     "id": "68",
-     "nombre": "Modelo mixto regresivo de regresión espacial",
-     "teoria": "Dependencia espacial sustantiva de primer orden.",
-     "tipo": "Economía Regional",
-     "descripcion": "Modelo mixto regresivo de regresión espacial, con perturbaciones aleatorias autorregresivas y heteroscedásticas",
-     "year": "2015",
-     "conceptos": [
-      "autocorrelación, espacial",
-      "especificación, regresión, perturbación",
-      "espacio, autocorrelación",
-      "perturbaciones, aleatorias, autorregresivas y heteroscedásticas"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "V=àâZV+åçZ+âféçf+ãu=λW3u+εε\\approx N(0,Ω);Ωii=hi(Zα);hi\\ge0."
-    },
-    {
-     "id": "69",
-     "nombre": "Modelo mixto regresivo-autorregresivo espacial de primer orden",
-     "teoria": "Dependencia espacial sustantiva de primer orden.",
-     "tipo": "Economía Regional",
-     "descripcion": "Modelo mixto regresivo-autorregresivo espacial de primer orden (modelo del retardo espacial)",
-     "year": "2015",
-     "conceptos": [
-      "autocorrelación, espacial",
-      "especificación, regresión, perturbación",
-      "espacio, autocorrelación",
-      "perturbaciones, aleatorias, autorregresivas y heteroscedásticas",
-      "regresivo, autorregresivo, espacial"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "V=àâZV+åçZ+ãu\\approx N(0,σ2I)"
-    },
-    {
-     "id": "70",
-     "nombre": "Modelo mixto regresivo-autorregresivo espacial con perturbaciones",
-     "teoria": "Dependencia espacial sustantiva de primer orden.",
-     "tipo": "Economía Regional",
-     "descripcion": "Modelo mixto regresivo-autorregresivo espacial con perturbaciones espaciales autorregresivas",
-     "year": "2015",
-     "conceptos": [
-      "autocorrelación, espacial",
-      "especificación, regresión, perturbación",
-      "espacio, autocorrelación",
-      "perturbaciones, aleatorias, autorregresivas y heteroscedásticas",
-      "regresivo, autorregresivo, espacial",
-      "perturbaciones, espaciales, autorregresivas"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "V=àâZV+åçZ+ãu=λW2u+εε\\approx N(0,σ2I)",
-     "views": 1
-    },
-    {
-     "id": "71",
-     "nombre": "Modelo mixto regresivo-regresivo espacial",
-     "teoria": "Dependencia espacial sustantiva de primer orden.",
-     "tipo": "Economía Regional",
-     "descripcion": "Modelo mixto regresivo-regresivo espacial",
-     "year": "2015",
-     "conceptos": [
-      "regresión, espacio"
-     ],
-     "autores": [
-      "Oscar Luis Alonso Cienfuegos"
-     ],
-     "referencias": [
-      "Cienfuegos A., L., O. (2015). La econometría espacial un enfoque para el estudio (Tesis en doctorado en ciencias económicas y empresariales, Universidad de Magala)"
-     ],
-     "equation": "V=àâZV+åçZ+âféçf+ã"
-    },
-    {
-     "id": "72",
-     "nombre": "Modelo mixto regresivo cruzado-regresivo espacial",
-     "teoria": "Dependencia espacial sustantiva de primer orden.",
-     "tipo": "Economía Regional",
-     "descripcion": "Modelo mixto regresivo cruzado-regresivo espacial",
-     "year": "2015",
-     "conceptos": [
-      "regresión, espacio",
-      "espacio,  autocorrelación"
-     ],
-     "autores": [
-      "Oscar Luis Alonso Cienfuegos"
-     ],
-     "referencias": [
-      "Cienfuegos A., L., O. (2015). La econometría espacial un enfoque para el estudio (Tesis en doctorado en ciencias económicas y empresariales, Universidad de Magala)"
-     ],
-     "equation": "V=àâZV+âféçf+ã"
-    },
-    {
-     "id": "73",
-     "nombre": "Externalidades espaciales globales.",
-     "teoria": "Modelos de dependencia espacial GLOBAL",
-     "tipo": "Economía Regional",
-     "descripcion": "Se utilizan cuando una externalidad tiene lugar en la variable y de la región i y esto hace que se extienda al resto de regiones, recogiéndose en el modelo como un multiplicador espacial. Se produce en modelos que siguen un proceso autorregresivo espacial (SAR) y donde la Cov (yi , yj ) ≠ 0, al transmitirse el impacto en i a todas las regiones..",
-     "year": "2015",
-     "conceptos": [
-      "autocorrelación, espacial",
-      "especificación, regresión, perturbación",
-      "espacio, autocorrelación",
-      "regresivo, autorregresivo, espacial"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "y=[I−ρW1]−1Xβ+[I−λW2]−1uy=[I−ρW]-1Xβ+[I−ρW]-1u"
-    },
-    {
-     "id": "74",
-     "nombre": "Externalidades espaciales locales.",
-     "teoria": "Modelos de dependencia espacial LOCAL",
-     "tipo": "Economía Regional",
-     "descripcion": "Impacto que se produce en la región i solo tiene influencia en las regiones vecinas, al menos hasta un grado limitado, y no en todas las demás, la dependencia es local. Incorporan dependencia espacial en las variables exógenas en el término de perturbación aleatoria, siguiendo procesos de medias móviles.",
-     "year": "2015",
-     "conceptos": [
-      "zona, espacio",
-      "proporción, localización, estimación, subyacente",
-      "regiones, limitación, localidad"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "y=Xβ1+W1Xβ2+(I+θW2)εy=(I+ρW)(Xβ+ε)"
-    },
-    {
-     "id": "75",
-     "nombre": "Modelo de heterocedasticidad aditiva.",
-     "teoria": "Modelo de heterocedasticidad aditiva.",
-     "tipo": "Economía Regional",
-     "descripcion": "La varianza de la perturbación aleatoria sería función lineal de Z variables heteroscedásticas, que no tienen por qué coincidir con las variables explicativas.",
-     "year": "2015",
-     "conceptos": [
-      "regrecion, espacio",
-      "perturbaciones, aleatorias, autorregresivas y heteroscedásticas",
-      "perturbaciones, espaciales, autorregresivas",
-      "perturbación, heterocedasticidad"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Var(u)=Zy"
-    },
-    {
-     "id": "76",
-     "nombre": "Modelo de heteroscedasticidad de coeficientes aleatorios.",
-     "teoria": "Modelo de heteroscedasticidad de coeficientes aleatorios.",
-     "tipo": "Economía Regional",
-     "descripcion": "En este caso la varianza es función del cuadrado de las variables heteroscedásticas.",
-     "year": "2015",
-     "conceptos": [
-      "perturbaciones, aleatorias, autorregresivas y heteroscedásticas",
-      "perturbaciones, espaciales, autorregresivas",
-      "perturbación, heterocedasticidad",
-      "heteroscedasticidad, varianza."
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Var(u)=Z^2γ"
-    },
-    {
-     "id": "77",
-     "nombre": "Modelo espacial de parámetros aleatorios, de Hildreth-Houck",
-     "teoria": "Modelos con inestabilidad paramétrica continua",
-     "tipo": "Economía Regional",
-     "descripcion": "Donde Xi es un vector fila (1 x K) de variables explicativas βi es un vector columna (K x 1) de coeficientes para cada observación i.",
-     "year": "2015",
-     "conceptos": [
-      "perturbaciones, aleatorias, autorregresivas y heteroscedásticas",
-      "perturbaciones, espaciales, autorregresivas",
-      "perturbación, heterocedasticidad",
-      "heteroscedasticidad, varianza.",
-      "parámetro,"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "yi=Xiβ"
-    },
-    {
-     "id": "78",
-     "nombre": "Modelo de superficie tendencial",
-     "teoria": "Modelos con inestabilidad paramétrica continua",
-     "tipo": "Economía Regional",
-     "descripcion": "Las variables explicativas de este modelo de regresión lineal son los elementos de un polinomio de las coordenadas terrestres de longitud (m) y latitud (p) correspondientes a la localización de una observación i en el espacio (mi , pi",
-     "year": "2015",
-     "conceptos": [
-      "localización, optimización",
-      "territorio"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "y=α+β1m+β2p+β3m2+β4p2+β6mp"
-    },
-    {
-     "id": "79",
-     "nombre": "Modelo de regresiones ponderadas geográficamente (RPG), de Fotheringham, Charlton y Brundsdon",
-     "teoria": "Modelos con inestabilidad paramétrica continua",
-     "tipo": "Economía Regional",
-     "descripcion": "Se trata de un modelo estimado por mínimos cuadrados ponderados donde los pesos son función de la distancia entre cada punto y el resto",
-     "year": "2015",
-     "conceptos": [
-      "localización, optimización",
-      "territorio",
-      "peso, distancia"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "yi=Xiβi+ui"
-    },
-    {
-     "id": "80",
-     "nombre": "Modelo ANOVA espacial (SANOVA)",
-     "teoria": "Modelos con inestabilidad paramétrica discreta",
-     "tipo": "Economía Regional",
-     "descripcion": "La aplicación espacial del modelo ANOVA tradicional. Se contrasta si el grado de variación entre una variable y la media de dicha variable en un grupo de datos es significativo o casual.",
-     "year": "2015",
-     "conceptos": [
-      "localización, optimización",
-      "territorio",
-      "peso, distancia",
-      "espacio, parámetro, "
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "y=β0+β1f+u"
-    },
-    {
-     "id": "81",
-     "nombre": "Modelo espacial de regresiones cambiantes (“switching regressions”)",
-     "teoria": "Modelos con inestabilidad paramétrica discreta",
-     "tipo": "Economía Regional",
-     "descripcion": "Se estiman tantos valores diferentes como estructuras o regiones cambiantes se hayan definido.",
-     "year": "2015",
-     "conceptos": [
-      "localización, optimización",
-      "territorio",
-      "espacio, parámetro, ",
-      "estructura, región"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "y1=X1β1+u1d=0"
-    },
-    {
-     "id": "82",
-     "nombre": "Test LM-LAG",
-     "teoria": "Contrastes de dependencia espacial sustantiva en modelos de regresión",
-     "tipo": "Economía Regional",
-     "descripcion": "Donde e es el vector de residuos MCO del modelo lineal comentado, Wy el termino espacial retardado, S2 la estimación de la varianza residual del mismo modelo y RJρ-β = [T1+(WXβ)´M(WXβ)/S2]",
-     "year": "2015",
-     "conceptos": [
-      "espacio, parámetro, "
-     ],
-     "autores": [
-      "Oscar Luis Alonso Cienfuegos",
-      "Pérez Pineda"
-     ],
-     "referencias": [],
-     "equation": "LM-LAG=[e'Wy/S2]/RJρ-β"
-    },
-    {
-     "id": "83",
-     "nombre": "Test LM-LE",
-     "teoria": "Contrastes de dependencia espacial sustantiva en modelos de regresión",
-     "tipo": "Economía Regional",
-     "descripcion": "El vector de residuos MCO del modelo lineal comentado, Wy el termino espacial retardado, S2 la estimación de la varianza residual del mismo modelo y RJρ-β = [T1+(WXβ)´M(WXβ)/S2] y con T1= Traza (W´W+W2)",
-     "year": "2015",
-     "conceptos": [
-      "espacio, parámetro, ",
-      "espacio, residuos"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "LM-LE=[(e'Wy/S2−e'We/S2)/(RJρ-β−T1)]2"
-    },
-    {
-     "id": "84",
-     "nombre": "I de Moran",
-     "teoria": "Contrastes de dependencia espacial residual en modelos de regresión",
-     "tipo": "Economía Regional",
-     "descripcion": "e es el vector de residuos de MCO de un modelo lineal, N el tamaño muestral y S = Σi Σj wij (la suma de los elementos wij de la matriz de pesos). En un contexto asintótico y el supuesto de residuos  no correlacionados, la I de moran estandarizada se distribuye como una normal estándar.",
-     "year": "2015",
-     "conceptos": [
-      "espacio, parámetro, ",
-      "espacio, residuos",
-      "pesos, residuos"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "I=(N/S)(e'We/e'e)"
-    },
-    {
-     "id": "85",
-     "nombre": "Test K-R (Kelejian- Robinson)",
-     "teoria": "Contrastes de dependencia espacial residual en modelos de regresión",
-     "tipo": "Economía Regional",
-     "descripcion": "Las variables explicativas de la regresión auxiliar Zh, están formadas por productos cruzados Xi y Xj . γ es el vector de coeficientes obtenido de MCO en una regresión de C en Z, y α el vector asociado a los residuos.",
-     "year": "2015",
-     "conceptos": [
-      "espacio, parámetro, ",
-      "espacio, residuos",
-      "pesos, residuos",
-      "productos, regresión, residuos"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "K-R=(γ'Z'Zγ)/(α'α/hR)"
-    },
-    {
-     "id": "86",
-     "nombre": "Test LM-ERR",
-     "teoria": "Contrastes de dependencia espacial residual en modelos de regresión",
-     "tipo": "Economía Regional",
-     "descripcion": "e es el vector de residuos de MCO, T1= Traza (W´W+W2), S2 la estimación de la varianza residual de dicho modelo. A diferencia de los dos estimadores anteriores este se distribuye como una χ2 con un grado de libertad.",
-     "year": "2015",
-     "conceptos": [
-      "productos, regresión, residuos"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "LM-ERR=[(e'We/S2)/T1]2"
-    },
-    {
-     "id": "87",
-     "nombre": "Test LM-EL",
-     "teoria": "Contrastes de dependencia espacial residual en modelos de regresión",
-     "tipo": "Economía Regional",
-     "descripcion": "M es una matriz idempotente y RJρ-β = [T1+(WXβ)´M(WXβ)/S2]. e es el vector de residuos MCO del modelo lineal comentado, Wy el termino espacial retardado, S2 la estimación de la varianza residual y T1= Traza (W´W+W2)",
-     "year": "2015",
-     "conceptos": [
-      "productos, regresión, residuos",
-      "estimación, grados de libertad",
-      "vector, varianza, espacio"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "LM-EL=[(e'We/S2)-T1(Rjρ-β)-1(e'Wy/S2)]2/[T1-T12(Rjρ-β)-1"
-    },
-    {
-     "id": "88",
-     "nombre": "test multidireccional SARMA",
-     "teoria": "test multidireccional SARMA",
-     "tipo": "Economía Regional",
-     "descripcion": "supone W1=W2=W, dónde e es el vector de residuos MCO del modelo bajo Ho y se distribuye bajo una χ 2 con dos grados de libertad.",
-     "year": "2015",
-     "conceptos": [
-      "residuos, multidireccional, grados de libertad."
-     ],
-     "autores": [
-      "Oscar Luis Alonso Cienfuegos"
-     ],
-     "referencias": [],
-     "equation": "SARMA=LM-ERR+LM-LE=LM-LAG+LM-EL"
-    },
-    {
-     "id": "89",
-     "nombre": "modelo mixto regresivo espacial autorregresivo con perturbaciones espaciales",
-     "teoria": "Multiplicador de Lagrange",
-     "tipo": "Economía Regional",
-     "descripcion": "Un contraste que evalúa la presencia simultánea de autocorrelación sustantiva y residual, basado en el Multiplicador de Lagrange, que para un modelo mixto regresivo espacial autorregresivo con perturbaciones espaciales, con estructura SARMA, contrastando simultáneamente para ρ y θ, bajo Ho= ρ = θ= 0,",
-     "year": "2015",
-     "conceptos": [
-      "residuos, multidireccional, grados de libertad.",
-      "Lagrange, espacio"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "SARMA=[(e'Wy/S2─e'We/S2)/(Rjρ-β─T1)]2+[(e'We/S2)/T1]2"
-    },
-    {
-     "id": "90",
-     "nombre": "Test SARMA multidireccional.",
-     "teoria": "Test SARMA multidireccional.",
-     "tipo": "Economía Regional",
-     "descripcion": "se basa en el multiplicador de Lagrange y permite estimar de forma conjunta la existencia de autocorrelación espacial sustantiva y residual. La hipótesis nula sería H0 (ρ=θ=0) ó H0 (ρ=λ=0).",
-     "year": "2015",
-     "conceptos": [
-      "residuos, multidireccional, grados de libertad.",
-      "Lagrange, espacio",
-      "espacio, residuos, Lagrange, dirección"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "SARMA=[[(e'Wy/s2)-(e'We/s2)]2/[RĴρ-β-T1]]+[(e'We/s2)2/T1]"
-    },
-    {
-     "id": "91",
-     "nombre": "La exposición a la innovación ",
-     "teoria": "Difusión espacial de innovaciones.",
-     "tipo": "Economía Regional",
-     "descripcion": "Sera función de la información que sobre ella se introduzca en un centro urbano dado.",
-     "year": "1978",
-     "conceptos": [
-      "tecnología, rendimientos, crecimiento.",
-      "innovación, urbano"
-     ],
-     "autores": [
-      "Luis Javier Posada"
-     ],
-     "referencias": [
-      "Agricultura y sociedad : revista ed. por la Secretaría General Técnica del Ministerio de Agricultura. - Vol. 6.1978, p. 137-180"
-     ],
-     "equation": "Jij=K(PiPj/d^bij)"
-    },
-    {
-     "id": "92",
-     "nombre": "Matriz de pesos espaciales",
-     "teoria": "Matriz de pesos espaciales",
-     "tipo": "Economía Regional",
-     "descripcion": "Esta matriz de pesos generalizada (W), en lugar de utilizar las ponderaciones binarias δij como cuantificación del concepto de vínculo, recoge el efecto de la región i sobre la región j a través de un peso o ponderación wij, de forma que W ≡ [wij]",
-     "year": "2003",
-     "conceptos": [
-      "peso, distancia",
-      "pesos, espacio."
-     ],
-     "autores": [
-      "Chasco Yrigoyen, C."
-     ],
-     "referencias": [
-      "Chasco Yrigoyen, C. (2003). Econometría espacial aplicada a la predicción-extrapolación de datos microterritoriales. Dirección General de Economía y Planificación."
-     ],
-     "equation": "2wij=dij^-2"
-    },
-    {
-     "id": "93",
-     "nombre": "Modelo de maximización de beneficio",
-     "teoria": "teoría de la empresa",
-     "tipo": "Microeconomia",
-     "descripcion": "Determinar la cantidad óptima de producción de una empresa para maximizar sus beneficios. Este modelo se basa en la suposición de que las empresas tienen como objetivo principal maximizar sus beneficios y toman decisiones en función de esta meta. B=beneficio IT=ingreso total  CT=costo total ",
-     "year": "2008",
-     "conceptos": [
-      "beneficio",
-      " ingreso total",
-      "costo total "
-     ],
-     "autores": [
-      "Nicholson, W."
-     ],
-     "referencias": [
-      "Nicholson, W. (2008). Teoría Micoeconómica: Principios básicos y ampliaciones"
-     ],
-     "equation": "B=IT-CT"
-    },
-    {
-     "id": "94",
-     "nombre": "Modelo de equilibrio general",
-     "teoria": "teoría microeconómica",
-     "tipo": "Microeconomia",
-     "descripcion": "Un modelo del conjunto de la economía que refleje adecuadamente las relaciones entre diversos mercados y agentes económicos. Walras un modelo que permita seguir los efectos que el cambio en un mercado produce en otros mercados. qD= cantidad demandada qS= cantidad ofertada",
-     "year": "2008",
-     "conceptos": [
-      "demanda",
-      "oferta"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "qD=qS"
-    },
-    {
-     "id": "95",
-     "nombre": "Modelo de Cournot",
-     "teoria": "teoría microeconómica",
-     "tipo": "Microeconomia",
-     "descripcion": "Supone que la empresa i cuando toma sus decisiones, considerando que la producción de la empresa j es fija, es decir, su derivada es igual a cero. Q= es la cantidad total demandada en el mercado y P= es el precio de mercado",
-     "year": "2008",
-     "conceptos": [
-      "demanda de mercado",
-      "precio de mercado "
-     ],
-     "autores": [
-      "Pindyck, R. S. and Rubinfeld, D.L."
-     ],
-     "referencias": [
-      "Pindyck, R. S. and Rubinfeld, D.L. (2013). Micoecnómia"
-     ],
-     "equation": "Q=D(P)",
-     "views": 1
-    },
-    {
-     "id": "96",
-     "nombre": "Modelo de stackelberg",
-     "teoria": "teoría microeconómica",
-     "tipo": "Microeconomia",
-     "descripcion": "Modelo del oligopolio en el que una empresa fija el nivel de producción antes que el resto. x=empresa líder y=la decisión del seguidor  π1(x,y)= función de beneficio del líder π2(x,y)=función de beneficio del seguidor ",
-     "year": "2013",
-     "conceptos": [
-      "empresa líder",
-      " decisión del seguidor",
-      "  función de beneficio del líder"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Maximizar\\pi1(x,y)\\ sujeto\\ a\\ y=y(x),Maximizar\\pi2(x,y)"
-    },
-    {
-     "id": "97",
-     "nombre": "Modelo de Bertrand",
-     "teoria": "teoría microeconómica",
-     "tipo": "Microeconomia",
-     "descripcion": "\"Modelo del oligopolio en el que las empresas producen un bien homogéneo, cada una considera fijo el precio de competidores y todas deciden simultáneamente el precio que van a cobrar. pA: el precio del producto de la empresa A\npB: el precio del producto de la empresa B\nD(pA,pB): la demanda del producto a los precios pA y pB\nc: el costo de producción del producto\"",
-     "year": "2013",
-     "conceptos": [
-      "precio del producto de la empresa",
-      "costo de producción del producto"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Maximizar\\pi A(pA,pB)\\ sujeto\\ a\\ \\ pA\\le pB\\ Maximizar\\pi B(pA,pB)\\ sujeto\\ a\\ pB\\le pA"
-    },
-    {
-     "id": "98",
-     "nombre": "Modelo de la fijación del precio de los activos de capital (MPAC)",
-     "teoria": "teoría microeconómica",
-     "tipo": "Microeconomia",
-     "descripcion": "\"Modelo en el que la prima de riesgo de una inversion de capital depende de la correlación entre el rendimiento de la inversión y el rendimeinto de todo el mercado de valores. P: el precio actual de la acción\nD1, D2, ..., Dn: los dividendos esperados de la empresa en los períodos 1, 2, ..., n, respectivamente.\nr: la tasa de descuento o la tasa de rentabilidad requerida por los inversores para invertir en la empresa.\ng: la tasa de crecimiento de los dividendos esperados de la empresa.\"",
-     "year": "2013",
-     "conceptos": [
-      "tasa de crecimiento",
-      "tasa de rentabilidad",
-      "precio actual "
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "P=(D1/r-g)+D1/(1+r)+D2/(1+r)^2+...+Dn/(1+r)^n"
-    },
-    {
-     "id": "99",
-     "nombre": "Modelo de los trabajadores que no se esfuerzan",
-     "teoria": "teoría económica neoclásica ",
-     "tipo": "Microeconomia",
-     "descripcion": "\"Principio según el cual los trabajadores aún tienen un incentivo para no esforzarse si una empresa les paga un salio que equilibra el mercado, ya que los trabajadores despedidos pueden ser contratados por otra empresa a cambio del mismo salario. w: el salario que recibe el trabajador\nx: la productividad del trabajador\nu: la fracción de tiempo que el trabajador no se esfuerza\"",
-     "year": "2013",
-     "conceptos": [
-      "salario",
-      "productividad ",
-      "tiempo "
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "w=(1-u)x",
-     "views": 2
-    },
-    {
-     "id": "100",
-     "nombre": "Modelo de la producción casera ",
-     "teoria": "teoría económica feminista",
-     "tipo": "Microeconomia",
-     "descripcion": "\"Es el supuesto de que los individuos no reciben utilidad directamente de los bienes de adquisición en el mercado. C: el consumo total del hogar\nm: el ingreso total del hogar\nh: la cantidad de horas trabajadas en el hogar\"",
-     "year": "2008",
-     "conceptos": [
-      "consumo",
-      "ingreso",
-      "horas"
-     ],
-     "autores": [
-      "Nicholson, W."
-     ],
-     "referencias": [
-      "Nicholson, W. (2008). Teoría Micoeconómica: Principios básicos y ampliaciones"
-     ],
-     "equation": "C=C(m,h)",
-     "views": 1
-    },
-    {
-     "id": "101",
-     "nombre": "Modelo de atributos lineales",
-     "teoria": "teoría de la elección del consumidor",
-     "tipo": "Microeconomia",
-     "descripcion": "Los atributos de los bienes son los que apropian utilidad a los individuos y cada bien tiene un atributo fijo. aix= cantidad de producto por unidad de x ",
-     "year": "2008",
-     "conceptos": [
-      "cantidad de producto"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "ai=axix+ayiy+anin"
-    },
-    {
-     "id": "102",
-     "nombre": "Función de producción",
-     "teoria": "teoría de la producción",
-     "tipo": "Microeconomia",
-     "descripcion": "\"Muestra la cantidad máxima de bines que ésta puede producir utilizando distintas combinaciones de capital y trabajo. Y: la cantidad de producción generada\nK: la cantidad de capital utilizado\nL: la cantidad de trabajo utilizado \"",
-     "year": "2008",
-     "conceptos": [
-      "cantidad de producción generada",
-      "cantidad de capital utilizado",
-      "cantidad de trabajo utilizado"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Y=f(K,L)",
-     "views": 1
-    },
-    {
-     "id": "103",
-     "nombre": "Modelo abstracto de la producción",
-     "teoria": "teoría de la producción",
-     "tipo": "Microeconomia",
-     "descripcion": "La combinación de factores de producción, considerando todos los factores para la fabricación de productos. q= producción de un bien en determinado tiempo k= maquinaria (capital) l= horas de trabajo (trabajo) m= materia prima",
-     "year": "2008",
-     "conceptos": [
-      "producción de un bien en determinado tiempo",
-      "materia prima",
-      "trabajo",
-      "capital"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "q=f(k,l,m,\\dots)"
-    },
-    {
-     "id": "104",
-     "nombre": "Modelo de crecimiento de Solow",
-     "teoria": "teoría neoclásica",
-     "tipo": "Microeconomia",
-     "descripcion": "\"Establece que el crecimeinto de una economía se debería basar en la gestión de la oferta, productividad y inversion, pero no en el resultado exclusivo de la demanda. Y: la producción total de la economía\nK: la cantidad de capital físico utilizado\nL: la cantidad de trabajo utilizado\nA: el nivel de tecnología\nα: el parámetro que representa la participación del capital en la producción (0 ≤ α ≤ 1) \"",
-     "year": "2008",
-     "conceptos": [
-      "producción",
-      "capital",
-      "nivel de tecnología"
-     ],
-     "autores": [],
-     "referencias": [],
-     "equation": "Y=F(K,L)=AK^αL^{(1-α)}",
-     "views": 1
+    [
+        {
+        "id": "4",
+        "nombre": "Ahorro de las familias",
+        "tipo": "Macroeconomia",
+        "descripcion": "En función de sus ingresos",
+        "year": "",
+        "conceptos": [
+            "Ingreso",
+            "Ahorro"
+        ],
+        "autores": [
+            "José María Caridad y Ocerín"
+        ],
+        "referencias": [
+            "Econometría: Modelos Econométricos y Series temporales."
+        ],
+        "teoria": "",
+        "equation": "A=f\\left(I\\right)",
+        "views": 1
+    },
+    {
+        "id": "5",
+        "nombre": "Consumo de un país",
+        "tipo": "Macroeconomia",
+        "descripcion": "En función de la renta nacional",
+        "year": "",
+        "conceptos": [
+            "Consumo",
+            "Renta"
+        ],
+        "autores": [
+            "José María Caridad y Ocerín"
+        ],
+        "referencias": [
+            "Econometría: Modelos Econométricos y Series temporales."
+        ],
+        "teoria": "",
+        "equation": "C=g\\left(R\\right)",
+        "views": 3
+    },
+    {
+        "id": "6",
+        "nombre": "Modelo aplicando ecuación Cobb-Douglas (con avance tecnológico)",
+        "tipo": "Microeconomia",
+        "descripcion": "Fuerza de trabajo N\nCapital K \nAvance tecnológico A\nLas cuales definen el producto Y.",
+        "year": "",
+        "conceptos": [
+            "Capital",
+            "Avance tecnologico",
+            "Fuerza de trabajo",
+            "Producto"
+        ],
+        "autores": [],
+        "referencias": [
+            "https://www.econlink.com.ar/crecimiento-econ/modelo-de-solow"
+        ],
+        "teoria": "",
+        "equation": "Y=A\\cdot F(K,N)"
+    },
+    {
+        "id": "8",
+        "nombre": "Residuo de Solow",
+        "tipo": "Macroeconomia",
+        "descripcion": "Algunos autores definen A como la productividad Marginal de todos los factores, y debido a que los factores y los productos son observables pero A no lo es, entonces simplemente se da vuelta a la ecuación de la tasa de crecimiento,",
+        "year": "",
+        "conceptos": [
+            "Productividad",
+            "Productos",
+            "Tasa",
+            "Crecimiento"
+        ],
+        "autores": [],
+        "referencias": [
+            "https://www.econlink.com.ar/crecimiento-econ/modelo-de-solow"
+        ],
+        "views": 2
+    },
+    {
+        "id": "9",
+        "nombre": "TERCERA LEY DE KALDOR",
+        "tipo": "Macroeconomia",
+        "descripcion": "Cuanto más rápido es el crecimiento del producto manufacturero más rápida es la tasa de transferencia de trabajo de los sectores no manufactureros a la industria, de modo que el crecimiento de la productividad total de la economía está asociado positivamente con el crecimiento del producto y del empleo industrial y correlacionado negativamente con el crecimiento del empleo fuera del sector manufacturero.",
+        "year": "",
+        "conceptos": [
+            "Manufactura",
+            "Industria",
+            "Productividad",
+            "Empleo",
+            "Trabajo"
+        ],
+        "autores": [],
+        "referencias": [],
+        "teoria": "",
+        "equation": "",
+        "views": 2
+    },
+    {
+        "id": "10",
+        "nombre": "SEGUNDA LEY DE KALDOR",
+        "tipo": "Macroeconomia",
+        "descripcion": "Existe una fuerte relación positiva entre el crecimiento de la productividad en la industria manufacturera y la tasa de crecimiento del producto.",
+        "year": "",
+        "conceptos": [
+            "Crecimiento",
+            "Producto",
+            "Productividad"
+        ],
+        "autores": [],
+        "referencias": []
+    },
+    {
+        "id": "11",
+        "nombre": "PRIMERA LEY DE KALDOR",
+        "tipo": "Macroeconomia",
+        "descripcion": "Existe una fuerte relación de causalidad que va del crecimiento del producto manufacturero al crecimiento del PIB.",
+        "year": "",
+        "conceptos": [
+            "Crecimiento",
+            "Producto",
+            "PIB"
+        ],
+        "autores": [],
+        "referencias": [],
+        "views": 2
+    },
+    {
+        "id": "12",
+        "nombre": "Crecimiento Económico",
+        "tipo": "Macroeconomia",
+        "descripcion": "De la condición de equilibrio macroeconómico tenemos:",
+        "year": "",
+        "conceptos": [
+            "Equilibrio"
+        ],
+        "autores": [],
+        "referencias": [],
+        "views": 1
+    },
+    {
+        "id": "13",
+        "nombre": "Participación de los beneficios en el ingreso nacional",
+        "tipo": "Macroeconomia",
+        "descripcion": "Dividiendo entre Y (ingresos),Esto significa que depende directamente del coeficiente de inversión dado las diversas propensiones marginales ahorrar.",
+        "year": "",
+        "conceptos": [
+            "Ingreso",
+            "Ahorro"
+        ],
+        "autores": [],
+        "referencias": []
+    },
+    {
+        "id": "14",
+        "nombre": "Ecuación de ahorro de Kaldor",
+        "tipo": "Macroeconomia",
+        "descripcion": "Plantea que el ahorro agregado va depender directamente del ingreso nacional y de los beneficios dado el producto marginal ahorrar ( PMgs) de las clases sociales.",
+        "year": "",
+        "conceptos": [
+            "Ingreso",
+            "Ahorro",
+            "Beneficios"
+        ],
+        "autores": [],
+        "referencias": []
+    },
+    {
+        "id": "15",
+        "nombre": "Ecuación de comportamiento",
+        "teoria": "",
+        "tipo": "Macroeconomia",
+        "descripcion": "El ahorro de los capitalistas ( c s ), depende directamente de su ingreso de los beneficios dado su producto marginal ahorrar de los capitalistas ( PMgsc ), donde; PMgsc =1",
+        "year": "",
+        "conceptos": [
+            "Ingreso",
+            "Ahorro"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": ""
+    },
+    {
+        "id": "16",
+        "nombre": "Modelo de Kaldor",
+        "teoria": "",
+        "tipo": "Macroeconomia",
+        "descripcion": "El producto por el lado del ingreso es igual a la suma de la masa de salario y la masa de beneficio.",
+        "year": "",
+        "conceptos": [
+            "Producto",
+            "Salario",
+            "Ahorro",
+            "Capitalistas",
+            "Trabajadores"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "",
+        "views": 2
+    },
+    {
+        "id": "17",
+        "nombre": "MODELO IS-LM",
+        "teoria": "TEORIA KEYNESIANA Y NEOCLÁSICA",
+        "tipo": "Macroeconomia",
+        "descripcion": "ES UN MODELO MACROECONÓMICO QUE MUESTRA LOS EQUILIBRIOS SIMULTANEOS DEL MERCADO DE BIENES Y DE DINERO",
+        "year": "1937",
+        "conceptos": [
+            "Demanda agregada",
+            "Mercado de bienes",
+            "Mercado de dinero",
+            "Inversión",
+            "Gasto agregado"
+        ],
+        "autores": [
+            "John Hicks",
+            "Alvin Hansen"
+        ],
+        "referencias": [
+            "Macroeconomía de Blanchard",
+            "Macroeconomía de Felipe Larraín",
+            "Macroeconomía de Krugman",
+            "Macroeconomía de Mankiw"
+        ],
+        "equation": "IS\\ =\\ LM",
+        "views": 1
+    },
+    {
+        "id": "18",
+        "nombre": "Modelo de Consumo",
+        "teoria": "Teoría keynesiana de consumo",
+        "tipo": "Macroeconomia",
+        "descripcion": "Keynes postula que la propensión marginal a consumir (b), es decir, la tasa de cambio del consumo generado por una unidad (digamos, un dólar) de cambio en el ingreso (I), es mayor que cero pero menor que uno. C-Consumo",
+        "year": "2010",
+        "conceptos": [
+            "Consumo",
+            "Ingreso"
+        ],
+        "autores": [
+            "Damodar N. Gujarati",
+            "Dawn C. Porter"
+        ],
+        "referencias": [],
+        "equation": "C\\ =\\ a\\ +\\ b\\ I",
+        "views": 3
+    },
+    {
+        "id": "19",
+        "nombre": "Multiplicador del ingreso",
+        "teoria": "Teoría macroeconómica",
+        "tipo": "Macroeconomia",
+        "descripcion": "M-Multiplicador del ingreso \nPMC-Propensión Marginal de Consumo",
+        "year": "2010",
+        "conceptos": [
+            "Multiplicador del ingreso",
+            "Propensión Marginal de Consumo"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "M\\ =\\frac{1}{1-PMC}",
+        "views": 1
+    },
+    {
+        "id": "20",
+        "nombre": "CAPM",
+        "teoria": "Moderna de portafolios",
+        "tipo": "Macroeconomia",
+        "descripcion": "CAPM-asignación de precios de activos de capital ERi = tasa esperada de rendimiento del título i. ERm = tasa esperada de rendimiento del portafolios del mercado como la representa. rf = tasa de rendimiento libre de riesgo. Bi = riesgo sistemático, es decir, es una medida del grado en el cual la i-ésima tasa de rendimiento del título se mueve con el mercado. Un Bi > 1 implica un título volátil o riesgoso, mientras que βi < 1 es un título seguro. (Nota: No confunda esta βi con el coeficiente de la pendiente)",
+        "year": "2010",
+        "conceptos": [
+            "Precios",
+            "Activos de capital",
+            "Rendimiento del portafolio",
+            "Rendimiento del título",
+            "Riesgo sistemático"
+        ],
+        "autores": [
+            "Gujarati"
+        ],
+        "referencias": [
+            "Gujarati (2010) Econometría"
+        ],
+        "equation": "\\left(ERi-Erf\\right)=\\left(ERm-rf\\right)Bi"
+    },
+    {
+        "id": "21",
+        "nombre": "Producción Cobb-Douglas",
+        "teoria": "Teoría de producción",
+        "tipo": "Microeconomia",
+        "descripcion": "Y = producción X2 = insumo trabajo X3 = insumo capital u = término de perturbación estocástica e = base del logaritmo natural β2 es la elasticidad (parcial) de la producción respecto del insumo trabajo, con el insumo capital constante β3 es la elasticidad (parcial) de la producción respecto del insumo capital, con el insumo trabajo constante. (β2 + β3) da información sobre los rendimientos a escala",
+        "year": "2010",
+        "conceptos": [
+            "Insumo de trabajo",
+            "Producción",
+            "Insumo de capital"
+        ],
+        "autores": [
+            "Gujarati"
+        ],
+        "referencias": [
+            "Gujarati (2010) Econometría"
+        ],
+        "equation": "Y=AK^{\\alpha}L^{\\beta}",
+        "views": 1
+    },
+    {
+        "id": "22",
+        "nombre": "Costo de corto plazo",
+        "teoria": "Teoría elemental de precios",
+        "tipo": "Microeconomia",
+        "descripcion": "En el corto plazo, las curvas de costo marginal de producción (CM) y de costo promedio (CP) en general tienen forma de U (al principio), a medida que la producción aumenta tanto el CM como el CP decrecen, pero, después de un nivel dado de producción, ambas vuelven a aumentar, de nuevo como consecuencia de la ley de rendimientos decrecientes. Y = costo total y X = producción. Si se desea observar las curvas de costo marginal y promedio de corto plazo en la forma típica de U: 1. β0, β1 y β3 > 0 2. β2 < 0 3. β2 2 < 3β1β3",
+        "year": "2010",
+        "conceptos": [
+            "Costo total",
+            "Producción"
+        ],
+        "autores": [],
+        "referencias": [
+            "Gujarati (2010) Econometría"
+        ],
+        "equation": "Y_i=B_0+B_1X_i+B_2X_i^2+B_3X_i^3",
+        "views": 1
+    },
+    {
+        "id": "23",
+        "nombre": "DEMANDA MONETARIA",
+        "teoria": "Teoria neoclásica",
+        "tipo": "Macroeconomia",
+        "descripcion": "La demanda monetaria es la cantidad de dinero que requieren o solicitan los agentes económicos. Nos muestra la cantidad de dinero que se demanda a un determinado ingreso y una determinada tasa de interés. Un aumento del ingreso desplaza la demanda hacia arriba. Mientras que los cambios en las tasas de interés provocan un movimiento a lo largo de la curva; a mayor tasa de interés menor cantidad de dinero demandada.",
+        "year": "1950",
+        "conceptos": [
+            "Tasas de interés",
+            "Ingreso"
+        ],
+        "autores": [
+            "Mill",
+            "Wicksell",
+            "Fisher",
+            "Walras"
+        ],
+        "referencias": [
+            "Mankiw",
+            "Krugman",
+            "Blanchard"
+        ],
+        "equation": "DM=KY-Hi",
+        "views": 1
+    },
+    {
+        "id": "24",
+        "nombre": "El índice I de Moran",
+        "teoria": "El índice I de Moran",
+        "tipo": "Economía Regional",
+        "descripcion": "es una adaptación de una medida de correlación no-espacial a un contexto espacial y se aplica normalmente a unidades espaciales donde hay disponibilidad de información en forma de razones o intervalos",
+        "year": "2008",
+        "conceptos": [
+            "observación, desviación",
+            "espacio, información"
+        ],
+        "autores": [
+            "Oscar Luis Alonso Cienfuegos",
+            "Ingrid Acevedo Bohórquez Ermilson Velásquez Ceballos"
+        ],
+        "referencias": [
+            "Acevedo Bohorquez, I., Velasquez Ceballos, E., (2008)Algunos conceptos de la econometria espacial yel analisis exploratorio de datos espaciales. Ecos de Economía, (27) 9-34."
+        ],
+        "equation": "I=(n/ƩƩwij)(y´Wy/yý)"
+    },
+    {
+        "id": "25",
+        "nombre": "Cocientes de localización y especialización",
+        "teoria": "Indicadores estáticos de estructura",
+        "tipo": "Economía Regional",
+        "descripcion": "la contribución a la economía nacional de cada región (j) sector por sector, la contribución a la economía nacional de cada sector (i) región por región",
+        "year": "2010",
+        "conceptos": [
+            "espacio, información"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "(Xij/ƩXij)/(ƩiXij/ƩiƩjXij)"
+    },
+    {
+        "id": "26",
+        "nombre": "Participación",
+        "teoria": "indicadores estáticos de estructura",
+        "tipo": "Economía Regional",
+        "descripcion": "Una relación que mide la participación relativa por sector al interior de cada región",
+        "year": "2010",
+        "conceptos": [
+            "contribución región",
+            "participación relativa, sector"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Xij/ƩXij"
+    },
+    {
+        "id": "27",
+        "nombre": "La productividad y crecimiento del producto",
+        "teoria": "La teoría de la causación acumulativa",
+        "tipo": "Economía Regional",
+        "descripcion": "La tasa de crecimiento de la productividad esta en función de la tasa de crecimiento del producto de manera que las regiones incrementan la productividad tanto mas intensamente crece su producto.",
+        "year": "2010",
+        "conceptos": [
+            "participación relativa, sector"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "\\pi i=f1i(y2/yi)"
+    },
+    {
+        "id": "28",
+        "nombre": "Base económica regional",
+        "teoria": "Indicadores de competitividad",
+        "tipo": "Economía Regional",
+        "descripcion": "Valor de la producción exportable del sector u de la región asumiendo un posible factor de competitividad.",
+        "year": "2010",
+        "conceptos": [
+            "participación relativa, sector",
+            "producción, región, factor"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "PBj=\\sum_{ }^{ }(i=1)^nPBij=PBj"
+    },
+    {
+        "id": "29",
+        "nombre": "coeficiente de localización concentración.",
+        "teoria": "Indicadores de distribución",
+        "tipo": "Economía Regional",
+        "descripcion": "Una medida al grado de similitud de la distribución interregional de cada sector con respecto a la distribución del patrón de comparación, que generalmente es la distribución del total de la actividad económica nacional.",
+        "year": "2010",
+        "conceptos": [
+            "distribución, patrón de comparación"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "CfLi=1/2Ʃ(n/J=I)I(Xij/(Ʃ(n/J=1)=XiJ)-(Ʃ(n/J=1)=XiJ)/(Ʃ(n/i=I))(Ʃ(n/j=I))=XijI"
+    },
+    {
+        "id": "30",
+        "nombre": "Coeficiente de asociación geográfica",
+        "teoria": "Indicadores de distribución",
+        "tipo": "Economía Regional",
+        "descripcion": "Una medida al grado de la relación aproximación entre la participación de un sector dentro de la economía regional y la participación de otro sector.",
+        "year": "2010",
+        "conceptos": [
+            "distribución, patrón de comparación, región, factor",
+            "grado de relación"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Cai,k=1/2(Ʃ(n/j=1)I((Xij/Ʃ(n/j=1)=Xij)-(Xkj/(n/j=1)=Xkj)"
+    },
+    {
+        "id": "31",
+        "nombre": "Coeficientes de localización simple.",
+        "teoria": "Técnicas indirectas (non-survey)",
+        "tipo": "Economía Regional",
+        "descripcion": "Proveen estimaciones de flujos y coeficientes de comercio regional al comparar la participación porcentual de una industria en una región con la participación porcentual de esa misma industria a nivel nacional.",
+        "year": "2017",
+        "conceptos": [
+            "distribución, patrón de comparación, región, factor",
+            "grado de relación",
+            "estimación de flujos, porcentual, industria"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "SLQ=(VBPSi,Ru/VBPRu)/(VBPSi.TP/VBPTP)"
+    },
+    {
+        "id": "32",
+        "nombre": "Coeficientes de localización solo de compra",
+        "teoria": "Técnicas indirectas (non-survey)",
+        "tipo": "Economía Regional",
+        "descripcion": "\"Proponen como variante que la suma de la produccion total usada en el calculo del coeficiente de localizacion deberia ser limitada solo a aquellas industrias que hacen compras de la industria i en la region y en la nacion respecificamente. XjR(X¡N) es el producto del sector i regional (nacional), X*R (X*N) representan el output \nde aquellos sectores regionales y nacionales que utilizan el input i.\"",
+        "year": "2017",
+        "conceptos": [
+            "estimación de flujos, porcentual, industria",
+            "producción, región, factor",
+            "producción, localización"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "q*i=(X_t^R/X*R)/(X_i^N/X*N)"
+    },
+    {
+        "id": "33",
+        "nombre": "Coeficientes de localización interindustrial (industria cruzada)",
+        "teoria": "Técnicas indirectas (non-survey)",
+        "tipo": "Economía Regional",
+        "descripcion": "Toma en cuenta la importancia relativa de la industria vendedora i en la region, asi como tambien la industria compradora j. El coeficiente compra la proporcion de la produccion nacional de la industria vendedora i en la region, con la proporcion para la industria compradora j. Donde, VBPSi,Ru es el valor bruto de producción del sector i en la región u, VBPSi,TP es el valor bruto de producción del sector i en el total del país, VBPSj,Ru es el valor bruto de producción del sector j en la región u, y VBPSj,TP es el valor bruto de producción del sector j en el total del país. \n",
+        "year": "2017",
+        "conceptos": [
+            "contribución región",
+            "espacio, información",
+            "coeficiente compra, industria"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "CILQij=(VBPSi,Ru/VBPSi,TP)/(VBPSj,Ru/VBPSj,TP)=SLQi/SLQj"
+    },
+    {
+        "id": "34",
+        "nombre": "Consistencia de la matriz regional",
+        "teoria": "Producción tipo Leontief",
+        "tipo": "Economía Regional",
+        "descripcion": "Se trata de resolver de la manera expuesta en el punto anterior considerando las adecuaciones pertinentes para el caso de una matriz regional.",
+        "year": "2017",
+        "conceptos": [
+            "contribución región",
+            "producción, región, factor",
+            "producción, localización",
+            "producción, matriz"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "RX+Y=X"
+    },
+    {
+        "id": "35",
+        "nombre": "Renta del suelo",
+        "teoria": "Espacio rural",
+        "tipo": "Economía Regional",
+        "descripcion": "sistema de localizaciones optimas, representando a la renta del suelo R representa la diferencia entre un precio de venta P que se supone constante un coste de producción C igualmente fijo y el coste de transporte T que se eleva con la distancia.",
+        "year": "1983",
+        "conceptos": [
+            "contribución región",
+            "producción, localización",
+            "localización, optimización"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "R=P-C-T=B-ad"
+    },
+    {
+        "id": "36",
+        "nombre": "Concentración ",
+        "teoria": "Concentración",
+        "tipo": "Economía Regional",
+        "descripcion": "Una medida simple de la concentración es el porcentaje de las empresas mas grandes en total industria.",
+        "year": "2012",
+        "conceptos": [
+            "localización, optimización",
+            "coeficiente compra, industria",
+            "porcentaje, industria "
+        ],
+        "autores": [
+            "Flor Brown y Lilia Domínguez"
+        ],
+        "referencias": [
+            "Brown Grossman, F., & Dominguez Villalobos, L. (2012). Organización Industrial teoría y aplicaciones al caso mexicano (2nd ed.)."
+        ],
+        "equation": "C=Ʃ((k)(i=1))Si"
+    },
+    {
+        "id": "37",
+        "nombre": "Coeficientes corrientes",
+        "teoria": "Insumo-producto",
+        "tipo": "Economía Regional",
+        "descripcion": "se establece una matriz diagonal con los coeficientes corrientes por filas obtenidos por cocientes entre el total conocido de insumos intermedios por filas y el estimado.",
+        "year": "2017",
+        "conceptos": [
+            "localización, optimización",
+            "coeficiente compra, industria",
+            "coeficientes, insumos intermediarios"
+        ],
+        "autores": [
+            "(Pino & Illanes), Edgar D. Edgar D. Gaytan Alfaro, Rigoberto Jiménez Diaz y Aldo A. Pérez Escatel."
+        ],
+        "referencias": [
+            "Alfaro, É. D. G., Jiménez Díaz, R., & Pérez Escatel, A. A. (2019). Matriz de insumo-producto para la economía del estado de Zacatecas, un enfoque de clústers. Colofón, S.A. de C.V."
+        ],
+        "equation": "r1=[u1]*[u1]-1"
+    },
+    {
+        "id": "38",
+        "nombre": "multiplicadores de insumo producto",
+        "teoria": "interregional",
+        "tipo": "Economía Regional",
+        "descripcion": "Su planteamiento es importante dado que de este deriva la estimación de multiplicadores directos, directos-indirectos y ponderados",
+        "year": "2017",
+        "conceptos": [
+            "multiplicadores, directos, producto"
+        ],
+        "autores": [
+            "(Leontief, Miller y Blair)Edgar D. Edgar D. Gaytán Alfaro, Rigoberto Jiménez Diaz y Aldo A. Pérez Escatel."
+        ],
+        "referencias": [
+            "Alfaro, É. D. G., Jiménez Díaz, R., & Pérez Escatel, A. A. (2019). Matriz de insumo-producto para la economía del estado de Zacatecas, un enfoque de clústers. Colofón, S.A. de C.V."
+        ],
+        "equation": "X´=(I-A)-1f"
+    },
+    {
+        "id": "39",
+        "nombre": "multiplicadores hacia atrás",
+        "teoria": "multiplicadores hacia atrás",
+        "tipo": "Economía Regional",
+        "descripcion": "miden la capacidad de una actividad de provocar o arrastrar el desarrollo de otras, dado que utiliza insumos procedentes de estas, con este multiplicador se registra el incremento en el valor bruto de la producción que es necesario llevar acabo en los diversos subsectores.",
+        "year": "2017",
+        "conceptos": [
+            "multiplicadores, directos, producto",
+            "capacidad, arrastre insumos"
+        ],
+        "autores": [
+            "(Leontief, Miller y Blair)Edgar D. Edgar D. Gaytán Alfaro, Rigoberto Jiménez Diaz y Aldo A. Pérez Escatel."
+        ],
+        "referencias": [],
+        "equation": "Lj=Ʃ((n)(i=1))lij"
+    },
+    {
+        "id": "40",
+        "nombre": "multiplicadores hacia adelante",
+        "teoria": "multiplicadores hacia adelante",
+        "tipo": "Economía Regional",
+        "descripcion": "Se presentan cuando una actividad ofrece determinado producto resulta ser el insumo de otro sector, que a su vez opera como estimulo para un tercer sector, este tipo de multiplicador cuantifica el incremento que alcanza en el valor bruto de la producción en un subsector ante un aumento unitario en la demanda final de todos los demás subsectores.",
+        "year": "2017",
+        "conceptos": [
+            "capacidad, arrastre insumos",
+            "producto, insumo, estimulo"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Li=Ʃ((n)(j=1))lij"
+    },
+    {
+        "id": "41",
+        "nombre": "localización de los productores",
+        "teoria": "Igualdad de precios de producción",
+        "tipo": "Economía Regional",
+        "descripcion": "la ecuación es un circulo centrado sobre la localización de los productos.",
+        "year": "1983",
+        "conceptos": [
+            "localización, optimización",
+            "localización, Precios"
+        ],
+        "autores": [
+            "Palender"
+        ],
+        "referencias": [
+            "Derycke, Pierre, H. (1983). La ciudad, el espacio y la teoría económica. Economía y planificación urbanas. Ed. Madrid: instituto de estudios de administración local. Pp. (81- 150)"
+        ],
+        "equation": "r=PB-PA/TA-TB"
+    },
+    {
+        "id": "42",
+        "nombre": "Función de producción largo plazo",
+        "teoria": "Teoría neoclásica",
+        "tipo": "Economía Regional",
+        "descripcion": "Explica el porque del crecimiento económico junto con sus variables a largo plazo",
+        "year": "2015",
+        "conceptos": [
+            "crecimiento económico"
+        ],
+        "autores": [
+            "Robert Solow"
+        ],
+        "referencias": [],
+        "equation": "Y=Ka(AL)l-a",
+        "views": 2
+    },
+    {
+        "id": "43",
+        "nombre": "Función de producción largo plazo",
+        "teoria": "Teoría neoclásica",
+        "tipo": "Economía Regional",
+        "descripcion": "Explica el porque del crecimiento económico junto con sus variables a largo plazo",
+        "year": "2015",
+        "conceptos": [
+            "crecimiento económico"
+        ],
+        "autores": [
+            "Robert Solow"
+        ],
+        "referencias": [],
+        "equation": "Y=Ka(AL)l-a",
+        "views": 2
+    },
+    {
+        "id": "44",
+        "nombre": "Crecimiento económico a corto plazo",
+        "teoria": "Teoría neoclásica",
+        "tipo": "Economía Regional",
+        "descripcion": "Mediante la idea de ciclo económico alrededor de una tendencia estocástica equivale al concepto de serie tiempo con tendencia en la media y en la varianza.",
+        "year": "2015",
+        "conceptos": [
+            "crecimiento económico",
+            "tiempo, tendencia, media y variable"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Yt=a+BYt-1+£t"
+    },
+    {
+        "id": "45",
+        "nombre": "Efectos de nivel",
+        "teoria": "Teoría neoclásica",
+        "tipo": "Economía Regional",
+        "descripcion": "El crecimiento es inducido por una variación externa en la tasa de aumento de la población o por una innovación, que harían el capital mas escaso y elevarían su productividad marginal.",
+        "year": "2015",
+        "conceptos": [
+            "crecimiento económico",
+            "tiempo, tendencia, media y variable",
+            "población, innovación, capital, productividad"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "K/Y=(K/L)(L/Y)"
+    },
+    {
+        "id": "46",
+        "nombre": "Productividad total de factores",
+        "teoria": "Teoría neoclásica",
+        "tipo": "Economía Regional",
+        "descripcion": "La diferenciación de los niveles y los de crecimiento y esa diferenciación afecta la tasa de crecimiento, en tanto que los efectos de nivel solo alteran la posición del sendero de crecimiento pero no la tasa.",
+        "year": "2015",
+        "conceptos": [
+            "crecimiento económico",
+            "tiempo, tendencia, media y variable",
+            "diferenciación, crecimiento"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "PTF=(0Y/Y-A(0K/K)-(1-a)0L/L"
+    },
+    {
+        "id": "47",
+        "nombre": "Crecimiento económico",
+        "teoria": "Teoría neoclásica",
+        "tipo": "Economía Regional",
+        "descripcion": "Con el incremento de la tasa de crecimiento de la productividad total de los factores y las elasticidades producto del capital y del trabajo en fuentes de crecimiento.",
+        "year": "2015",
+        "conceptos": [
+            "crecimiento económico",
+            "tiempo, tendencia, media y variable",
+            "diferenciación, crecimiento",
+            "incremento, elasticidad,crecimiento"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Yt=ΔPTF+ak+βl"
+    },
+    {
+        "id": "48",
+        "nombre": "Concentración económica espacial",
+        "teoria": "Concentración económica espacial",
+        "tipo": "Economía Regional",
+        "descripcion": "La ecuación de la concentración económica espacial es una relación que establece la interacción entre sitios económicos ij, entre las diferencias de producto endógeno creado en el sitio n, donde n=i,j, n, y la diferencia acumulada en el tiempo t del producto endógeno de los sitios n.",
+        "year": "2015",
+        "conceptos": [
+            "crecimiento económico"
+        ],
+        "autores": [
+            "Robert Solow",
+            "Normand Asuad Sanen."
+        ],
+        "referencias": [],
+        "equation": "CEEYi\")~((AkaI!'T\"JiU)+~(yAkiu)-yAkj(i)lJ-[(AkaI!'T\")j(i)+t,(yAkj(i)+yAki(i)l]",
+        "views": 1
+    },
+    {
+        "id": "49",
+        "nombre": "Producción endógena",
+        "teoria": "Concentración económica espacial",
+        "tipo": "Economía Regional",
+        "descripcion": "Especifica como una función de producción compuesta de tecnología endógena de rendimientos crecientes, Rc, del tipo Cobb-Douglas, cuya producción adicional es resultado de externalidades espaciales, ExE, que corresponden a externalidades de mercado T, que integran como un vector único la sinergia de externalidades tecnológicas k y de mercado Z del sitio i.",
+        "year": "2016",
+        "conceptos": [
+            "crecimiento económico",
+            "producto, endógeno",
+            "tecnología, rendimientos, crecimiento."
+        ],
+        "autores": [
+            "Robert Solow",
+            "Normand Asuad Sanen.",
+            "Pablo Jesús Medina Alias"
+        ],
+        "referencias": [
+            "Medina Alias, P. J. (2016), Las teorias de la localizacion en el contexto de la nueva geografia economica, Facultad de ciencias economicas y empresariales. Universidad de Almería."
+        ],
+        "equation": "YAki=AKatLβtTλt",
+        "views": 1
+    },
+    {
+        "id": "50",
+        "nombre": "Gradiante de diversificación",
+        "teoria": "Concentración económica espacial",
+        "tipo": "Economía Regional",
+        "descripcion": "Implica en todas direcciones al aumentar la distancia con respecto al centro la diversificación disminuye.",
+        "year": "2016",
+        "conceptos": [
+            "crecimiento económico",
+            "producto, endógeno",
+            "tecnología, rendimientos, crecimiento.",
+            "localización, precios",
+            "distancia, localización"
+        ],
+        "autores": [
+            "Pablo Jesús Medina Alias"
+        ],
+        "referencias": [],
+        "equation": "Si>dr<Sj"
+    },
+    {
+        "id": "51",
+        "nombre": "Modelo de efectos fijos",
+        "teoria": "Concentración económica espacial",
+        "tipo": "Economía Regional",
+        "descripcion": "la interpretación de esta prueba se realiza observando el valor de la hipótesis nula, Ho, que establece que el valor del intercepto es cero, al agregar variables que afectan el valor del intercepto, frente a la hipótesis alternativa de que es diferente de cero.",
+        "year": "2016",
+        "conceptos": [
+            "localización, precios",
+            "distancia, localización",
+            "intercepto, localización"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "F=((ESS1-ESS2)/(N-1))/(ESS2)/(TN-N-K))=F(N-1)(TN-N-K)"
+    },
+    {
+        "id": "52",
+        "nombre": "dependencia espacial",
+        "teoria": "dependencia espacial",
+        "tipo": "Economía Regional",
+        "descripcion": "Una colección de observaciones de datos muestrales se refiere al hecho de que una observación asociada con una localización la cual se puede denominar i, depende de otras observaciones asociadas con localizaciones ji",
+        "year": "2008",
+        "conceptos": [
+            "localización, precios",
+            "distancia, localización",
+            "intercepto, localización",
+            "localizacion, muestra."
+        ],
+        "autores": [
+            "Ingrid Acevedo Bohórquez Ermilson Velásquez Ceballos"
+        ],
+        "referencias": [
+            "Acevedo Bohorquez, I., Velasquez Ceballos, E., (2008)Algunos conceptos de la econometria espacial yel analisis exploratorio de datos espaciales. Ecos de Economía, (27) 9-34."
+        ],
+        "equation": "yi=f(yj)i=1,...,nji"
+    },
+    {
+        "id": "53",
+        "nombre": "Heterogeneidad Espacial",
+        "teoria": "Heterogeneidad Espacial",
+        "tipo": "Economía Regional",
+        "descripcion": "Se refiere a la variación en las relaciones sobre el espacio. En el más general de los casos se podría considerar que una relación diferente se presente para cada punto en el espacio.",
+        "year": "2008",
+        "conceptos": [
+            "localización, precios",
+            "distancia, localización",
+            "intercepto, localización",
+            "localizacion, muestra.",
+            "variación, espacio."
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "yi=XiEi+Hii=1,...,n"
+    },
+    {
+        "id": "54",
+        "nombre": "Heteroscedasticidad Espacial",
+        "teoria": "Heteroscedasticidad Espacial",
+        "tipo": "Economía Regional",
+        "descripcion": "consiste en la ausencia de estabilidad en la dispersión de un fenómeno, como sucede muchas veces con los residuos de una regresión.",
+        "year": "2008",
+        "conceptos": [
+            "estabilidad, región"
+        ],
+        "autores": [
+            "Ingrid Acevedo Bohórquez Ermilson Velásquez Ceballos"
+        ],
+        "referencias": [
+            "Acevedo Bohorquez, I., Velasquez Ceballos, E., (2008)Algunos conceptos de la econometria espacial yel analisis exploratorio de datos espaciales. Ecos de Economía, (27) 9-34."
+        ],
+        "equation": "Var(ui)=σ2i"
+    },
+    {
+        "id": "55",
+        "nombre": "Tiempo de concentración",
+        "teoria": "Tiempo de concentración",
+        "tipo": "Economía Regional",
+        "descripcion": "El tiempo de concentración (tc) se determina con la longitud (L) y pendiente del cauce principal (S), donde tc en h, L en m y S en decimales es determinada con el método de la pendiente media.",
+        "year": "2016",
+        "conceptos": [
+            "distancia, localización",
+            "variación, espacio.",
+            "concentración, longitud"
+        ],
+        "autores": [
+            "Domínguez-Mora, Ramón, Arganis-Juárez, Maritza L., Guzmán-García, Humberto, Carrizosa-Elizondo, Eliseo, Esquivel-Garduño, Gabriela, & Fuentes-Mariles, Guadalupe E.."
+        ],
+        "referencias": [
+            "Domínguez-Mora, Ramón, Arganis-Juárez, Maritza L., Guzmán-García, Humberto, Carrizosa-Elizondo, Eliseo, Esquivel-Garduño, Gabriela, & Fuentes-Mariles, Guadalupe E.. (2016). Modelos regionales de escurrimientos máximos instantáneos en la república mexicana. Tecnología y ciencias del agua, 7(5), 15-32. Recuperado en 07 de marzo de 2023, de http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2007-24222016000500015&lng=es&tlng=es."
+        ],
+        "equation": "tc=0.000325L0.77/S0.385"
+    },
+    {
+        "id": "56",
+        "nombre": "Curvas regionales para estimar la MQMIA",
+        "teoria": "Escurrimiento Hídrico",
+        "tipo": "Economía Regional",
+        "descripcion": "Donde MQMIA es la media de los gastos máximos anuales obtenida para cada estación hidrométrica de la región o grupo de regiones considerada, en m3/s; A, el área de la cuenca, en km2; tc, el tiempo de concentración en h; V, un indicador del volumen de precipitación en la cuenca, obtenido al multiplicar el área (km2) por la precipitación hp (mm) (determinada como el promedio en la cuenca de la media de las precipitaciones diarias máximas anuales.",
+        "year": "2016",
+        "conceptos": [
+            "variación, espacio.",
+            "concentración, longitud",
+            "hídrico, concentración"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "1MQMIA=C1AC22MQMIA=C1AC2tcc3"
+    },
+    {
+        "id": "57",
+        "nombre": "Coeficiente regional",
+        "teoria": "TECNICAS INDIRECTAS DE REGIONALIZACIÓN",
+        "tipo": "Economía Regional",
+        "descripcion": "Los coeficientes de comercio regional difieren de los nacionales sólo por un factor de participación del comercio regional ( q;) ·",
+        "year": "2001",
+        "conceptos": [
+            "participación relativa, sector",
+            "producción, localización",
+            "participación, comercio."
+        ],
+        "autores": [
+            "NOE ARON FUENTES, ALEJANDRO BRUGUÉS"
+        ],
+        "referencias": [
+            "Fuentes A. N., Burgues A., Modelos de insumo - producto regionales y procedimientes de regionalizacion. Revista Colombiana de Educacion. http://revistas.bancomext.gob.mx/rce/magazines/38/2/RCE.pdf"
+        ],
+        "equation": "rij=qij*aij"
+    },
+    {
+        "id": "58",
+        "nombre": "Coeficiente de localización interindustrial",
+        "teoria": "TECNICAS INDIRECTAS DE REGIONALIZACIÓN",
+        "tipo": "Economía Regional",
+        "descripcion": "El CLI considera la importancia relativa de la industria vendedora i en la región, así como la industria compradora}. El coeficiente compara la proporción de la producción nacional de la industria vendedora i en la región con la respectiva de la industria compradora j.",
+        "year": "2001",
+        "conceptos": [
+            "participación relativa, sector",
+            "producción, localización",
+            "participación, comercio.",
+            "industria compradora, proporción, producción"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "CLIrij=(Xri/Xni)/(Xrj/Xnj)"
+    },
+    {
+        "id": "59",
+        "nombre": "Coeficiente de localización semilogarítmico",
+        "teoria": "TECNICAS INDIRECTAS DE REGIONALIZACION",
+        "tipo": "Economía Regional",
+        "descripcion": "Los coeficientes de localización semilogarítmicos {CLS) proporcionan ajustes en los coeficientes regionales en tres sentidos: a] por el tamaño relativo del sector vendedor i; b] por el tamaño relativo del sector comprador, y e] por el tamaño relativo de la región. Ésta constituye una de las propuesta más recientes para estimar la economía regional, cuando la idea subyacente es encontrar un coeficiente q .. óptimo.",
+        "year": "2001",
+        "conceptos": [
+            "producción, localización",
+            "industria compradora, proporción, producción",
+            "proporción, localización, estimación, subyacente"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "λ=(Ert/Ent)/(log(1+Ert/Ent))"
+    },
+    {
+        "id": "60",
+        "nombre": "Ajustes de oferta-demanda",
+        "teoria": "TECNICAS INDIRECTAS DE REGIONALIZACION",
+        "tipo": "Economía Regional",
+        "descripcion": "El ajuste de oferta y demanda consiste en estimar balanzas comerciales regionales entre la producción regional de un bien y los requerimientos regionales del bien.",
+        "year": "2001",
+        "conceptos": [
+            "industria compradora, proporción, producción",
+            "oferta, demanda"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Ort=Xrt(i=1\\dots.n)",
+        "views": 1
+    },
+    {
+        "id": "61",
+        "nombre": "Modelo de regresión espacial",
+        "teoria": "Modelo de regresión espacial",
+        "tipo": "Economía Regional",
+        "descripcion": "La especificación correcta para una variable que presenta autocorrelación espacial, sólo en el caso de que este efecto espacial esté totalmente explicado por los valores de una o más variables explicativas, es decir, por condicionantes internos referidos a dicho lugar",
+        "year": "2015",
+        "conceptos": [
+            "autocorrelación, espacial"
+        ],
+        "autores": [
+            "Oscar Luis Alonso Cienfuegos"
+        ],
+        "referencias": [
+            "Cienfuegos A., L., O. (2015). La econometría espacial un enfoque para el estudio a nivel de datos micro territoriales de la eficacia de las políticas de desarrollo rural cofinanciadas por la unión europea el caso de Austrias. (Tesis en doctorado en ciencias económicas y empresariales, Universidad de Magala)"
+        ],
+        "equation": "y=Xβ+u"
+    },
+    {
+        "id": "62",
+        "nombre": "Diagrama de dispersión de Moran.",
+        "teoria": "Diagrama de dispersión de Moran.",
+        "tipo": "Economía Regional",
+        "descripcion": "N es el nº observaciones, S0 es la suma de todos los elementos de la matriz de pesos espaciales, y’es el vector de observaciones en desviaciones a la media, Wy’ es el retardo espacial asociado a la variable y en desviaciones a la media. Donde S0 es igual a N al estandarizar por filas la matriz de pesos espaciales haciendo que estas sumen I.",
+        "year": "2015",
+        "conceptos": [
+            "autocorrelación, espacial",
+            "variación",
+            "observación, desviación"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "I=Ny′WyS^yjy"
+    },
+    {
+        "id": "63",
+        "nombre": "operador de retardo espacial",
+        "teoria": "operador de retardo espacial",
+        "tipo": "Economía Regional",
+        "descripcion": "El retardo espacial considera la suma ponderada de todos los valores de una variable que pertenecen a un mismo criterio de contigüidad (torre/alfil/reina), en vez de tomar individualmente cada uno de ellos. Los términos de esta suma se obtienen multiplicando las observaciones en cuestión (yi) por sus correspondientes pesos de la matriz de ponderaciones W",
+        "year": "2015",
+        "conceptos": [
+            "autocorrelación, espacial",
+            "observación, desviación",
+            "retardo, multiplicador, ponderación"
+        ],
+        "autores": [
+            "Oscar Luis Alonso Cienfuegos"
+        ],
+        "referencias": [
+            "Cienfuegos A., L., O. (2015). La econometría espacial un enfoque para el estudio (Tesis en doctorado en ciencias económicas y empresariales, Universidad de Magala)"
+        ],
+        "equation": "Bsyi=\\sum_{ }^{ }jwijyj"
+    },
+    {
+        "id": "64",
+        "nombre": "Modelo autorregresivo de regresión espacial.",
+        "teoria": "Modelo autorregresivo de regresión espacial.",
+        "tipo": "Economía Regional",
+        "descripcion": "n los casos en los que se detecta la existencia de dependencia entre los valores que toma una variable en un lugar concreto (i) y los valores que toma la misma variable en otras zonas del espacio (j). Es decir la Cov (yi yj) ≠ 0",
+        "year": "2015",
+        "conceptos": [
+            "autocorrelación, espacial",
+            "zona, espacio"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "V=àâV+ãu\\approx N(0,σ2I)"
+    },
+    {
+        "id": "65",
+        "nombre": "Modelo del error espacial.",
+        "teoria": "Modelo del error espacial.",
+        "tipo": "Economía Regional",
+        "descripcion": "Suele ocurrir cuando se da una incorrecta especificación del modelo básico de regresión espacial, lo que hace que el término de perturbación aleatoria recoja las características propias de dependencia espacial que se dan en la variable endógena y que no son consideradas por las variables explicativas.",
+        "year": "2015",
+        "conceptos": [
+            "autocorrelación, espacial",
+            "zona, espacio",
+            "especificación, regresión, perturbación"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "V=åç+ãu=λWu+εε\\approx N(0,σ2I)"
+    },
+    {
+        "id": "66",
+        "nombre": "Modelo básico de regresión espacial.",
+        "teoria": "Modelo básico de regresión espacial.",
+        "tipo": "Economía Regional",
+        "descripcion": "El MBRL será la especificación correcta para una variable que presenta autocorrelación espacial, sólo en el caso de que este efecto espacial esté totalmente explicado por los valores de una o más variables explicativas, es decir, por condicionantes internos referidos a dicho lugar i",
+        "year": "2015",
+        "conceptos": [
+            "autocorrelación, espacial",
+            "zona, espacio",
+            "especificación, regresión, perturbación",
+            "espacio, autocorrelación"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "V=åç+ãu\\approx N(0,σ2I)"
+    },
+    {
+        "id": "67",
+        "nombre": "Modelo del retardo espacial.",
+        "teoria": "ANÁLISIS CONFIRMATORIO DE DATOS ESPACIALES",
+        "tipo": "Economía Regional",
+        "descripcion": "El modelo básico de regresión espacial tampoco recoge en su totalidad la autocorrelación espacial a través de las variables explicativas. Esto hace que se incorpore en este modelo una variable dependiente espacialmente retardada que lo recoja.",
+        "year": "2015",
+        "conceptos": [
+            "regresion, espacio"
+        ],
+        "autores": [
+            "Oscar Luis Alonso Cienfuegos"
+        ],
+        "referencias": [
+            "Cienfuegos A., L., O. (2015). La econometría espacial un enfoque para el estudio (Tesis en doctorado en ciencias económicas y empresariales, Universidad de Magala)"
+        ],
+        "equation": "V=àâV+åç+ãu\\approx N(0,σ2I)"
+    },
+    {
+        "id": "68",
+        "nombre": "Modelo mixto regresivo de regresión espacial",
+        "teoria": "Dependencia espacial sustantiva de primer orden.",
+        "tipo": "Economía Regional",
+        "descripcion": "Modelo mixto regresivo de regresión espacial, con perturbaciones aleatorias autorregresivas y heteroscedásticas",
+        "year": "2015",
+        "conceptos": [
+            "autocorrelación, espacial",
+            "especificación, regresión, perturbación",
+            "espacio, autocorrelación",
+            "perturbaciones, aleatorias, autorregresivas y heteroscedásticas"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "V=àâZV+åçZ+âféçf+ãu=λW3u+εε\\approx N(0,Ω);Ωii=hi(Zα);hi\\ge0."
+    },
+    {
+        "id": "69",
+        "nombre": "Modelo mixto regresivo-autorregresivo espacial de primer orden",
+        "teoria": "Dependencia espacial sustantiva de primer orden.",
+        "tipo": "Economía Regional",
+        "descripcion": "Modelo mixto regresivo-autorregresivo espacial de primer orden (modelo del retardo espacial)",
+        "year": "2015",
+        "conceptos": [
+            "autocorrelación, espacial",
+            "especificación, regresión, perturbación",
+            "espacio, autocorrelación",
+            "perturbaciones, aleatorias, autorregresivas y heteroscedásticas",
+            "regresivo, autorregresivo, espacial"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "V=àâZV+åçZ+ãu\\approx N(0,σ2I)"
+    },
+    {
+        "id": "70",
+        "nombre": "Modelo mixto regresivo-autorregresivo espacial con perturbaciones",
+        "teoria": "Dependencia espacial sustantiva de primer orden.",
+        "tipo": "Economía Regional",
+        "descripcion": "Modelo mixto regresivo-autorregresivo espacial con perturbaciones espaciales autorregresivas",
+        "year": "2015",
+        "conceptos": [
+            "autocorrelación, espacial",
+            "especificación, regresión, perturbación",
+            "espacio, autocorrelación",
+            "perturbaciones, aleatorias, autorregresivas y heteroscedásticas",
+            "regresivo, autorregresivo, espacial",
+            "perturbaciones, espaciales, autorregresivas"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "V=àâZV+åçZ+ãu=λW2u+εε\\approx N(0,σ2I)",
+        "views": 1
+    },
+    {
+        "id": "71",
+        "nombre": "Modelo mixto regresivo-regresivo espacial",
+        "teoria": "Dependencia espacial sustantiva de primer orden.",
+        "tipo": "Economía Regional",
+        "descripcion": "Modelo mixto regresivo-regresivo espacial",
+        "year": "2015",
+        "conceptos": [
+            "regresión, espacio"
+        ],
+        "autores": [
+            "Oscar Luis Alonso Cienfuegos"
+        ],
+        "referencias": [
+            "Cienfuegos A., L., O. (2015). La econometría espacial un enfoque para el estudio (Tesis en doctorado en ciencias económicas y empresariales, Universidad de Magala)"
+        ],
+        "equation": "V=àâZV+åçZ+âféçf+ã"
+    },
+    {
+        "id": "72",
+        "nombre": "Modelo mixto regresivo cruzado-regresivo espacial",
+        "teoria": "Dependencia espacial sustantiva de primer orden.",
+        "tipo": "Economía Regional",
+        "descripcion": "Modelo mixto regresivo cruzado-regresivo espacial",
+        "year": "2015",
+        "conceptos": [
+            "regresión, espacio",
+            "espacio,  autocorrelación"
+        ],
+        "autores": [
+            "Oscar Luis Alonso Cienfuegos"
+        ],
+        "referencias": [
+            "Cienfuegos A., L., O. (2015). La econometría espacial un enfoque para el estudio (Tesis en doctorado en ciencias económicas y empresariales, Universidad de Magala)"
+        ],
+        "equation": "V=àâZV+âféçf+ã"
+    },
+    {
+        "id": "73",
+        "nombre": "Externalidades espaciales globales.",
+        "teoria": "Modelos de dependencia espacial GLOBAL",
+        "tipo": "Economía Regional",
+        "descripcion": "Se utilizan cuando una externalidad tiene lugar en la variable y de la región i y esto hace que se extienda al resto de regiones, recogiéndose en el modelo como un multiplicador espacial. Se produce en modelos que siguen un proceso autorregresivo espacial (SAR) y donde la Cov (yi , yj ) ≠ 0, al transmitirse el impacto en i a todas las regiones..",
+        "year": "2015",
+        "conceptos": [
+            "autocorrelación, espacial",
+            "especificación, regresión, perturbación",
+            "espacio, autocorrelación",
+            "regresivo, autorregresivo, espacial"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "y=[I−ρW1]−1Xβ+[I−λW2]−1uy=[I−ρW]-1Xβ+[I−ρW]-1u"
+    },
+    {
+        "id": "74",
+        "nombre": "Externalidades espaciales locales.",
+        "teoria": "Modelos de dependencia espacial LOCAL",
+        "tipo": "Economía Regional",
+        "descripcion": "Impacto que se produce en la región i solo tiene influencia en las regiones vecinas, al menos hasta un grado limitado, y no en todas las demás, la dependencia es local. Incorporan dependencia espacial en las variables exógenas en el término de perturbación aleatoria, siguiendo procesos de medias móviles.",
+        "year": "2015",
+        "conceptos": [
+            "zona, espacio",
+            "proporción, localización, estimación, subyacente",
+            "regiones, limitación, localidad"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "y=Xβ1+W1Xβ2+(I+θW2)εy=(I+ρW)(Xβ+ε)"
+    },
+    {
+        "id": "75",
+        "nombre": "Modelo de heterocedasticidad aditiva.",
+        "teoria": "Modelo de heterocedasticidad aditiva.",
+        "tipo": "Economía Regional",
+        "descripcion": "La varianza de la perturbación aleatoria sería función lineal de Z variables heteroscedásticas, que no tienen por qué coincidir con las variables explicativas.",
+        "year": "2015",
+        "conceptos": [
+            "regrecion, espacio",
+            "perturbaciones, aleatorias, autorregresivas y heteroscedásticas",
+            "perturbaciones, espaciales, autorregresivas",
+            "perturbación, heterocedasticidad"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Var(u)=Zy"
+    },
+    {
+        "id": "76",
+        "nombre": "Modelo de heteroscedasticidad de coeficientes aleatorios.",
+        "teoria": "Modelo de heteroscedasticidad de coeficientes aleatorios.",
+        "tipo": "Economía Regional",
+        "descripcion": "En este caso la varianza es función del cuadrado de las variables heteroscedásticas.",
+        "year": "2015",
+        "conceptos": [
+            "perturbaciones, aleatorias, autorregresivas y heteroscedásticas",
+            "perturbaciones, espaciales, autorregresivas",
+            "perturbación, heterocedasticidad",
+            "heteroscedasticidad, varianza."
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Var(u)=Z^2γ"
+    },
+    {
+        "id": "77",
+        "nombre": "Modelo espacial de parámetros aleatorios, de Hildreth-Houck",
+        "teoria": "Modelos con inestabilidad paramétrica continua",
+        "tipo": "Economía Regional",
+        "descripcion": "Donde Xi es un vector fila (1 x K) de variables explicativas βi es un vector columna (K x 1) de coeficientes para cada observación i.",
+        "year": "2015",
+        "conceptos": [
+            "perturbaciones, aleatorias, autorregresivas y heteroscedásticas",
+            "perturbaciones, espaciales, autorregresivas",
+            "perturbación, heterocedasticidad",
+            "heteroscedasticidad, varianza.",
+            "parámetro,"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "yi=Xiβ"
+    },
+    {
+        "id": "78",
+        "nombre": "Modelo de superficie tendencial",
+        "teoria": "Modelos con inestabilidad paramétrica continua",
+        "tipo": "Economía Regional",
+        "descripcion": "Las variables explicativas de este modelo de regresión lineal son los elementos de un polinomio de las coordenadas terrestres de longitud (m) y latitud (p) correspondientes a la localización de una observación i en el espacio (mi , pi",
+        "year": "2015",
+        "conceptos": [
+            "localización, optimización",
+            "territorio"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "y=α+β1m+β2p+β3m2+β4p2+β6mp"
+    },
+    {
+        "id": "79",
+        "nombre": "Modelo de regresiones ponderadas geográficamente (RPG), de Fotheringham, Charlton y Brundsdon",
+        "teoria": "Modelos con inestabilidad paramétrica continua",
+        "tipo": "Economía Regional",
+        "descripcion": "Se trata de un modelo estimado por mínimos cuadrados ponderados donde los pesos son función de la distancia entre cada punto y el resto",
+        "year": "2015",
+        "conceptos": [
+            "localización, optimización",
+            "territorio",
+            "peso, distancia"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "yi=Xiβi+ui"
+    },
+    {
+        "id": "80",
+        "nombre": "Modelo ANOVA espacial (SANOVA)",
+        "teoria": "Modelos con inestabilidad paramétrica discreta",
+        "tipo": "Economía Regional",
+        "descripcion": "La aplicación espacial del modelo ANOVA tradicional. Se contrasta si el grado de variación entre una variable y la media de dicha variable en un grupo de datos es significativo o casual.",
+        "year": "2015",
+        "conceptos": [
+            "localización, optimización",
+            "territorio",
+            "peso, distancia",
+            "espacio, parámetro, "
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "y=β0+β1f+u"
+    },
+    {
+        "id": "81",
+        "nombre": "Modelo espacial de regresiones cambiantes (“switching regressions”)",
+        "teoria": "Modelos con inestabilidad paramétrica discreta",
+        "tipo": "Economía Regional",
+        "descripcion": "Se estiman tantos valores diferentes como estructuras o regiones cambiantes se hayan definido.",
+        "year": "2015",
+        "conceptos": [
+            "localización, optimización",
+            "territorio",
+            "espacio, parámetro, ",
+            "estructura, región"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "y1=X1β1+u1d=0"
+    },
+    {
+        "id": "82",
+        "nombre": "Test LM-LAG",
+        "teoria": "Contrastes de dependencia espacial sustantiva en modelos de regresión",
+        "tipo": "Economía Regional",
+        "descripcion": "Donde e es el vector de residuos MCO del modelo lineal comentado, Wy el termino espacial retardado, S2 la estimación de la varianza residual del mismo modelo y RJρ-β = [T1+(WXβ)´M(WXβ)/S2]",
+        "year": "2015",
+        "conceptos": [
+            "espacio, parámetro, "
+        ],
+        "autores": [
+            "Oscar Luis Alonso Cienfuegos",
+            "Pérez Pineda"
+        ],
+        "referencias": [],
+        "equation": "LM-LAG=[e'Wy/S2]/RJρ-β"
+    },
+    {
+        "id": "83",
+        "nombre": "Test LM-LE",
+        "teoria": "Contrastes de dependencia espacial sustantiva en modelos de regresión",
+        "tipo": "Economía Regional",
+        "descripcion": "El vector de residuos MCO del modelo lineal comentado, Wy el termino espacial retardado, S2 la estimación de la varianza residual del mismo modelo y RJρ-β = [T1+(WXβ)´M(WXβ)/S2] y con T1= Traza (W´W+W2)",
+        "year": "2015",
+        "conceptos": [
+            "espacio, parámetro, ",
+            "espacio, residuos"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "LM-LE=[(e'Wy/S2−e'We/S2)/(RJρ-β−T1)]2"
+    },
+    {
+        "id": "84",
+        "nombre": "I de Moran",
+        "teoria": "Contrastes de dependencia espacial residual en modelos de regresión",
+        "tipo": "Economía Regional",
+        "descripcion": "e es el vector de residuos de MCO de un modelo lineal, N el tamaño muestral y S = Σi Σj wij (la suma de los elementos wij de la matriz de pesos). En un contexto asintótico y el supuesto de residuos  no correlacionados, la I de moran estandarizada se distribuye como una normal estándar.",
+        "year": "2015",
+        "conceptos": [
+            "espacio, parámetro, ",
+            "espacio, residuos",
+            "pesos, residuos"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "I=(N/S)(e'We/e'e)"
+    },
+    {
+        "id": "85",
+        "nombre": "Test K-R (Kelejian- Robinson)",
+        "teoria": "Contrastes de dependencia espacial residual en modelos de regresión",
+        "tipo": "Economía Regional",
+        "descripcion": "Las variables explicativas de la regresión auxiliar Zh, están formadas por productos cruzados Xi y Xj . γ es el vector de coeficientes obtenido de MCO en una regresión de C en Z, y α el vector asociado a los residuos.",
+        "year": "2015",
+        "conceptos": [
+            "espacio, parámetro, ",
+            "espacio, residuos",
+            "pesos, residuos",
+            "productos, regresión, residuos"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "K-R=(γ'Z'Zγ)/(α'α/hR)"
+    },
+    {
+        "id": "86",
+        "nombre": "Test LM-ERR",
+        "teoria": "Contrastes de dependencia espacial residual en modelos de regresión",
+        "tipo": "Economía Regional",
+        "descripcion": "e es el vector de residuos de MCO, T1= Traza (W´W+W2), S2 la estimación de la varianza residual de dicho modelo. A diferencia de los dos estimadores anteriores este se distribuye como una χ2 con un grado de libertad.",
+        "year": "2015",
+        "conceptos": [
+            "productos, regresión, residuos"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "LM-ERR=[(e'We/S2)/T1]2"
+    },
+    {
+        "id": "87",
+        "nombre": "Test LM-EL",
+        "teoria": "Contrastes de dependencia espacial residual en modelos de regresión",
+        "tipo": "Economía Regional",
+        "descripcion": "M es una matriz idempotente y RJρ-β = [T1+(WXβ)´M(WXβ)/S2]. e es el vector de residuos MCO del modelo lineal comentado, Wy el termino espacial retardado, S2 la estimación de la varianza residual y T1= Traza (W´W+W2)",
+        "year": "2015",
+        "conceptos": [
+            "productos, regresión, residuos",
+            "estimación, grados de libertad",
+            "vector, varianza, espacio"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "LM-EL=[(e'We/S2)-T1(Rjρ-β)-1(e'Wy/S2)]2/[T1-T12(Rjρ-β)-1"
+    },
+    {
+        "id": "88",
+        "nombre": "test multidireccional SARMA",
+        "teoria": "test multidireccional SARMA",
+        "tipo": "Economía Regional",
+        "descripcion": "supone W1=W2=W, dónde e es el vector de residuos MCO del modelo bajo Ho y se distribuye bajo una χ 2 con dos grados de libertad.",
+        "year": "2015",
+        "conceptos": [
+            "residuos, multidireccional, grados de libertad."
+        ],
+        "autores": [
+            "Oscar Luis Alonso Cienfuegos"
+        ],
+        "referencias": [],
+        "equation": "SARMA=LM-ERR+LM-LE=LM-LAG+LM-EL"
+    },
+    {
+        "id": "89",
+        "nombre": "modelo mixto regresivo espacial autorregresivo con perturbaciones espaciales",
+        "teoria": "Multiplicador de Lagrange",
+        "tipo": "Economía Regional",
+        "descripcion": "Un contraste que evalúa la presencia simultánea de autocorrelación sustantiva y residual, basado en el Multiplicador de Lagrange, que para un modelo mixto regresivo espacial autorregresivo con perturbaciones espaciales, con estructura SARMA, contrastando simultáneamente para ρ y θ, bajo Ho= ρ = θ= 0,",
+        "year": "2015",
+        "conceptos": [
+            "residuos, multidireccional, grados de libertad.",
+            "Lagrange, espacio"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "SARMA=[(e'Wy/S2─e'We/S2)/(Rjρ-β─T1)]2+[(e'We/S2)/T1]2"
+    },
+    {
+        "id": "90",
+        "nombre": "Test SARMA multidireccional.",
+        "teoria": "Test SARMA multidireccional.",
+        "tipo": "Economía Regional",
+        "descripcion": "se basa en el multiplicador de Lagrange y permite estimar de forma conjunta la existencia de autocorrelación espacial sustantiva y residual. La hipótesis nula sería H0 (ρ=θ=0) ó H0 (ρ=λ=0).",
+        "year": "2015",
+        "conceptos": [
+            "residuos, multidireccional, grados de libertad.",
+            "Lagrange, espacio",
+            "espacio, residuos, Lagrange, dirección"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "SARMA=[[(e'Wy/s2)-(e'We/s2)]2/[RĴρ-β-T1]]+[(e'We/s2)2/T1]"
+    },
+    {
+        "id": "91",
+        "nombre": "La exposición a la innovación ",
+        "teoria": "Difusión espacial de innovaciones.",
+        "tipo": "Economía Regional",
+        "descripcion": "Sera función de la información que sobre ella se introduzca en un centro urbano dado.",
+        "year": "1978",
+        "conceptos": [
+            "tecnología, rendimientos, crecimiento.",
+            "innovación, urbano"
+        ],
+        "autores": [
+            "Luis Javier Posada"
+        ],
+        "referencias": [
+            "Agricultura y sociedad : revista ed. por la Secretaría General Técnica del Ministerio de Agricultura. - Vol. 6.1978, p. 137-180"
+        ],
+        "equation": "Jij=K(PiPj/d^bij)"
+    },
+    {
+        "id": "92",
+        "nombre": "Matriz de pesos espaciales",
+        "teoria": "Matriz de pesos espaciales",
+        "tipo": "Economía Regional",
+        "descripcion": "Esta matriz de pesos generalizada (W), en lugar de utilizar las ponderaciones binarias δij como cuantificación del concepto de vínculo, recoge el efecto de la región i sobre la región j a través de un peso o ponderación wij, de forma que W ≡ [wij]",
+        "year": "2003",
+        "conceptos": [
+            "peso, distancia",
+            "pesos, espacio."
+        ],
+        "autores": [
+            "Chasco Yrigoyen, C."
+        ],
+        "referencias": [
+            "Chasco Yrigoyen, C. (2003). Econometría espacial aplicada a la predicción-extrapolación de datos microterritoriales. Dirección General de Economía y Planificación."
+        ],
+        "equation": "2wij=dij^-2"
+    },
+    {
+        "id": "93",
+        "nombre": "Modelo de maximización de beneficio",
+        "teoria": "teoría de la empresa",
+        "tipo": "Microeconomia",
+        "descripcion": "Determinar la cantidad óptima de producción de una empresa para maximizar sus beneficios. Este modelo se basa en la suposición de que las empresas tienen como objetivo principal maximizar sus beneficios y toman decisiones en función de esta meta. B=beneficio IT=ingreso total  CT=costo total ",
+        "year": "2008",
+        "conceptos": [
+            "beneficio",
+            " ingreso total",
+            "costo total "
+        ],
+        "autores": [
+            "Nicholson, W."
+        ],
+        "referencias": [
+            "Nicholson, W. (2008). Teoría Micoeconómica: Principios básicos y ampliaciones"
+        ],
+        "equation": "B=IT-CT"
+    },
+    {
+        "id": "94",
+        "nombre": "Modelo de equilibrio general",
+        "teoria": "teoría microeconómica",
+        "tipo": "Microeconomia",
+        "descripcion": "Un modelo del conjunto de la economía que refleje adecuadamente las relaciones entre diversos mercados y agentes económicos. Walras un modelo que permita seguir los efectos que el cambio en un mercado produce en otros mercados. qD= cantidad demandada qS= cantidad ofertada",
+        "year": "2008",
+        "conceptos": [
+            "demanda",
+            "oferta"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "qD=qS"
+    },
+    {
+        "id": "95",
+        "nombre": "Modelo de Cournot",
+        "teoria": "teoría microeconómica",
+        "tipo": "Microeconomia",
+        "descripcion": "Supone que la empresa i cuando toma sus decisiones, considerando que la producción de la empresa j es fija, es decir, su derivada es igual a cero. Q= es la cantidad total demandada en el mercado y P= es el precio de mercado",
+        "year": "2008",
+        "conceptos": [
+            "demanda de mercado",
+            "precio de mercado "
+        ],
+        "autores": [
+            "Pindyck, R. S. and Rubinfeld, D.L."
+        ],
+        "referencias": [
+            "Pindyck, R. S. and Rubinfeld, D.L. (2013). Micoecnómia"
+        ],
+        "equation": "Q=D(P)",
+        "views": 1
+    },
+    {
+        "id": "96",
+        "nombre": "Modelo de stackelberg",
+        "teoria": "teoría microeconómica",
+        "tipo": "Microeconomia",
+        "descripcion": "Modelo del oligopolio en el que una empresa fija el nivel de producción antes que el resto. x=empresa líder y=la decisión del seguidor  π1(x,y)= función de beneficio del líder π2(x,y)=función de beneficio del seguidor ",
+        "year": "2013",
+        "conceptos": [
+            "empresa líder",
+            " decisión del seguidor",
+            "  función de beneficio del líder"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Maximizar\\pi1(x,y)\\ sujeto\\ a\\ y=y(x),Maximizar\\pi2(x,y)"
+    },
+    {
+        "id": "97",
+        "nombre": "Modelo de Bertrand",
+        "teoria": "teoría microeconómica",
+        "tipo": "Microeconomia",
+        "descripcion": "\"Modelo del oligopolio en el que las empresas producen un bien homogéneo, cada una considera fijo el precio de competidores y todas deciden simultáneamente el precio que van a cobrar. pA: el precio del producto de la empresa A\npB: el precio del producto de la empresa B\nD(pA,pB): la demanda del producto a los precios pA y pB\nc: el costo de producción del producto\"",
+        "year": "2013",
+        "conceptos": [
+            "precio del producto de la empresa",
+            "costo de producción del producto"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Maximizar\\pi A(pA,pB)\\ sujeto\\ a\\ \\ pA\\le pB\\ Maximizar\\pi B(pA,pB)\\ sujeto\\ a\\ pB\\le pA"
+    },
+    {
+        "id": "98",
+        "nombre": "Modelo de la fijación del precio de los activos de capital (MPAC)",
+        "teoria": "teoría microeconómica",
+        "tipo": "Microeconomia",
+        "descripcion": "\"Modelo en el que la prima de riesgo de una inversion de capital depende de la correlación entre el rendimiento de la inversión y el rendimeinto de todo el mercado de valores. P: el precio actual de la acción\nD1, D2, ..., Dn: los dividendos esperados de la empresa en los períodos 1, 2, ..., n, respectivamente.\nr: la tasa de descuento o la tasa de rentabilidad requerida por los inversores para invertir en la empresa.\ng: la tasa de crecimiento de los dividendos esperados de la empresa.\"",
+        "year": "2013",
+        "conceptos": [
+            "tasa de crecimiento",
+            "tasa de rentabilidad",
+            "precio actual "
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "P=(D1/r-g)+D1/(1+r)+D2/(1+r)^2+...+Dn/(1+r)^n"
+    },
+    {
+        "id": "99",
+        "nombre": "Modelo de los trabajadores que no se esfuerzan",
+        "teoria": "teoría económica neoclásica ",
+        "tipo": "Microeconomia",
+        "descripcion": "\"Principio según el cual los trabajadores aún tienen un incentivo para no esforzarse si una empresa les paga un salio que equilibra el mercado, ya que los trabajadores despedidos pueden ser contratados por otra empresa a cambio del mismo salario. w: el salario que recibe el trabajador\nx: la productividad del trabajador\nu: la fracción de tiempo que el trabajador no se esfuerza\"",
+        "year": "2013",
+        "conceptos": [
+            "salario",
+            "productividad ",
+            "tiempo "
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "w=(1-u)x",
+        "views": 2
+    },
+    {
+        "id": "100",
+        "nombre": "Modelo de la producción casera ",
+        "teoria": "teoría económica feminista",
+        "tipo": "Microeconomia",
+        "descripcion": "\"Es el supuesto de que los individuos no reciben utilidad directamente de los bienes de adquisición en el mercado. C: el consumo total del hogar\nm: el ingreso total del hogar\nh: la cantidad de horas trabajadas en el hogar\"",
+        "year": "2008",
+        "conceptos": [
+            "consumo",
+            "ingreso",
+            "horas"
+        ],
+        "autores": [
+            "Nicholson, W."
+        ],
+        "referencias": [
+            "Nicholson, W. (2008). Teoría Micoeconómica: Principios básicos y ampliaciones"
+        ],
+        "equation": "C=C(m,h)",
+        "views": 1
+    },
+    {
+        "id": "101",
+        "nombre": "Modelo de atributos lineales",
+        "teoria": "teoría de la elección del consumidor",
+        "tipo": "Microeconomia",
+        "descripcion": "Los atributos de los bienes son los que apropian utilidad a los individuos y cada bien tiene un atributo fijo. aix= cantidad de producto por unidad de x ",
+        "year": "2008",
+        "conceptos": [
+            "cantidad de producto"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "ai=axix+ayiy+anin"
+    },
+    {
+        "id": "102",
+        "nombre": "Función de producción",
+        "teoria": "teoría de la producción",
+        "tipo": "Microeconomia",
+        "descripcion": "\"Muestra la cantidad máxima de bines que ésta puede producir utilizando distintas combinaciones de capital y trabajo. Y: la cantidad de producción generada\nK: la cantidad de capital utilizado\nL: la cantidad de trabajo utilizado \"",
+        "year": "2008",
+        "conceptos": [
+            "cantidad de producción generada",
+            "cantidad de capital utilizado",
+            "cantidad de trabajo utilizado"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Y=f(K,L)",
+        "views": 1
+    },
+    {
+        "id": "103",
+        "nombre": "Modelo abstracto de la producción",
+        "teoria": "teoría de la producción",
+        "tipo": "Microeconomia",
+        "descripcion": "La combinación de factores de producción, considerando todos los factores para la fabricación de productos. q= producción de un bien en determinado tiempo k= maquinaria (capital) l= horas de trabajo (trabajo) m= materia prima",
+        "year": "2008",
+        "conceptos": [
+            "producción de un bien en determinado tiempo",
+            "materia prima",
+            "trabajo",
+            "capital"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "q=f(k,l,m,\\dots)"
+    },
+    {
+        "id": "104",
+        "nombre": "Modelo de crecimiento de Solow",
+        "teoria": "teoría neoclásica",
+        "tipo": "Microeconomia",
+        "descripcion": "\"Establece que el crecimeinto de una economía se debería basar en la gestión de la oferta, productividad y inversion, pero no en el resultado exclusivo de la demanda. Y: la producción total de la economía\nK: la cantidad de capital físico utilizado\nL: la cantidad de trabajo utilizado\nA: el nivel de tecnología\nα: el parámetro que representa la participación del capital en la producción (0 ≤ α ≤ 1) \"",
+        "year": "2008",
+        "conceptos": [
+            "producción",
+            "capital",
+            "nivel de tecnología"
+        ],
+        "autores": [],
+        "referencias": [],
+        "equation": "Y=F(K,L)=AK^αL^{(1-α)}",
+        "views": 1
     }
-   ]
+]
