@@ -34,7 +34,7 @@ export function SearchPage() {
       for (const value of conceptos) {
           tempResult = 
             row.conceptos.some((v) => compareFunction(v,value) || compareFunction(value,v)) || 
-            row.autores.some((v) => compareFunction(v,value)) ||
+            row.autores?.some((v) => compareFunction(v,value)) ||
             row.year === value || 
             compareFunction(row.tipo, value) ||
             compareFunction(row.nombre, value);
