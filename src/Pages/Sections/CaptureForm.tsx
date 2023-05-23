@@ -72,6 +72,8 @@ export default function CaptureForm() {
 
   const updateData = () => {
     const id = model[`id`];
+    console.log(`updateData:`);
+    console.log(model);
     axios
       .put(`https://economic-expert-default-rtdb.firebaseio.com/data/${id}.json`, {
         nombre,

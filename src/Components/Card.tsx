@@ -156,6 +156,7 @@ export function Card({ row }) {
     const views = (item.views ?? 0) + 1;
     axios
       .put(`https://economic-expert-default-rtdb.firebaseio.com/data/${key}.json`, {
+        ...item,
         views
       })
       .then(() => {
