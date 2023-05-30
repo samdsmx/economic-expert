@@ -36,14 +36,15 @@ export function InsertPage() {
           }
           a+=e;
           return a;
-        });
+        }).trim();
         nodes.push({
           id: index,
           label: label,
           title: "node 1 tootip text",
           color: colorTipo.get(r[`tipo`]),
         });
-        r["conceptos"] && r["conceptos"].forEach((c: any) => {
+        r["conceptos"] && r["conceptos"].forEach((c_temp: any) => {
+          const c = c_temp.trim();
           if (!conceptos.has(c)) {
             conceptos.set(c, []);
           }
