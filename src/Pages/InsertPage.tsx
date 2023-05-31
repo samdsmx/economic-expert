@@ -36,7 +36,7 @@ export function InsertPage() {
           }
           a+=e;
           return a;
-        }).trim();
+        });
         nodes.push({
           id: index,
           label: label,
@@ -44,7 +44,7 @@ export function InsertPage() {
           color: colorTipo.get(r[`tipo`]),
         });
         r["conceptos"] && r["conceptos"].forEach((c_temp: any) => {
-          const c = c_temp.trim();
+          let c = c_temp.trim();
           if (!conceptos.has(c)) {
             conceptos.set(c, []);
           }
