@@ -135,13 +135,13 @@ export default function CaptureForm() {
             label="Nombre del modelo"
             autoAdjustHeight
             value={nombre}
-            onChange={(_e, newVal) => setNombre(newVal)}
+            onChange={(_e, newVal) => setNombre(newVal.trim())}
           />
           <TextField
             label="Teoría económica relacionada"
             autoAdjustHeight
             value={teoria}
-            onChange={(_e, newVal) => setTeoria(newVal)}
+            onChange={(_e, newVal) => setTeoria(newVal.trim())}
           />
           <Dropdown
             placeholder="Selecione una opcion"
@@ -179,7 +179,8 @@ export default function CaptureForm() {
             label={`Año`}
             autoAdjustHeight
             value={year}
-            onChange={(_e, newVal) => setYear(newVal)}
+            type=""
+            onChange={(_e, newVal) => setYear(newVal.trim())}
           />
 
           <InputPill

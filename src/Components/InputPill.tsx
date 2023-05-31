@@ -18,7 +18,7 @@ export function InputPill({ label="", value=[], type="pill", onChange=(_newVal: 
     };
   
     const addConcept = () => {
-      conceptos.push(concepto);
+      conceptos.push(concepto.trim());
       const newConceptos = conceptos.slice();
       setConceptos(newConceptos);
       onChange(newConceptos);
