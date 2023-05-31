@@ -25,13 +25,22 @@ export function SearchPage() {
 
   useEffect(()=>{
     const array = Object.entries(APIData);
+    console.log(`array`);
+    console.log(array);
     let filteredTheories = array?.filter(([key, row]: any) => {
+      console.log(`key`);console.log(key);
+      console.log(`row`);console.log(row);
+      
       if (row === null) return false;
       if (viewAll && (!conceptos || conceptos.length === 0)) return true;
       if (parsedPinsMap.get(key)) return true;
       let tempResult = false;
+
+      console.log(`conceptos`);console.log(conceptos);
+
       for (const value of conceptos) {
-          tempResult = 
+        console.log(`value`);console.log(value);
+        tempResult = 
             row.conceptos.some((v) => compareFunction(v,value) || compareFunction(value,v)) || 
             row.autores?.some((v) => compareFunction(v,value)) ||
             row.year === value || 
