@@ -53,7 +53,6 @@ export function InsertPage() {
         index++;
       }
     });
-    console.log(conceptos);
     conceptos.forEach((value, key) => {
       nodes.push({
         id: index,
@@ -65,8 +64,6 @@ export function InsertPage() {
       });
       index++;
     });
-    console.log(nodes);
-    console.log(edges);
     setGraph({
       nodes: nodes,
       edges: edges,
